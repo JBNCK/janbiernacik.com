@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Jan Biernacik - Tech enthusiast and self taught hobbyist web developer.</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
         <link rel="stylesheet" href="/assets/styles/index.css" />
         <link rel="icon" type="image/png" href="/assets/media/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/assets/media/favicon.svg" />
@@ -15,20 +16,30 @@
     <body>
         <script>
             const userLanguage = navigator.language;
-            console.log(userLanguage)
-
+            console.log(userLanguage);
+        
             switch(userLanguage) {
                 case 'de-DE':
+                case 'de-AT':
+                case 'de-CH':
+                case 'de-BE':
+                case 'de-LI':
+                case 'de-LU':
+                case 'de':
                     window.location.href = "/de/";
                     break;
+                
                 case 'pl-PL':
+                case 'pl':
                     window.location.href = "/pl/";
                     break;
+                
                 default:
                     window.location.href = "/en/";
                     break;
             }
         </script>
+        
         <h1>Jan Biernacik - Homepage</h1>
         <hr>
         <p>Tech enthusiast and self taught hobbyist web developer.</p>
