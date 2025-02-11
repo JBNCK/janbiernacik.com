@@ -15,6 +15,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="/assets/styles/index.css" />
+        <link rel="stylesheet" href="/assets/styles/classes.css" />
+        <link rel="stylesheet" href="/assets/styles/media.css" />
         <link rel="icon" type="image/png" href="/assets/media/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/assets/media/favicon.svg" />
         <link rel="shortcut icon" href="/assets/media/favicon.ico" />
@@ -24,8 +26,46 @@
         <script src="/assets/scripts/index.js"></script>
     </head>
     <body>
-        <h1>Coming Soon...</h1>
-        <hr>
-        <p>Diese Site befindet sich noch im Aufbau.</p>
+        <header>
+            <div class="navbar">
+                <div class="navbar-item-container">
+                    <div class="navbar-items-left">
+                        <img class="menu-toggle" src="/assets/media/menu_dark.png" onclick="toggleMenu();" />
+                        <a href="/" class="navbar-link">Startseite</a>
+                        <a href="https://www.github.com/JBNCK" class="navbar-link">GitHub</a>
+                    </div>
+                    <div class="navbar-items-right">
+                        <a href="mailto:jan@biernacik.org" class="navbar-contact-link">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="menu" id="menu">
+            <div class="menu-content" id="menuContent">
+                <a href="/" class="menu-link">Startseite</a>
+                <a href="https://www.github.com/JBNCK" class="menu-link">GitHub</a>
+            </div>
+        </div>
+        <div class="menu-collapser" id="menuCollapser" onclick="toggleMenu();"></div>
+        <main>
+            <div class="main-banner">
+                <div class="main-banner-title">
+                    <h1>Jan Biernacik</h1>
+                    <p>Tech enthusiast and self taught hobbyist web developer.</p>
+                </div>
+                <img class="main-banner-picture" src="/assets/media/web-app-manifest-512x512.png" alt="Picture of Myself in London" />
+            </div>
+            <div class="main-section">
+                <h1>Information</h1>
+                <hr>
+                <p>Diese Seite befindet sich noch im Aufbau, daher sind die aktuellen Inhalte und das Design nur provisorisch. Ich arbeite aktiv daran, in Kürze ein aktualisiertes Design bereitzustellen.</p>
+            </div>
+            <div class="main-section">
+                <h1>Über Mich</h1>
+                <hr>
+                <p>Moin, ich bin Jan, 17 Jahre alt und lebe in Hamburg. Ich komme aus Polen, daher beherrsche ich neben Deutsch und Englisch auch Polnisch fließend. Ich interessiere mich für Informatik, insbesondere für die Webentwicklung, welche ich mir seit einigen Jahren größtenteils selber beibringe. In diesen Jahren habe ich bereits 2 Schülerpraktika im Bereich IT absolvieren können und starte im August meine Ausbildung zum Fachinformatiker für Anwendungsentwicklung.</p>
+            </div>
+        </main>
+        <div class="site-end"></div>
     </body>
 </html>

@@ -1,0 +1,25 @@
+@media screen and (max-width: 1000px) {
+    .main-banner {
+        flex-direction: column-reverse;
+    }
+    .main-banner-picture {
+        width: 70%;
+        max-width: 512px;
+        margin: 0;
+    }
+    .navbar-link {
+        display: none;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .menu {
+        visibility: hidden;
+    }
+    .menu-collapser {
+        display: none;
+    }
+}

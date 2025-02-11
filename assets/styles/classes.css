@@ -1,0 +1,97 @@
+.navbar {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid black;
+    background-color: white;
+}
+
+.navbar-item-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-items-left {
+    margin: 0 20px;
+}
+
+.navbar-items-right {
+    margin: 0 20px;
+}
+
+.navbar-link {
+    margin-right: 10px;
+    color: black;
+}
+
+.menu-toggle {
+    height: 20px;
+    display: none;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    top: 81px;
+    border-bottom: 1px black solid;
+    background-color: #f6f6f6;
+    padding: 22px 20px;
+    display: none;
+    z-index: 998;
+}
+
+.menu-link {
+    display: block;
+    margin: 8px 0;
+    font-size: large;
+    color: black;
+}
+
+.menu-collapser {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    top: 81px;
+    background: rgba(0,0,0,0.25);
+    z-index: 997;
+    visibility: hidden;
+}
+
+.navbar-contact-link {
+    background-color: black;
+    color: white;
+    border: solid 8px black;
+    border-radius: 20px;
+}
+
+.main-banner {
+    max-width: 1240px;
+    margin: 160px auto 80px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-banner-title {
+    margin: 0 20px;
+}
+
+.main-banner-picture {
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+.main-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+}
+
+.site-end {
+    margin: 40px 0;
+}

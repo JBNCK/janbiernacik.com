@@ -13,6 +13,20 @@
         "wdth" 100;
 }
 
+body {
+    height: 100%;
+    margin: 0;
+}
+
 h1 {
     font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
