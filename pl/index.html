@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
     <head>
-
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRLESV1ET5"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'G-RRLESV1ET5');
         </script>
-
-        <title>Jan Biernacik - Strona główna</title>
+        
+        <title>Jan Biernacik - Strona Główna</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="/assets/styles/index.css" />
+        <link rel="stylesheet" href="/assets/styles/classes.css" />
+        <link rel="stylesheet" href="/assets/styles/media.css" />
         <link rel="icon" type="image/png" href="/assets/media/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/assets/media/favicon.svg" />
         <link rel="shortcut icon" href="/assets/media/favicon.ico" />
@@ -24,8 +24,46 @@
         <script src="/assets/scripts/index.js"></script>
     </head>
     <body>
-        <h1>Coming Soon...</h1>
-        <hr>
-        <p>Ta strona jest w budowie.</p>
+        <header>
+            <div class="navbar">
+                <div class="navbar-item-container">
+                    <div class="navbar-items-left">
+                        <img class="menu-toggle" src="/assets/media/menu_dark.png" onclick="toggleMenu();" alt="Menu" />
+                        <a href="/" class="navbar-link">Strona Główna</a>
+                        <a href="https://www.github.com/JBNCK" class="navbar-link">GitHub</a>
+                    </div>
+                    <div class="navbar-items-right">
+                        <a href="mailto:jan@biernacik.org" class="navbar-contact-link">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="menu" id="menu">
+            <div class="menu-content" id="menuContent">
+                <a href="/" class="menu-link">Strona Główna</a>
+                <a href="https://www.github.com/JBNCK" class="menu-link">GitHub</a>
+            </div>
+        </div>
+        <div class="menu-collapser" id="menuCollapser" onclick="toggleMenu();"></div>
+        <main>
+            <div class="main-banner">
+                <div class="main-banner-title">
+                    <h1>Jan Biernacik</h1>
+                    <p>Entuzjasta technologii i samouk w dziedzinie tworzenia stron internetowych.</p>
+                </div>
+                <img class="main-banner-picture" src="/assets/media/web-app-manifest-512x512.png" alt="Zdjęcie mnie w Londynie" />
+            </div>
+            <div class="main-section">
+                <h1>Informacja</h1>
+                <hr>
+                <p>Ta strona jest nadal w budowie, więc obecna treść i wygląd są tymczasowe. Aktywnie pracuję nad wprowadzeniem zaktualizowanego projektu wkrótce.</p>
+            </div>
+            <div class="main-section">
+                <h1>O mnie</h1>
+                <hr>
+                <p>Cześć, nazywam się Jan, mam 17 lat i mieszkam w Hamburgu. Pochodzę z Polski, więc oprócz niemieckiego i angielskiego, posługuję się również językiem polskim. Interesuję się informatyką, a w szczególności tworzeniem stron internetowych, czego nauczyłem się samodzielnie w ciągu ostatnich kilku lat. W tym czasie odbyłem już dwa staże uczniowskie w branży IT, a w sierpniu rozpocznę szkolenie zawodowe na informatyka specjalizującego się w tworzeniu oprogramowania.</p>
+            </div>
+        </main>
+        <div class="site-end"></div>
     </body>
 </html>
