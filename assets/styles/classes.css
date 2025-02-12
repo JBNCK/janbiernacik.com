@@ -17,11 +17,11 @@
 }
 
 .navbar-items-left {
-    margin: 0 20px;
+    margin: 0 40px;
 }
 
 .navbar-items-right {
-    margin: 0 20px;
+    margin: 0 40px;
 }
 
 .navbar-link {
@@ -40,7 +40,7 @@
     top: 81px;
     border-bottom: 1px black solid;
     background-color: #f6f6f6;
-    padding: 22px 20px;
+    padding: 22px 40px;
     display: none;
     z-index: 998;
 }
@@ -70,7 +70,7 @@
 }
 
 .main-banner {
-    max-width: 1240px;
+    max-width: 1280px;
     margin: 160px auto 80px auto;
     display: flex;
     justify-content: space-between;
@@ -78,18 +78,18 @@
 }
 
 .main-banner-title {
-    margin: 0 20px;
+    margin: 0 40px;
 }
 
 .main-banner-picture {
     border-radius: 50%;
-    margin: 0 20px;
+    margin: 0 40px;
 }
 
 .main-section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px 20px 20px;
+    padding: 0 40px 20px 40px;
 }
 
 .site-end {
