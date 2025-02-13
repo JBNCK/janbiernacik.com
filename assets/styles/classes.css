@@ -27,6 +27,7 @@
 .navbar-link {
     margin-right: 10px;
     color: black;
+    display: inline-block;
 }
 
 .menu-toggle {
@@ -37,10 +38,10 @@
 .menu {
     position: fixed;
     width: 100%;
-    top: 81px;
+    top: 80px;
     border-bottom: 1px black solid;
     background-color: #f6f6f6;
-    padding: 22px 40px;
+    padding: 20px 40px;
     display: none;
     z-index: 998;
 }
@@ -70,7 +71,7 @@
 }
 
 .main-banner {
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 160px auto 80px auto;
     display: flex;
     justify-content: space-between;
@@ -78,7 +79,11 @@
 }
 
 .main-banner-title {
-    margin: 0 40px;
+    margin: 40px;
+}
+
+.main-banner-title h1 {
+    margin-bottom: 10px;
 }
 
 .main-banner-picture {
@@ -90,6 +95,12 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 40px 20px 40px;
+}
+
+.main-section-title {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid black;
 }
 
 .site-end {
