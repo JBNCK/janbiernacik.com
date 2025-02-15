@@ -33,6 +33,7 @@
 .menu-toggle {
     height: 20px;
     display: none;
+    cursor: pointer;
 }
 
 .menu {
