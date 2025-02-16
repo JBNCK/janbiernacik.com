@@ -17,10 +17,12 @@
 }
 
 body {
-    display: block;
     height: 100%;
 }
 
+footer {
+    margin-top: 30px;
+}
 h1 {
     font-weight: 700;
 }
@@ -35,6 +37,7 @@ p {
 
 a {
     text-decoration: none;
+    width: fit-content;
 }
 
 a:hover {
