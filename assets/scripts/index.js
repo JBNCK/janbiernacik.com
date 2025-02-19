@@ -1,5 +1,5 @@
 console.log("Hello, user!");
-let menuToggled = 0;
+var menuToggled = 0;
 
 $(document).ready(function(){
     var documentLanguage = document.documentElement.lang;
@@ -56,13 +56,15 @@ function loadContent(url) {
 
 function toggleMenu() {
     if (menuToggled == 0) {
-        document.getElementById("menu").style.display = "block";
-        document.getElementById("menuCollapser").style.visibility = "visible";
+        $('.menu').css({display: 'block'});
+        $('.menu-collapser').css({visibility: 'visible'});
+        $('body').css({overflow: 'hidden'});
         menuToggled = 1;
     }
     else {
-        document.getElementById("menu").style.display = "none";
-        document.getElementById("menuCollapser").style.visibility = "hidden";
+        $('.menu').css({display: 'none'});
+        $('.menu-collapser').css({visibility: 'hidden'});
+        $('body').css({overflow: 'auto'});
         menuToggled = 0;
     }
 }
