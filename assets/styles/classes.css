@@ -147,3 +147,14 @@ footer .main-section a {
     width: 100%;
     cursor: pointer;
 }
+
+.social-icon-wrapper {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.social-icon {
+    font-size: x-large;
+    padding: 0 5px;
+    color: black;
+}
