@@ -90,6 +90,7 @@
 .main-banner-picture {
     border-radius: 50%;
     margin: 0 40px;
+    max-width: 400px;
 }
 
 .main-section {
@@ -104,6 +105,10 @@ footer .main-section a {
     margin-bottom: 20px;
     padding-bottom: 16px;
     border-bottom: 1px solid black;
+}
+.main-section-subtitle {
+    padding-top: 20px;
+    font-weight: 700;
 }
 
 .site-end {
@@ -129,4 +134,15 @@ footer .main-section a {
 }
 .timeline-event-desc {
     padding-bottom: 10px;
+}
+
+.github-calendar-wrapper {
+    width: 100%;
+    overflow: auto;
+}
+.github-calendar {
+    margin-top: 40px;
+    min-width: 800px;
+    width: 100%;
+    cursor: pointer;
 }
