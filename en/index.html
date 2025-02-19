@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+        <script src="/assets/libraries/jquery-3.7.1.min.js"></script>
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRLESV1ET5"></script>
         <script>
@@ -49,7 +50,8 @@
             </div>
         </div>
         <div class="menu-collapser" id="menuCollapser" onclick="toggleMenu();"></div>
-        <main>
+        <div class="page-content">
+        <main id="main" class="main">
             <div class="main-banner">
                 <div class="main-banner-title">
                     <h1>Jan Biernacik</h1>
@@ -60,14 +62,44 @@
             <div class="main-section">
                 <h1 class="main-section-title">About me</h1>
                 <p>Hi, my name is Jan, I'm 17 years old, and I live in Hamburg. I come from Poland, so in addition to German and English, I also speak Polish fluently. I'm interested in computer science, especially web development, which I have mostly taught myself over the past few years. During this time, I have already completed two student internships in the IT field and will start my apprenticeship as an IT specialist for application development in August.</p>
+                <h3 class="main-section-subtitle">GitHub Activity</h3>
+                <div class="github-calendar-wrapper">
+                    <img class="github-calendar" src="http://ghchart.rshah.org/JBNCK" alt="Github chart" onclick="window.location.href = 'https://github.com/JBNCK'" />
+                </div>
+            </div>
+            <div class="main-section">
+                <h1 class="main-section-title">Résumé</h1>
+                <div class="timeline">
+                    <div class="timeline-event">
+                        <p class="timeline-event-date">2025 -</p>
+                        <h3 class="timeline-event-title">Apprenticeship</h3>
+                        <p class="timeline-event-desc">In August, I will begin my apprenticeship as an IT specialist for application development at the Fricke Group in Hamburg.</p>
+                    </div>
+                    <div class="timeline-event">
+                      <p class="timeline-event-date">Currently</p>
+                      <h3 class="timeline-event-title">High School</h3>
+                      <p class="timeline-event-desc">I am currently attending the 12th grade of German high school and will complete my school education with the Abitur (German high school diploma) this summer.</p>
+                    </div>
+                    <div class="timeline-event">
+                      <p class="timeline-event-date">2023</p>
+                      <h3 class="timeline-event-title">IT Internship at Fielmann</h3>
+                      <p class="timeline-event-desc">In October 2023, I completed another student internship in the IT field, with a focus on software and web development. During this time, I had the opportunity to further deepen and expand my existing skills.</p>
+                    </div>
+                    <div class="timeline-event">
+                      <p class="timeline-event-date">2022</p>
+                      <h3 class="timeline-event-title">IT Internship at the Bundeswehr</h3>
+                      <p class="timeline-event-desc">In October 2022, I completed a student internship at the Bundeswehr's Command Academy. There, I gained experience in various IT areas, ranging from system administration to helpdesk support.</p>
+                    </div>
+                  </div>
             </div>
         </main>
         <footer>
             <div class="main-section">
-                <a href="privacy/">Privacy Policy</a><br>
+                <a href="/en/privacy/">Privacy Policy</a><br>
                 <a href="/de">Deutsche Version</a>
             </div>
         </footer>
         <div class="site-end"></div>
+        </div>
     </body>
 </html>
