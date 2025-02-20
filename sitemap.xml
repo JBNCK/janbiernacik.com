@@ -1,13 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>https://janbiernacik.com/</loc>
-  <lastmod>2025-02-11T21:24:00+00:00</lastmod>
+  <loc>https://janbiernacik.com/de/</loc>
+  <priority>1</priority>
+  <xhtml:link 
+    rel="alternate"
+    hreflang="en"
+    href="https://janbiernacik.com/en/"
+  />
+  <xhtml:link
+    rel="alternate"
+    hreflang="de"
+    href="https://janbiernacik.com/de/"
+  />
+</url>
+<url>
+  <loc>https://janbiernacik.com/en/</loc>
+  <priority>1</priority>
+  <xhtml:link 
+    rel="alternate"
+    hreflang="de"
+    href="https://janbiernacik.com/de/"
+  />
+  <xhtml:link
+    rel="alternate"
+    hreflang="en"
+    href="https://janbiernacik.com/en/"
+  />
+</url>
+<url>
+  <loc>https://janbiernacik.com/de/datenschutz/</loc>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://janbiernacik.com/en/privacy/</loc>
+  <priority>0.64</priority>
 </url>
 
 </urlset>
