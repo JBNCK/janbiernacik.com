@@ -29,11 +29,16 @@
     color: var(--text);
     display: inline-block;
 }
+.navbar-link:hover {
+    border-left: 2px solid var(--border);
+    padding-left: 4px;
+}
 
 .menu-toggle {
     font-size: xx-large;
     display: none;
     cursor: pointer;
+    margin-left: -4px;
 }
 
 .menu {
@@ -43,7 +48,8 @@
     border-bottom: 1px var(--border) solid;
     background-color: var(--background-alt);
     padding: 20px 40px;
-    display: none;
+    visibility: hidden;
+    margin-top: -150px;
     z-index: 998;
 }
 
@@ -62,6 +68,7 @@
     background: rgba(0,0,0,0.25);
     z-index: 997;
     visibility: hidden;
+    opacity: 0;
 }
 
 .navbar-link-right {
@@ -69,6 +76,11 @@
     color: var(--background);
     border: solid 8px var(--text);
     border-radius: 20px;
+}
+
+.navbar-link-right:hover {
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 .main-banner {
@@ -157,4 +169,7 @@ footer .main-section a {
     font-size: x-large;
     padding: 0 5px;
     color: var(--text);
+}
+.social-icon:hover {
+    padding: 0 10px;
 }

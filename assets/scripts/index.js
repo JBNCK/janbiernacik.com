@@ -56,14 +56,14 @@ function loadContent(url) {
 
 function toggleMenu() {
     if (menuToggled == 0) {
-        $('.menu').css({display: 'block'});
-        $('.menu-collapser').css({visibility: 'visible'});
+        $('.menu').css({visibility: 'visible', marginTop: '0'});
+        $('.menu-collapser').css({visibility: 'visible', opacity: '100%'});
         $('body').css({overflow: 'hidden'});
         menuToggled = 1;
     }
     else {
-        $('.menu').css({display: 'none'});
-        $('.menu-collapser').css({visibility: 'hidden'});
+        $('.menu').css({visibility: 'hidden', marginTop: '-150px'});
+        $('.menu-collapser').css({visibility: 'hidden', opacity: '0'});
         $('body').css({overflow: 'auto'});
         menuToggled = 0;
     }
