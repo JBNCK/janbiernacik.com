@@ -22,3 +22,16 @@
         display: none;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    * {
+        --background: #000000;
+        --text: #cccccc;
+        --accent: #3080ff;
+        --background-alt: #252525;
+        --border: #707070;
+    }
+    img {
+        filter: brightness(0.85);
+    }
+}

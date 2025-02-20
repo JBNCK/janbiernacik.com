@@ -15,10 +15,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --background: #ffffff;
+    --text: #121212;
+    --accent: #2070ff;
+    --background-alt: #f6f6f6;
+    --border: #121212;
+    color: var(--text);
 }
 
 body {
     height: 100%;
+    background-color: var(--background);
 }
 
 footer {

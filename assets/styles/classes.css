@@ -4,8 +4,8 @@
     top: 0;
     width: 100%;
     height: 80px;
-    border-bottom: 1px solid black;
-    background-color: white;
+    border-bottom: 1px solid var(--border);
+    background-color: var(--background);
 }
 
 .navbar-item-container {
@@ -26,12 +26,12 @@
 
 .navbar-link {
     margin-right: 10px;
-    color: black;
+    color: var(--text);
     display: inline-block;
 }
 
 .menu-toggle {
-    height: 20px;
+    font-size: xx-large;
     display: none;
     cursor: pointer;
 }
@@ -40,8 +40,8 @@
     position: fixed;
     width: 100%;
     top: 80px;
-    border-bottom: 1px black solid;
-    background-color: #f6f6f6;
+    border-bottom: 1px var(--border) solid;
+    background-color: var(--background-alt);
     padding: 20px 40px;
     display: none;
     z-index: 998;
@@ -51,7 +51,7 @@
     display: block;
     margin: 8px 0;
     font-size: large;
-    color: black;
+    color: var(--text);
 }
 
 .menu-collapser {
@@ -65,9 +65,9 @@
 }
 
 .navbar-link-right {
-    background-color: black;
-    color: white;
-    border: solid 8px black;
+    background-color: var(--text);
+    color: var(--background);
+    border: solid 8px var(--text);
     border-radius: 20px;
 }
 
@@ -99,12 +99,12 @@
     padding: 0 40px 40px 40px;
 }
 footer .main-section a {
-    color: black;
+    color: var(--text);
 }
 .main-section-title {
     margin-bottom: 20px;
     padding-bottom: 16px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--border);
 }
 .main-section-subtitle {
     padding-top: 20px;
@@ -120,7 +120,7 @@ footer .main-section a {
 }
 
 .timeline {
-    border-left: 3px black solid;
+    border-left: 3px var(--border) solid;
     padding-left: 20px;
 }
 
@@ -156,5 +156,5 @@ footer .main-section a {
 .social-icon {
     font-size: x-large;
     padding: 0 5px;
-    color: black;
+    color: var(--text);
 }
