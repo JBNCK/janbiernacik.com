@@ -25,6 +25,8 @@ $(document).ready(function(){
         loadContent(window.location.pathname);
     });
     bindAjax();
+
+    $("body").css({opacity: '100%'});
 });
 
 function bindAjax() {

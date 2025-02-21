@@ -29,6 +29,7 @@
     color: var(--text);
     display: inline-block;
 }
+
 .navbar-link:hover {
     border-left: 2px solid var(--border);
     padding-left: 4px;
@@ -81,6 +82,7 @@
 .navbar-link-right:hover {
     border-radius: 8px;
     text-decoration: none;
+    padding: 4px 0;
 }
 
 .main-banner {
@@ -110,8 +112,10 @@
     margin: 0 auto;
     padding: 0 40px 40px 40px;
 }
-footer .main-section a {
-    color: var(--text);
+.main-section a:hover {
+    color: var(--accent);
+    border-left: 2px solid var(--border);
+    padding-left: 4px;
 }
 .main-section-title {
     margin-bottom: 20px;
@@ -158,6 +162,10 @@ footer .main-section a {
     min-width: 800px;
     width: 100%;
     cursor: pointer;
+}
+
+.github-calendar:hover {
+    transform: scale(0.95);
 }
 
 .social-icon-wrapper {
