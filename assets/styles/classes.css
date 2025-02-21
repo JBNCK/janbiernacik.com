@@ -41,6 +41,17 @@
     cursor: pointer;
     margin-left: -4px;
 }
+.menu-toggle i {
+    border: 0px solid;
+    border-radius: 8px;
+}
+.menu-toggle i:hover {
+    background: var(--background-alt2);
+}
+.menu-toggle i.active {
+    background: var(--text);
+    color: var(--background);
+}
 
 .menu {
     position: fixed;
@@ -70,6 +81,8 @@
     z-index: 997;
     visibility: hidden;
     opacity: 0;
+    backdrop-filter: blur(0);
+    -webkit-backdrop-filter: blur(0);
 }
 
 .navbar-link-right {
@@ -180,4 +193,8 @@
 }
 .social-icon:hover {
     padding: 0 10px;
+}
+.social-icon-wrapper a:hover {
+    border-left: 0;
+    padding-left: 0;
 }
