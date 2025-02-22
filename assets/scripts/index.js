@@ -5,6 +5,9 @@ var menuToggled = 0;
 
 $(document).ready(function(){
     var documentLanguage = document.documentElement.lang;
+    var menuUrl = "/en/shared/menu.html";
+    var navbarUrl = "/en/shared/navbar.html"
+
     switch(documentLanguage) {
         case 'de-DE':
         case 'de-AT':
@@ -13,23 +16,24 @@ $(document).ready(function(){
         case 'de-LI':
         case 'de-LU':
         case 'de':
-            $(".navbar").load("/de/shared/navbar.html");
-            $(".menu").load("/de/shared/menu.html");
-            break;
-        
-        default:
-            $(".navbar").load("/en/shared/navbar.html");
-            $(".menu").load("/en/shared/menu.html");
+            var menuUrl = "/de/shared/menu.html";
+            var navbarUrl = "/de/shared/navbar.html"
             break;
     }
+    // ↓ This is severely retarded and will be addressed in the future
+    $(".navbar").load(navbarUrl, function() {
+        bindAjax();
+    });
+
+    $(".menu").load(menuUrl, function() {
+        bindAjax();
+    });
 
     window.addEventListener('popstate', function() {
         loadContent(window.location.pathname);
     });
 
     $("main").css({opacity: '100%'});
-    bindAjax();
-    
 });
 
 function bindAjax() {
@@ -48,7 +52,7 @@ function loadContent(url) {
             console.log("Loading Content");
             var tempDiv = $('<div>').html(response);
             var title = tempDiv.find('title').text();
-            var pageContent = tempDiv.find(".page-content").html();
+            var pageContent = tempDiv.find(".page-content").html(); // Copy pasted from ChatGPT, no idead what this does but the site doesn't work without it
             $(".page-content").html(pageContent);
             $('html, body').scrollTop(0);
             $('title').text(title);
