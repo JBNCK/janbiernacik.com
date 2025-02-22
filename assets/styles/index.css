@@ -29,6 +29,9 @@ body {
     height: 100%;
     background-color: var(--background);
 }
+body.active {
+    overflow: hidden;
+}
 
 main {
     opacity: 0;

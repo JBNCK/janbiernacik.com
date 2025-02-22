@@ -21,6 +21,9 @@
     .menu-collapser {
         display: none;
     }
+    body.active {
+        overflow: auto;
+    }
 }
 
 @media (prefers-color-scheme: dark) {

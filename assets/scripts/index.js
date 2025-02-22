@@ -1,31 +1,35 @@
 console.log("Hello, user!");
 var menuToggled = 0;
+var documentLanguage = document.documentElement.lang;
+var menuUrl = "/assets/shared/en/menu.html";
+var navbarUrl = "/assets/shared/en/navbar.html";
+var footerUrl = "/assets/shared/en/footer.html";
 
-
+switch(documentLanguage) {
+    case 'de-DE':
+    case 'de-AT':
+    case 'de-CH':
+    case 'de-BE':
+    case 'de-LI':
+    case 'de-LU':
+    case 'de':
+        var menuUrl = "/assets/shared/de/menu.html";
+        var navbarUrl = "/assets/shared/de/navbar.html"
+        var footerUrl = "/assets/shared/de/footer.html";
+        break;
+}
 
 $(document).ready(function(){
-    var documentLanguage = document.documentElement.lang;
-    var menuUrl = "/en/shared/menu.html";
-    var navbarUrl = "/en/shared/navbar.html"
-
-    switch(documentLanguage) {
-        case 'de-DE':
-        case 'de-AT':
-        case 'de-CH':
-        case 'de-BE':
-        case 'de-LI':
-        case 'de-LU':
-        case 'de':
-            var menuUrl = "/de/shared/menu.html";
-            var navbarUrl = "/de/shared/navbar.html"
-            break;
-    }
     // ↓ This is severely retarded and will be addressed in the future
     $(".navbar").load(navbarUrl, function() {
         bindAjax();
     });
 
     $(".menu").load(menuUrl, function() {
+        bindAjax();
+    });
+
+    $("footer").load(footerUrl, function() {
         bindAjax();
     });
 
@@ -54,6 +58,7 @@ function loadContent(url) {
             var title = tempDiv.find('title').text();
             var pageContent = tempDiv.find(".page-content").html(); // Copy pasted from ChatGPT, no idead what this does but the site doesn't work without it
             $(".page-content").html(pageContent);
+            $("footer").load(footerUrl);
             $('html, body').scrollTop(0);
             $('title').text(title);
             window.history.replaceState(null, title, url);
@@ -81,14 +86,14 @@ function toggleMenu() {
         $('.menu').css({visibility: 'visible', marginTop: '0'});
         $('.menu-collapser').css({visibility: 'visible', opacity: '100%', backdropFilter: 'blur(10px)', webkitBackdropFilter: 'blur(10px)'});
         $('.menu-toggle i').addClass('active');
-        $('body').css({overflow: 'hidden'});
+        $('body').addClass('active');
         menuToggled = 1;
     }
     else {
         $('.menu').css({visibility: 'hidden', marginTop: '-150px'});
         $('.menu-collapser').css({visibility: 'hidden', opacity: '0', backdropFilter: 'blur(0)', webkitBackdropFilter: 'blur(0)'});
         $('.menu-toggle i').removeClass('active');
-        $('body').css({overflow: 'auto'});
+        $('body').removeClass('active');
         menuToggled = 0;
     }
 }

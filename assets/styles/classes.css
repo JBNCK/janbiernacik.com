@@ -72,6 +72,11 @@
     font-size: large;
     color: var(--text);
 }
+.menu-link:hover {
+    border-left: 2px solid var(--border);
+    padding-left: 4px;
+    color: var(--accent);
+}
 
 .menu-collapser {
     position: fixed;
@@ -170,6 +175,7 @@
     width: 100%;
     overflow: auto;
     text-align: center;
+    margin-bottom: 10px;
 }
 .github-calendar {
     margin-top: 40px;
@@ -222,4 +228,19 @@
 }
 .repo-list-item p {
     margin: 0;
+}
+
+.inline-link {
+    color: var(--accent);
+}
+
+.inline-link:hover {
+    color: var(--text);
+    padding-left: 0 !important;
+    border-left: 0 !important;
+    border-bottom: 2px solid var(--accent);
+}
+
+.block-button {
+    display: block;
 }
