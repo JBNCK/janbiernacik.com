@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <script src="/assets/libraries/jquery-3.7.1.min.js"></script>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRLESV1ET5"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-RRLESV1ET5');
+        </script>
+        
+        <title>Jan Biernacik - Projects</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="/assets/styles/index.css" />
+        <link rel="stylesheet" href="/assets/styles/classes.css" />
+        <link rel="stylesheet" href="/assets/styles/media.css" />
+        <link rel="icon" type="image/png" href="/assets/media/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/assets/media/favicon.svg" />
+        <link rel="shortcut icon" href="/assets/media/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/media/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Jan Biernacik" />
+        <link rel="manifest" href="/assets/media/site.webmanifest" />
+        <script src="/assets/scripts/index.js"></script>
+        <meta name="color-scheme" content="light dark" />
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
+    </head>
+    <body>
+        <header>
+            <div class="navbar"></div>
+        </header>
+        <div class="menu" id="menu"></div>
+        <div class="menu-collapser" id="menuCollapser" onclick="toggleMenu();"></div>
+        <div class="page-content">
+        <div class="site-beginning"></div>
+        <main>
+            <div class="main-section">
+                <a class="ajax-button" href="/de/">Go Back</a>
+                <h1 class="main-section-title">Projects</h1>
+                <div class="github-calendar-wrapper">
+                    <img class="github-calendar" src="https://ghchart.rshah.org/JBNCK" alt="GitHub-Aktivität" onclick="window.location.href = 'https://github.com/JBNCK'" />
+                </div>
+                <a href="https://github.com/JBNCK">My GitHub Profile</a>
+            </div>
+            <div class="main-section">
+                <div class="repo-list"></div>
+                <a href="https://biernacik.org">Further Projects</a>
+            </div>
+        </main>
+        <footer>
+            <div class="main-section">
+                <a class="ajax-button" href="/en/privacy/">Privacy Policy</a><br>
+                <a href="/de">Deutsche Version</a>
+            </div>
+        </footer>
+        <div class="site-end"></div>
+        <script>loadGitHubRepos();</script>
+        </div>
+    </body>
+</html>
+                
+                

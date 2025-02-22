@@ -33,6 +33,7 @@
 .navbar-link:hover {
     border-left: 2px solid var(--border);
     padding-left: 4px;
+    color: var(--accent);
 }
 
 .menu-toggle {
@@ -197,4 +198,28 @@
 .social-icon-wrapper a:hover {
     border-left: 0;
     padding-left: 0;
+}
+
+.repo-list {
+    margin: 10px 0;
+}
+.repo-list-item {
+    border: 2px var(--background-alt2) solid;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 10px;
+    box-shadow: 0 0 20px var(--background-alt2);
+}
+.repo-list-item:hover {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: var(--background-alt2);
+}
+.repo-list-item h3 {
+    padding: 0;
+}
+.repo-list-item p {
+    margin: 0;
 }

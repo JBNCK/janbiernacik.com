@@ -30,9 +30,14 @@
         --accent: #3080ff;
         --background-alt: #252525;
         --background-alt2: #252525;
+        --background-alt3: #121212;
         --border: #707070;
     }
     img {
         filter: brightness(0.85);
+    }
+    .repo-list-item {
+        background-color: var(--background-alt3);
+        box-shadow: none;
     }
 }

@@ -26,14 +26,14 @@ $(document).ready(function(){
     window.addEventListener('popstate', function() {
         loadContent(window.location.pathname);
     });
-    bindAjax();
 
     $("main").css({opacity: '100%'});
+    bindAjax();
     
 });
 
 function bindAjax() {
-    $(".ajax-button").click(function(event){
+    $(".ajax-button").off("click").on("click", function(event){
         event.preventDefault();
         var pageUrl = $(this).attr("href");
         loadContent(pageUrl);
@@ -41,9 +41,11 @@ function bindAjax() {
 }
 
 function loadContent(url) {
+    $("main").css({opacity: '0'});
     $.ajax({
         url: url,
         success: function(response) {
+            console.log("Loading Content");
             var tempDiv = $('<div>').html(response);
             var title = tempDiv.find('title').text();
             var pageContent = tempDiv.find(".page-content").html();
@@ -51,11 +53,21 @@ function loadContent(url) {
             $('html, body').scrollTop(0);
             $('title').text(title);
             window.history.replaceState(null, title, url);
-            bindAjax();
             $("main").css({opacity: '100%'});
+            var $currentPageContent = $(".page-content");
+            $currentPageContent.removeData();
+            bindAjax();
+            if (menuToggled != 0) {
+                $('.menu').css({visibility: 'hidden', marginTop: '-150px'});
+                $('.menu-collapser').css({visibility: 'hidden', opacity: '0', backdropFilter: 'blur(0)', webkitBackdropFilter: 'blur(0)'});
+                $('.menu-toggle i').removeClass('active');
+                $('body').css({overflow: 'auto'});
+                menuToggled = 0;
+            }
         },
         error: function() {
             console.log("Error loading page: " + url);
+            $("main").css({opacity: '100%'});
         }
     });
 }
@@ -75,4 +87,17 @@ function toggleMenu() {
         $('body').css({overflow: 'auto'});
         menuToggled = 0;
     }
+}
+
+function loadGitHubRepos() {
+    $.getJSON("//api.github.com/users/JBNCK/repos", function(data) {
+        var items = '';
+        $.each(data, function(key, value) {
+            items += '<a href="' + value.html_url + '"><div class="repo-list-item">';
+            items += '<h3 class="main-section-subtitle">' + value.name + '</h3>';
+            items += '<p>' + value.description + '<p>';
+            items += '</div></a>';
+        })
+        $('.repo-list').html(items);
+    });
 }
