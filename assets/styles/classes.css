@@ -216,6 +216,10 @@
     margin-top: 10px;
     box-shadow: 0 0 20px var(--background-alt2);
 }
+.repo-list-item-wrapper:hover {
+    padding-left: 0 !important;
+    border-left: 0 !important;
+}
 .repo-list-item:hover {
     margin-left: 5px;
     margin-right: 5px;

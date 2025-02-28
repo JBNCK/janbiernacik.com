@@ -58,7 +58,9 @@ function loadContent(url) {
             var title = tempDiv.find('title').text();
             var pageContent = tempDiv.find(".page-content").html(); // Copy pasted from ChatGPT, no idead what this does but the site doesn't work without it
             $(".page-content").html(pageContent);
-            $("footer").load(footerUrl);
+            $("footer").load(footerUrl, function() {
+                bindAjax();
+            });
             $('html, body').scrollTop(0);
             $('title').text(title);
             window.history.replaceState(null, title, url);
@@ -102,7 +104,7 @@ function loadGitHubRepos() {
     $.getJSON("//api.github.com/users/JBNCK/repos", function(data) {
         var items = '';
         $.each(data, function(key, value) {
-            items += '<a href="' + value.html_url + '"><div class="repo-list-item">';
+            items += '<a class="repo-list-item-wrapper" href="' + value.html_url + '"><div class="repo-list-item">';
             items += '<h3 class="main-section-subtitle">' + value.name + '</h3>';
             items += '<p>' + value.description + '<p>';
             items += '</div></a>';
