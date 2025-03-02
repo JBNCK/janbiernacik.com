@@ -12,6 +12,22 @@
     .menu-toggle {
         display: block;
     }
+    .main-section {
+        padding: 0 20px 40px 20px;
+    }
+    .navbar-items-left {
+        margin: 0 20px;
+    }
+    
+    .navbar-items-right {
+        margin: 0 20px;
+    }
+    .main-banner-title {
+        margin: 20px;
+    }
+    .main-banner-picture {
+        margin: 0 20px;
+    }
 }
 
 @media screen and (min-width: 801px) {
