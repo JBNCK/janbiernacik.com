@@ -49,8 +49,9 @@
         --accent: #3080ff;
         --background-alt: #252525;
         --background-alt2: #252525;
-        --background-alt3: #121212;
-        --transparent-bg: rgba(0,0,0,0.85);
+        --background-alt3: #161616;
+        --border: #707070;
+        --transparent-bg: rgba(0,0,0,0.8);
     }
     img {
         filter: brightness(0.85);

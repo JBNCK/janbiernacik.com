@@ -162,7 +162,7 @@
 }
 
 .timeline {
-    border-left: 3px var(--border) solid;
+    border-left: 3px var(--text) solid;
     padding-left: 20px;
 }
 

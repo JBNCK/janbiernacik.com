@@ -20,7 +20,6 @@ switch(documentLanguage) {
         break;
 }
 
-// This looks retarded to me but it works
 $(document).on('scroll', function() {
     var scrollPosition = $(document).scrollTop();
     if (scrollPosition > 1) {
@@ -31,8 +30,6 @@ $(document).on('scroll', function() {
 })
 
 $(document).ready(function(){
-    window.history.replaceState({url: window.location.href}, document.title, window.location.href);
-
     // ↓ This is severely retarded and will be addressed in the future
     $(".navbar").load(navbarUrl, function() {
         bindAjax();
@@ -57,13 +54,11 @@ function bindAjax() {
     $(".ajax-button").off("click").on("click", function(event){
         event.preventDefault();
         var pageUrl = $(this).attr("href");
-        loadContent(pageUrl, true);
+        loadContent(pageUrl);
     });
 }
 
-
-// AI generated slop couldn't be bothered to fix this shit myself
-function loadContent(url, pushState = false) {
+function loadContent(url) {
     $("main").css({opacity: '0'});
     $.ajax({
         url: url,
@@ -71,25 +66,18 @@ function loadContent(url, pushState = false) {
             console.log("Loading Content");
             var tempDiv = $('<div>').html(response);
             var title = tempDiv.find('title').text();
-            var pageContent = tempDiv.find(".page-content").html();
+            var pageContent = tempDiv.find(".page-content").html(); // Copy pasted from ChatGPT, no idead what this does but the site doesn't work without it
             $(".page-content").html(pageContent);
             $("footer").load(footerUrl, function() {
                 bindAjax();
             });
             $('html, body').scrollTop(0);
             $('title').text(title);
-            
-            if (pushState) {
-                window.history.pushState({url: url}, title, url);
-            } else {
-                window.history.replaceState({url: url}, title, url);
-            }
-            
+            window.history.replaceState(null, title, url);
             $("main").css({opacity: '100%'});
             var $currentPageContent = $(".page-content");
             $currentPageContent.removeData();
             bindAjax();
-            
             if (menuToggled != 0) {
                 $('.menu').css({visibility: 'hidden', marginTop: '-150px'});
                 $('.menu-collapser').css({visibility: 'hidden', opacity: '0', backdropFilter: 'blur(0)', webkitBackdropFilter: 'blur(0)'});
@@ -105,20 +93,18 @@ function loadContent(url, pushState = false) {
     });
 }
 
-$(window).on('popstate', function(event) {
-    if (event.originalEvent.state && event.originalEvent.state.url) {
-        loadContent(event.originalEvent.state.url, false);
-    }
-});
-
 function toggleMenu() {
     if (menuToggled == 0 && menuLock != 1) {
         menuLock = 1;
-        $('.menu').css({visibility: 'visible', marginLeft: '0', top: '20vh'});
-        $('.menu-link').css({opacity: '100%', 'font-size': 'xx-large', margin: '16px 0'});
+        $('.menu').css({visibility: 'visible', marginLeft: '0', top: '130px', padding: '22px'});
+        $('.menu-link').css({opacity: '100%', 'font-size': '33px', margin: '16px 0'});
         $('.menu-collapser').css({visibility: 'visible', opacity: '100%', backdropFilter: 'blur(20px)', webkitBackdropFilter: 'blur(20px)'});
         $('.menu-toggle i').addClass('active');
         $('body').addClass('active');
+        setTimeout(function() {
+            $('.menu').css({top: '120px', padding: '20px'});
+            $('.menu-link').css({'font-size': 'xx-large'});
+        }, 250)
         setTimeout(function() {
             menuLock = 0;
         }, 500)
