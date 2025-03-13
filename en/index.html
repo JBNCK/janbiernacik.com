@@ -2,16 +2,6 @@
 <html lang="en-US">
     <head>
         <script src="/assets/libraries/jquery-3.7.1.min.js"></script>
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRLESV1ET5"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-RRLESV1ET5');
-        </script>
-        
         <title>Jan Biernacik - Homepage</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="UTF-8" />
@@ -19,7 +9,8 @@
         <meta name="keywords" content="Web Development, Coding, HTML, CSS, JavaScript">
         <meta name="author" content="Jan Biernacik">
         <link rel="stylesheet" href="/assets/styles/index.css" />
-        <link rel="stylesheet" href="/assets/styles/classes.css" />
+        <link rel="stylesheet" href="/assets/styles/header.css" />
+        <link rel="stylesheet" href="/assets/styles/main.css" />
         <link rel="stylesheet" href="/assets/styles/media.css" />
         <link rel="icon" type="image/png" href="/assets/media/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/assets/media/favicon.svg" />
@@ -42,31 +33,28 @@
         <div class="menu-collapser" id="menuCollapser" onclick="toggleMenu();"></div>
         <div class="page-content">
         <main id="main" class="main">
-            <div class="main-banner">
-                <div class="main-banner-title">
-                    <h1>Jan Biernacik</h1>
-                    <p>Tech enthusiast and self taught web developer.</p>
-                    <div class="social-icon-wrapper">
-                        <a href="https://www.instagram.com/janj_bnck/"><i class="bi bi-instagram social-icon"></i></a>
-                        <a href="https://x.com/janj_bnck"><i class="bi bi-twitter-x social-icon"></i></a>
-                        <a href="mailto:jan@biernacik.org"><i class="bi bi-envelope-fill social-icon"></i></a>
-                    </div>
+            <div class="home-banner">
+                <div class="home-banner-text">
+                    <h1>Hi, I'm <br><a>Jan Biernacik</a>.</h1>
                 </div>
-                <img class="main-banner-picture" src="/assets/media/web-app-manifest-512x512.png" alt="Picture of Myself in London" />
+                <img class="home-banner-picture" alt="Bild von mir in London" src="/assets/media/web-app-manifest-512x512.png">
+            </div>
+            <div class="social-icon-wrapper">
+                <a href="https://www.instagram.com/janj_bnck/"><i class="bi bi-instagram social-icon"></i></a>
+                <a href="https://x.com/janj_bnck"><i class="bi bi-twitter-x social-icon"></i></a>
+                <a href="mailto:jan@biernacik.org"><i class="bi bi-envelope-fill social-icon"></i></a>
             </div>
             <div class="main-section">
                 <div class="github-calendar-wrapper">
                     <img class="github-calendar" src="https://ghchart.rshah.org/JBNCK" alt="GitHub-Aktivität" onclick="window.location.href = 'https://github.com/JBNCK'" />
                 </div>
-                <a href="/en/projects/" class="ajax-button block-button"><i class="bi bi-arrow-right-circle-fill"></i> Project Overview</a>
             </div>
             <div class="main-section">
                 <h1 class="main-section-title">About me</h1>
-                <p>Hi, my name is Jan, I'm 17 years old, and I live in Hamburg. I come from Poland, so in addition to German and English, I also speak Polish fluently. I'm interested in computer science, especially web development, which I have mostly taught myself over the past few years. During this time, I have already completed two student internships in the IT field and will start my apprenticeship as an IT specialist for application development in August.</p>
-                <p>In addition to my computer science activities, I am a member of a shooting club and go on long-distance bike rides.</p>
+                <p>Hi, my name is Jan, I'm 17 years old, and I live in Hamburg. I come from Poland, so in addition to German and English, I also speak Polish fluently. I'm interested in computer science, especially web development, which I have mostly taught myself over the past few years. During this time, I have already completed two student internships in the IT field and will start my apprenticeship as an IT specialist for application development in August. In addition to my computer science activities, I am a member of a shooting club and go on long-distance bike rides.</p>
             </div>
             <div class="main-section">
-                <h1 class="main-section-title">Résumé</h1>
+                <h1 class="main-section-title">Resume</h1>
                 <div class="timeline">
                     <div class="timeline-event">
                         <p class="timeline-event-date">2025 -</p>

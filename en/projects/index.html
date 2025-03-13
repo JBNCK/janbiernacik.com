@@ -2,21 +2,12 @@
 <html lang="en-US">
     <head>
         <script src="/assets/libraries/jquery-3.7.1.min.js"></script>
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRLESV1ET5"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-RRLESV1ET5');
-        </script>
-        
         <title>Jan Biernacik - Projects</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="/assets/styles/index.css" />
-        <link rel="stylesheet" href="/assets/styles/classes.css" />
+        <link rel="stylesheet" href="/assets/styles/header.css" />
+        <link rel="stylesheet" href="/assets/styles/main.css" />
         <link rel="stylesheet" href="/assets/styles/media.css" />
         <link rel="icon" type="image/png" href="/assets/media/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/assets/media/favicon.svg" />
@@ -40,7 +31,7 @@
         <div class="site-beginning"></div>
         <main>
             <div class="main-section">
-                <a class="ajax-button" href="/en/"><i class="bi bi-arrow-left-circle-fill"></i> Go Back</a>
+                <i class="bi bi-arrow-left-circle-fill"> </i><a class="ajax-button" href="/en/">Go Back</a>
                 <h1 class="main-section-title">Projects</h1>
                 <div class="github-calendar-wrapper">
                     <img class="github-calendar" src="https://ghchart.rshah.org/JBNCK" alt="GitHub-Aktivität" onclick="window.location.href = 'https://github.com/JBNCK'" />
@@ -49,7 +40,7 @@
             <div class="main-section">
                 <div class="repo-list"></div>
                 <script>loadGitHubRepos();</script>
-                <a href="https://github.com/JBNCK"><i class="bi bi-arrow-right-circle-fill"></i> My GitHub Profile</a>
+                <i class="bi bi-arrow-right-circle-fill"> </i><a href="https://github.com/JBNCK">My GitHub Profile</a>
             </div>
         </main>
         <footer></footer>

@@ -88,12 +88,12 @@ function loadContent(url) {
 function toggleMenu() {
     if (menuToggled == 0 && menuLock != 1) {
         menuLock = 1;
+        $('.menu-toggle i').addClass('active');
         $('body').addClass('active');
         $('.menu-collapser').css({visibility: 'visible', opacity: '100%'});
         setTimeout(function() {
             $('.menu').css({visibility: 'visible', marginLeft: '0', top: '125px'});
             $('.menu-link').css({'font-size': 'xx-large', margin: '16px 0'});
-            $('.menu-toggle i').addClass('active');
             setTimeout(function() {
                 $('.menu').css({top: '120px'});
                 $('.menu-link').css({margin: '12px 0'});
@@ -108,10 +108,10 @@ function toggleMenu() {
         menuLock = 1;
         $('.menu').css({visibility: 'hidden', marginLeft: '0', top: '20px'});
         $('.menu-link').css({'font-size': '0', margin: '0 0'});
-        $('.menu-toggle i').removeClass('active');
         setTimeout(function() {
             $('.menu-collapser').css({visibility: 'hidden', opacity: '0'});
             $('body').removeClass('active');
+            $('.menu-toggle i').removeClass('active');
         }, 300)
         setTimeout(function() {
             menuLock = 0;
