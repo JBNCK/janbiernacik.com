@@ -20,6 +20,7 @@ switch(documentLanguage) {
         break;
 }
 
+// This looks retarded to me but it works
 $(document).on('scroll', function() {
     var scrollPosition = $(document).scrollTop();
     if (scrollPosition > 1) {
@@ -30,6 +31,8 @@ $(document).on('scroll', function() {
 })
 
 $(document).ready(function(){
+    window.history.replaceState({url: window.location.href}, document.title, window.location.href);
+
     // ↓ This is severely retarded and will be addressed in the future
     $(".navbar").load(navbarUrl, function() {
         bindAjax();
@@ -54,11 +57,13 @@ function bindAjax() {
     $(".ajax-button").off("click").on("click", function(event){
         event.preventDefault();
         var pageUrl = $(this).attr("href");
-        loadContent(pageUrl);
+        loadContent(pageUrl, true);
     });
 }
 
-function loadContent(url) {
+
+// AI generated slop couldn't be bothered to fix this shit myself
+function loadContent(url, pushState = false) {
     $("main").css({opacity: '0'});
     $.ajax({
         url: url,
@@ -66,18 +71,25 @@ function loadContent(url) {
             console.log("Loading Content");
             var tempDiv = $('<div>').html(response);
             var title = tempDiv.find('title').text();
-            var pageContent = tempDiv.find(".page-content").html(); // Copy pasted from ChatGPT, no idead what this does but the site doesn't work without it
+            var pageContent = tempDiv.find(".page-content").html();
             $(".page-content").html(pageContent);
             $("footer").load(footerUrl, function() {
                 bindAjax();
             });
             $('html, body').scrollTop(0);
             $('title').text(title);
-            window.history.replaceState(null, title, url);
+            
+            if (pushState) {
+                window.history.pushState({url: url}, title, url);
+            } else {
+                window.history.replaceState({url: url}, title, url);
+            }
+            
             $("main").css({opacity: '100%'});
             var $currentPageContent = $(".page-content");
             $currentPageContent.removeData();
             bindAjax();
+            
             if (menuToggled != 0) {
                 $('.menu').css({visibility: 'hidden', marginTop: '-150px'});
                 $('.menu-collapser').css({visibility: 'hidden', opacity: '0', backdropFilter: 'blur(0)', webkitBackdropFilter: 'blur(0)'});
@@ -92,6 +104,12 @@ function loadContent(url) {
         }
     });
 }
+
+$(window).on('popstate', function(event) {
+    if (event.originalEvent.state && event.originalEvent.state.url) {
+        loadContent(event.originalEvent.state.url, false);
+    }
+});
 
 function toggleMenu() {
     if (menuToggled == 0 && menuLock != 1) {
