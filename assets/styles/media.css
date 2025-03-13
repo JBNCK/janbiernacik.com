@@ -25,6 +25,9 @@
     .navbar-items-right {
         margin: 0 30px;
     }
+    footer .main-section {
+        padding-bottom: 10px;
+    }
 }
 
 @media screen and (min-width: 801px) {
