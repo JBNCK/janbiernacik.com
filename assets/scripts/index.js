@@ -101,7 +101,7 @@ function toggleMenu() {
             setTimeout(function() {
                 menuLock = 0;
             }, 500)
-        }, 150)
+        }, 300)
         menuToggled = 1;
     }
     if (menuToggled == 1 && menuLock != 1) {
@@ -112,7 +112,7 @@ function toggleMenu() {
         setTimeout(function() {
             $('.menu-collapser').css({visibility: 'hidden', opacity: '0'});
             $('body').removeClass('active');
-        }, 150)
+        }, 300)
         setTimeout(function() {
             menuLock = 0;
         }, 500)

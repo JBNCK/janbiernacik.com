@@ -3,7 +3,8 @@
         flex-direction: column-reverse;
     }
     .main-banner-picture {
-        width: 70%;
+        width: 30svh;
+        min-width: 250px;
         margin: 0;
     }
     .navbar-link {
@@ -23,10 +24,10 @@
         margin: 0 30px;
     }
     .main-banner-title {
-        margin: 30px;
+        margin-bottom: 100px;
     }
     .main-banner-picture {
-        margin: 0 30px;
+        margin-top: 100px;
     }
 }
 
