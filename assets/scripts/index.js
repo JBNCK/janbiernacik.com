@@ -112,7 +112,7 @@ function toggleMenu() {
     }
     else {
         menuLock = 1;
-        $('.menu').css({visibility: 'hidden', marginLeft: '0', top: '0'});
+        $('.menu').css({visibility: 'hidden', marginLeft: '0', top: '0', padding: '16px'});
         $('.menu-link').css({'font-size': '0', margin: '0 0'});
         $('.menu-collapser').css({visibility: 'hidden', opacity: '0', backdropFilter: 'blur(0)', webkitBackdropFilter: 'blur(0)'});
         $('.menu-toggle i').removeClass('active');
