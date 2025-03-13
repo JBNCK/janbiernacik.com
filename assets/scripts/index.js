@@ -20,15 +20,6 @@ switch(documentLanguage) {
         break;
 }
 
-$(document).on('scroll', function() {
-    var scrollPosition = $(document).scrollTop();
-    if (scrollPosition > 1) {
-        $('.navbar').css({borderBottom: '0.01em solid var(--border)', background: 'var(--transparent-bg)', backdropFilter: 'blur(20px)', webkitBackdropFilter: 'blur(20px)'});
-    } else {
-        $('.navbar').css({borderBottom: '0.01em solid var(--background)', background: 'var(--background)', backdropFilter: 'blur(0)', webkitBackdropFilter: 'blur(0)'});
-    }
-})
-
 $(document).ready(function(){
     // ↓ This is severely retarded and will be addressed in the future
     $(".navbar").load(navbarUrl, function() {
