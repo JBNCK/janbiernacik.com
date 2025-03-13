@@ -3,9 +3,12 @@
         flex-direction: column-reverse;
     }
     .main-banner-picture {
-        width: 30svh;
-        min-width: 250px;
-        margin: 0;
+        width: 70%;
+        margin: 10px 0;
+    }
+    .main-banner-title {
+        margin: 10px 0;
+        padding: 0 30px;
     }
     .navbar-link {
         display: none;
@@ -19,15 +22,8 @@
     .navbar-items-left {
         margin: 0 30px;
     }
-    
     .navbar-items-right {
         margin: 0 30px;
-    }
-    .main-banner-title {
-        margin-bottom: 100px;
-    }
-    .main-banner-picture {
-        margin-top: 100px;
     }
 }
 
