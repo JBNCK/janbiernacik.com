@@ -17,6 +17,7 @@
     box-sizing: border-box;
     --background: #ffffff;
     --text: #161616;
+    --text-alt: #404040;
     --accent: #2070ff;
     --background-alt: #f5f5f5;
     --background-alt2: #eeeeee;
@@ -57,6 +58,10 @@ a {
     text-decoration: none;
     width: fit-content;
     color: var(--text);
+    transition: all .15s;
+}
+i {
+    transition: all .15s;
 }
 
 a:hover {

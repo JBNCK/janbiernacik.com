@@ -13,20 +13,20 @@
         display: block;
     }
     .main-section {
-        padding: 0 20px 40px 20px;
+        padding: 0 30px 40px 30px;
     }
     .navbar-items-left {
-        margin: 0 20px;
+        margin: 0 30px;
     }
     
     .navbar-items-right {
-        margin: 0 20px;
+        margin: 0 30px;
     }
     .main-banner-title {
-        margin: 20px;
+        margin: 30px;
     }
     .main-banner-picture {
-        margin: 0 20px;
+        margin: 0 30px;
     }
 }
 
@@ -46,12 +46,13 @@
     * {
         --background: #000000;
         --text: #dddddd;
+        --text-alt: #909090;
         --accent: #3080ff;
         --background-alt: #252525;
         --background-alt2: #252525;
         --background-alt3: #161616;
         --transparent-bg: rgba(0,0,0,0.8);
-        --border: #707070;
+        --border: #808080;
     }
     img {
         filter: brightness(0.9);

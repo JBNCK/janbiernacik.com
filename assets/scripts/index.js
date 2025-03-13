@@ -37,8 +37,7 @@ $(document).ready(function(){
     window.addEventListener('popstate', function() {
         loadContent(window.location.pathname);
     });
-
-    $("main").css({opacity: '100%'});
+    setTimeout(function() {$("main").css({opacity: '100%'});}, 500)
 });
 
 function bindAjax() {
@@ -92,7 +91,7 @@ function toggleMenu() {
         $('body').addClass('active');
         $('.menu-collapser').css({visibility: 'visible', opacity: '100%'});
         setTimeout(function() {
-            $('.menu').css({visibility: 'visible', marginLeft: '0', top: '125px', padding: '20px'});
+            $('.menu').css({visibility: 'visible', marginLeft: '0', top: '125px'});
             $('.menu-link').css({'font-size': 'xx-large', margin: '16px 0'});
             $('.menu-toggle i').addClass('active');
             setTimeout(function() {
@@ -105,9 +104,9 @@ function toggleMenu() {
         }, 150)
         menuToggled = 1;
     }
-    else {
+    if (menuToggled == 1 && menuLock != 1) {
         menuLock = 1;
-        $('.menu').css({visibility: 'hidden', marginLeft: '0', top: '20px', padding: '16px'});
+        $('.menu').css({visibility: 'hidden', marginLeft: '0', top: '20px'});
         $('.menu-link').css({'font-size': '0', margin: '0 0'});
         $('.menu-toggle i').removeClass('active');
         setTimeout(function() {
@@ -126,7 +125,7 @@ $(document).on('scroll', function() {
     if (scrollPosition < 10) {
         $('.navbar').css({borderBottom: 'none'});
     } else {
-        $('.navbar').css({borderBottom: 'solid 0.01em var(--border)'});
+        $('.navbar').css({borderBottom: 'solid 0em var(--border)'});
     }
 });
 

@@ -4,8 +4,8 @@
     width: 100%;
     height: 80px;
     background: var(--transparent-bg);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     z-index: 996;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .navbar-link:hover {
-    border-left: 2px solid var(--border);
+    border-left: 2px solid var(--text);
     padding-left: 4px;
     color: var(--accent);
 }
@@ -46,7 +46,7 @@
     float: left;
     position: fixed;
     top: 19px;
-    left: 20px;
+    left: 30px;
 }
 .menu-toggle i {
     border: 0px solid;
@@ -65,7 +65,7 @@
     width: 100%;
     top: 20px;
     background: transparent;
-    padding: 16px;
+    padding: 30px;
     visibility: hidden;
     z-index: 998;
     align-content: right;
@@ -77,9 +77,12 @@
     font-size: 0;
     color: var(--text);
     text-align: right;
+    transition: all .3s ease-out;
 }
 .menu-link:hover {
-    padding: 8px 0;
+    border-left: 2px solid var(--text);
+    padding-left: 4px;
+    color: var(--accent);
 }
 
 .menu-collapser {
@@ -103,14 +106,13 @@
 }
 
 .navbar-link-right:hover {
-    border-radius: 8px;
-    text-decoration: none;
-    padding: 4px 0;
+    background-color: var(--text-alt);
+    border: solid 8px var(--text-alt);
 }
 
 .main-banner {
     max-width: 1000px;
-    margin: 90px auto 40px auto;
+    margin: 100px auto 50px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -137,7 +139,7 @@
 }
 .main-section a:hover {
     color: var(--accent);
-    border-left: 2px solid var(--border);
+    border-left: 2px solid var(--text);
     padding-left: 4px;
 }
 .main-section-title {
@@ -193,21 +195,19 @@
 }
 
 .social-icon-wrapper {
-    text-align: center;
-    padding-top: 40px;
+    padding-top: 4px;
 }
-
 .social-icon {
     font-size: x-large;
-    padding: 0 5px;
+    padding-right: 8px;
     color: var(--text);
-}
-.social-icon:hover {
-    padding: 0 10px;
 }
 .social-icon-wrapper a:hover {
     border-left: 0;
     padding-left: 0;
+}
+.social-icon:hover {
+    color: var(--text-alt);
 }
 
 .repo-list {
