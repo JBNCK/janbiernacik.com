@@ -1,4 +1,5 @@
 console.log("Hello, user!");
+var menuLock = 0;
 var menuToggled = 0;
 var documentLanguage = document.documentElement.lang;
 var menuUrl = "/assets/shared/en/menu.html";
@@ -18,6 +19,15 @@ switch(documentLanguage) {
         var footerUrl = "/assets/shared/de/footer.html";
         break;
 }
+
+$(document).on('scroll', function() {
+    var scrollPosition = $(document).scrollTop();
+    if (scrollPosition > 1) {
+        $('.navbar').css({borderBottom: '0.01em solid var(--border)', background: 'var(--transparent-bg)', backdropFilter: 'blur(20px)', webkitBackdropFilter: 'blur(20px)'});
+    } else {
+        $('.navbar').css({borderBottom: '0.01em solid var(--background)', background: 'var(--background)', backdropFilter: 'blur(0)', webkitBackdropFilter: 'blur(0)'});
+    }
+})
 
 $(document).ready(function(){
     // ↓ This is severely retarded and will be addressed in the future
@@ -85,14 +95,18 @@ function loadContent(url) {
 
 function toggleMenu() {
     if (menuToggled == 0) {
-        $('.menu').css({visibility: 'visible', marginTop: '0'});
-        $('.menu-collapser').css({visibility: 'visible', opacity: '100%', backdropFilter: 'blur(10px)', webkitBackdropFilter: 'blur(10px)'});
+        menuLock = 1;
+        $('.menu').css({visibility: 'visible', marginLeft: '0', top: '20vh'});
+        $('.menu-link').css({opacity: '100%', 'font-size': 'xx-large', margin: '16px 0'});
+        $('.menu-collapser').css({visibility: 'visible', opacity: '100%', backdropFilter: 'blur(20px)', webkitBackdropFilter: 'blur(20px)'});
         $('.menu-toggle i').addClass('active');
         $('body').addClass('active');
         menuToggled = 1;
     }
     else {
-        $('.menu').css({visibility: 'hidden', marginTop: '-150px'});
+        menuLock = 0;
+        $('.menu').css({visibility: 'hidden', marginLeft: '0', top: '0'});
+        $('.menu-link').css({opacity: '0', 'font-size': '0', margin: '0 0'});
         $('.menu-collapser').css({visibility: 'hidden', opacity: '0', backdropFilter: 'blur(0)', webkitBackdropFilter: 'blur(0)'});
         $('.menu-toggle i').removeClass('active');
         $('body').removeClass('active');
