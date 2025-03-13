@@ -97,13 +97,13 @@ function toggleMenu() {
     if (menuToggled == 0 && menuLock != 1) {
         menuLock = 1;
         $('.menu').css({visibility: 'visible', marginLeft: '0', top: '130px', padding: '22px'});
-        $('.menu-link').css({opacity: '100%', 'font-size': '33px', margin: '16px 0'});
+        $('.menu-link').css({opacity: '100%', 'font-size': 'xx-large', margin: '16px 0'});
         $('.menu-collapser').css({visibility: 'visible', opacity: '100%', backdropFilter: 'blur(20px)', webkitBackdropFilter: 'blur(20px)'});
         $('.menu-toggle i').addClass('active');
         $('body').addClass('active');
         setTimeout(function() {
             $('.menu').css({top: '120px', padding: '20px'});
-            $('.menu-link').css({'font-size': 'xx-large'});
+            $('.menu-link').css({margin: '12px 0'});
         }, 250)
         setTimeout(function() {
             menuLock = 0;
