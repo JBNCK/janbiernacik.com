@@ -51,69 +51,84 @@ function bindAjax() {
 
 function loadContent(url) {
     $("main").css({opacity: '0'});
-    $.ajax({
-        url: url,
-        success: function(response) {
-            console.log("Loading Content");
-            var tempDiv = $('<div>').html(response);
-            var title = tempDiv.find('title').text();
-            var pageContent = tempDiv.find(".page-content").html(); // Copy pasted from ChatGPT, no idead what this does but the site doesn't work without it
-            $(".page-content").html(pageContent);
-            $("footer").load(footerUrl, function() {
+    setTimeout(function() {
+        $.ajax({
+            url: url,
+            success: function(response) {
+                console.log("Loading Content");
+                var tempDiv = $('<div>').html(response);
+                var title = tempDiv.find('title').text();
+                var pageContent = tempDiv.find(".page-content").html(); // Copy pasted from ChatGPT, no idead what this does but the site doesn't work without it
+                $(".page-content").html(pageContent);
+                $("footer").load(footerUrl, function() {
+                    bindAjax();
+                });
+                $('html, body').scrollTop(0);
+                $('title').text(title);
+                window.history.replaceState(null, title, url);
+                $("main").css({opacity: '100%'});
+                var $currentPageContent = $(".page-content");
+                $currentPageContent.removeData();
                 bindAjax();
-            });
-            $('html, body').scrollTop(0);
-            $('title').text(title);
-            window.history.replaceState(null, title, url);
-            $("main").css({opacity: '100%'});
-            var $currentPageContent = $(".page-content");
-            $currentPageContent.removeData();
-            bindAjax();
-            if (menuToggled != 0) {
-                $('.menu').css({visibility: 'hidden', marginTop: '-150px'});
-                $('.menu-collapser').css({visibility: 'hidden', opacity: '0', backdropFilter: 'blur(0)', webkitBackdropFilter: 'blur(0)'});
-                $('.menu-toggle i').removeClass('active');
-                $('body').css({overflow: 'auto'});
-                menuToggled = 0;
+                if (menuToggled != 0) {
+                    $('.menu').css({visibility: 'hidden', marginTop: '-150px'});
+                    $('.menu-collapser').css({visibility: 'hidden', opacity: '0', backdropFilter: 'blur(0)', webkitBackdropFilter: 'blur(0)'});
+                    $('.menu-toggle i').removeClass('active');
+                    $('body').css({overflow: 'auto'});
+                    menuToggled = 0;
+                }
+            },
+            error: function() {
+                console.log("Error loading page: " + url);
+                $("main").css({opacity: '100%'});
             }
-        },
-        error: function() {
-            console.log("Error loading page: " + url);
-            $("main").css({opacity: '100%'});
-        }
-    });
+        });
+    }, 500);
 }
 
 function toggleMenu() {
     if (menuToggled == 0 && menuLock != 1) {
         menuLock = 1;
-        $('.menu').css({visibility: 'visible', marginLeft: '0', top: '125px', padding: '21px'});
-        $('.menu-link').css({'font-size': 'xx-large', margin: '16px 0'});
-        $('.menu-collapser').css({visibility: 'visible', opacity: '100%', backdropFilter: 'blur(20px)', webkitBackdropFilter: 'blur(20px)'});
-        $('.menu-toggle i').addClass('active');
         $('body').addClass('active');
+        $('.menu-collapser').css({visibility: 'visible', opacity: '100%'});
         setTimeout(function() {
-            $('.menu').css({top: '120px', padding: '20px'});
-            $('.menu-link').css({margin: '12px 0'});
-        }, 300)
-        setTimeout(function() {
-            menuLock = 0;
-        }, 500)
+            $('.menu').css({visibility: 'visible', marginLeft: '0', top: '125px', padding: '20px'});
+            $('.menu-link').css({'font-size': 'xx-large', margin: '16px 0'});
+            $('.menu-toggle i').addClass('active');
+            setTimeout(function() {
+                $('.menu').css({top: '120px'});
+                $('.menu-link').css({margin: '12px 0'});
+            }, 350)
+            setTimeout(function() {
+                menuLock = 0;
+            }, 500)
+        }, 150)
         menuToggled = 1;
     }
     else {
         menuLock = 1;
-        $('.menu').css({visibility: 'hidden', marginLeft: '0', top: '0', padding: '16px'});
+        $('.menu').css({visibility: 'hidden', marginLeft: '0', top: '20px', padding: '16px'});
         $('.menu-link').css({'font-size': '0', margin: '0 0'});
-        $('.menu-collapser').css({visibility: 'hidden', opacity: '0', backdropFilter: 'blur(0)', webkitBackdropFilter: 'blur(0)'});
         $('.menu-toggle i').removeClass('active');
-        $('body').removeClass('active');
+        setTimeout(function() {
+            $('.menu-collapser').css({visibility: 'hidden', opacity: '0'});
+            $('body').removeClass('active');
+        }, 150)
         setTimeout(function() {
             menuLock = 0;
         }, 500)
         menuToggled = 0;
     }
 }
+
+$(document).on('scroll', function() {
+    var scrollPosition = $(document).scrollTop();
+    if (scrollPosition < 10) {
+        $('.navbar').css({borderBottom: 'none'});
+    } else {
+        $('.navbar').css({borderBottom: 'solid 0.01em var(--border)'});
+    }
+});
 
 function loadGitHubRepos() {
     $.getJSON("//api.github.com/users/JBNCK/repos", function(data) {
