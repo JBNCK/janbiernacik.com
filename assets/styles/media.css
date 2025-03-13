@@ -59,4 +59,7 @@
         background-color: var(--background-alt3);
         box-shadow: none;
     }
+    .navbar {
+        background: rgba(0,0,0,0.8);
+    }
 }

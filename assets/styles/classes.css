@@ -5,7 +5,9 @@
     width: 100%;
     height: 80px;
     border-bottom: 1px solid var(--border);
-    background-color: var(--background);
+    background: rgba(255,255,255,0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar-item-container {
