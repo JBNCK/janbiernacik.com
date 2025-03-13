@@ -94,22 +94,28 @@ function loadContent(url) {
 }
 
 function toggleMenu() {
-    if (menuToggled == 0) {
+    if (menuToggled == 0 && menuLock != 1) {
         menuLock = 1;
         $('.menu').css({visibility: 'visible', marginLeft: '0', top: '20vh'});
         $('.menu-link').css({opacity: '100%', 'font-size': 'xx-large', margin: '16px 0'});
         $('.menu-collapser').css({visibility: 'visible', opacity: '100%', backdropFilter: 'blur(20px)', webkitBackdropFilter: 'blur(20px)'});
         $('.menu-toggle i').addClass('active');
         $('body').addClass('active');
+        setTimeout(function() {
+            menuLock = 0;
+        }, 500)
         menuToggled = 1;
     }
     else {
-        menuLock = 0;
+        menuLock = 1;
         $('.menu').css({visibility: 'hidden', marginLeft: '0', top: '0'});
         $('.menu-link').css({opacity: '0', 'font-size': '0', margin: '0 0'});
         $('.menu-collapser').css({visibility: 'hidden', opacity: '0', backdropFilter: 'blur(0)', webkitBackdropFilter: 'blur(0)'});
         $('.menu-toggle i').removeClass('active');
         $('body').removeClass('active');
+        setTimeout(function() {
+            menuLock = 0;
+        }, 500)
         menuToggled = 0;
     }
 }
