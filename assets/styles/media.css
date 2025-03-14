@@ -6,17 +6,21 @@
         --spacing-extra-large: 120px;
     }
 
+    h1 {
+        font-size: x-large;
+    }
+
     .home-page-banner {
         flex-direction: row-reverse;
         align-content: space-around;
-        margin: var(--spacing) 0;
+        margin: var(--spacing-large) 0;
         width: 100%;
         padding: 0 var(--spacing);
     }
 
     .home-page-banner-picture {
         margin-right: var(--spacing-small);
-        width: 20%;
+        width: 25%;
     }
 
     .home-page-banner-text {
@@ -30,6 +34,10 @@
 
     .home-page-banner-text h1 a {
         font-size: x-large;
+    }
+
+    .main-section {
+        margin: var(--spacing-large) auto;
     }
 }
 

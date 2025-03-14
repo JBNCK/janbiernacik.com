@@ -48,3 +48,7 @@
     padding: 0 var(--spacing);
     max-width: 1200px;
 }
+
+.main-section h1 {
+    margin-bottom: 4px
+}
