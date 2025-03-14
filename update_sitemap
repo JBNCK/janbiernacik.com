@@ -1,5 +1,0 @@
-#!/usr/bin/bash
-
-sitemap_file="sitemap.xml"
-current_datetime=$(date -u +%Y-%m-%dT%H:%M:%S%Z | sed 's/Z/+00:00/')
-sed -i "s/<lastmod>.*<\/lastmod>/<lastmod>${current_datetime}<\/lastmod>/g" "$sitemap_file"

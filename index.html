@@ -1,60 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRLESV1ET5"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-RRLESV1ET5');
-        </script>
-        
-        <title>Jan Biernacik - Tech enthusiast and self taught web developer.</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="/assets/libraries/jquery-3.7.1.min.js"></script>
+        <title>Jan Biernacik</title>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="/assets/styles/index.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" href="/assets/media/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/assets/media/favicon.svg" />
         <link rel="shortcut icon" href="/assets/media/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/media/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-title" content="Jan Biernacik" />
         <link rel="manifest" href="/assets/media/site.webmanifest" />
-        <link rel="alternate" hreflang="x-default" href="https://janbiernacik.com/en" />
+        <link rel="alternate" hreflang="x-default" href="https://janbiernacik.com/de" />
         <link rel="alternate" hreflang="de" href="https://janbiernacik.com/de/" />
-        <link rel="alternate" hreflang="en" href="https://janbiernacik.com/en/" />
+        <link rel="manifest" href="/assets/media/site.webmanifest" />
+        <link rel="stylesheet" href="/assets/styles/elements.css" />
+        <link rel="stylesheet" href="/assets/styles/footer.css" />
+        <link rel="stylesheet" href="/assets/styles/header.css" />
+        <link rel="stylesheet" href="/assets/styles/index.css" />
+        <link rel="stylesheet" href="/assets/styles/main.css" />
+        <link rel="stylesheet" href="/assets/styles/media.css" />
         <script src="/assets/scripts/index.js"></script>
-        <meta name="color-scheme" content="light dark" />
+        <script src="/assets/scripts/layout.js"></script>
     </head>
     <body>
-        <div class="page-content">
-        <script>
-            const userLanguage = navigator.language;
-            console.log(userLanguage);
-        
-            switch(userLanguage) {
-                case 'de-DE':
-                case 'de-AT':
-                case 'de-CH':
-                case 'de-BE':
-                case 'de-LI':
-                case 'de-LU':
-                case 'de':
-                    window.location.href = "/de/";
-                    break;
-                
-                default:
-                    window.location.href = "/en/";
-                    break;
-            }
-        </script>
-        
-        <h1>Jan Biernacik - Homepage</h1>
-        <hr>
-        <p>Tech enthusiast and self taught web developer.</p>
-        <br>
-        <p>You will soon be redirected. If not, click <a href="/de/">here</a> for German and <a href="/en/">here</a> for English..</p>
-        </div>
+        <script>window.location.href = '/de';</script>
     </body>
 </html>

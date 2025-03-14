@@ -1,86 +1,55 @@
 <!DOCTYPE html>
-<html lang="de-DE">
+<html lang="de">
     <head>
         <script src="/assets/libraries/jquery-3.7.1.min.js"></script>
-        <title>Jan Biernacik - Startseite</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Jan Biernacik</title>
         <meta charset="UTF-8" />
-        <meta name="description" content="Ich bin Jan, 17 Jahre alt und lebe in Hamburg. Ich interessiere mich für Informatik, insbesondere für die Webentwicklung.">
-        <meta name="keywords" content="Webentwicklung, Programmierung, HTML, CSS, JavaScript">
-        <meta name="author" content="Jan Biernacik">
-        <link rel="stylesheet" href="/assets/styles/index.css" />
-        <link rel="stylesheet" href="/assets/styles/header.css" />
-        <link rel="stylesheet" href="/assets/styles/main.css" />
-        <link rel="stylesheet" href="/assets/styles/media.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" href="/assets/media/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/assets/media/favicon.svg" />
         <link rel="shortcut icon" href="/assets/media/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/media/apple-touch-icon.png" />
         <meta name="apple-mobile-web-app-title" content="Jan Biernacik" />
-        <link rel="manifest" href="/assets/media/site.webmanifest" />
+        <meta name="description" content="Ich bin Jan, 17 Jahre alt und lebe in Hamburg. Ich interessiere mich für Informatik, insbesondere für die Webentwicklung.">
+        <meta name="keywords" content="Webentwicklung, Programmierung, HTML, CSS, JavaScript">
+        <meta name="author" content="Jan Biernacik">
         <link rel="canonical" href="https://janbiernacik.com/de/" />
+        <link rel="manifest" href="/assets/media/site.webmanifest" />
+        <link rel="stylesheet" href="/assets/styles/elements.css" />
+        <link rel="stylesheet" href="/assets/styles/footer.css" />
+        <link rel="stylesheet" href="/assets/styles/header.css" />
+        <link rel="stylesheet" href="/assets/styles/index.css" />
+        <link rel="stylesheet" href="/assets/styles/main.css" />
+        <link rel="stylesheet" href="/assets/styles/media.css" />
         <script src="/assets/scripts/index.js"></script>
-        <meta name="color-scheme" content="light dark" />
-        <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
-        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
+        <script src="/assets/scripts/layout.js"></script>
     </head>
     <body>
         <header>
-            <div class="navbar"></div>
-            <a class="menu-toggle" onclick="toggleMenu();"><i class="bi bi-list"></i></a>
+            <div id="navbar"></div>
+            <div id="menu"></div>
+            <div id="background-elements"></div>
         </header>
-        <div class="menu" id="menu" onclick="toggleMenu();"></div>
-        <div class="menu-collapser" id="menuCollapser" onclick="toggleMenu();"></div>
-        <div class="page-content">
-        <main class="main">
-            <div class="home-banner">
-                <div class="home-banner-text">
-                    <h1>Moin, ich bin<br><a>Jan Biernacik</a>.</h1>
-                </div>
-                <img class="home-banner-picture" alt="Bild von mir in London" src="/assets/media/web-app-manifest-512x512.png">
-            </div>
-            <div class="social-icon-wrapper">
-                <a href="https://www.instagram.com/janj_bnck/"><i class="bi bi-instagram social-icon"></i></a>
-                <a href="https://x.com/janj_bnck"><i class="bi bi-twitter-x social-icon"></i></a>
-                <a href="mailto:jan@biernacik.org"><i class="bi bi-envelope-fill social-icon"></i></a>
-            </div>
-            <div class="main-section">
-                <div class="github-calendar-wrapper">
-                    <img class="github-calendar" src="https://ghchart.rshah.org/JBNCK" alt="GitHub-Aktivität" onclick="window.location.href = 'https://github.com/JBNCK'" />
-                </div>
-            </div>
-            <div class="main-section">
-                <h1 class="main-section-title">Über Mich</h1>
-                <p>Moin, ich bin Jan, 17 Jahre alt und lebe in Hamburg. Ich komme aus Polen, daher beherrsche ich neben Deutsch und Englisch auch Polnisch fließend. Ich interessiere mich für Informatik, insbesondere für die Webentwicklung, welche ich mir seit einigen Jahren größtenteils selber beibringe. In diesen Jahren habe ich bereits 2 Schülerpraktika im Bereich IT absolvieren können und starte im August meine Ausbildung zum Fachinformatiker für Anwendungsentwicklung. Neben meinen informatischen Tätigkeiten bin ich in einem hamburger Schützenverein angemeldet und mache Langstreckenfahrten mit dem Fahrrad.</p>
-            </div>
-            <div class="main-section">
-                <h1 class="main-section-title">Lebenslauf</h1>
-                <div class="timeline">
-                    <div class="timeline-event">
-                        <p class="timeline-event-date">2025 -</p>
-                        <h3 class="timeline-event-title">Ausbildung zum Fachinformatiker</h3>
-                        <p class="timeline-event-desc">Im August starte ich meine Berufsausbildung zum Fachinformatiker für Anwendungsentwicklung bei der Fricke Gruppe in Hamburg.</p>
-                    </div>
-                    <div class="timeline-event">
-                        <p class="timeline-event-date">Aktuell</p>
-                        <h3 class="timeline-event-title">Gymnasiale Oberstufe</h3>
-                        <p class="timeline-event-desc">Ich besuche zurzeit die 12. Klasse eines Gymnasiums und werde im Sommer meine Schulausbildung mit dem Abitur abschließen.</p>
-                    </div>
-                    <div class="timeline-event">
-                        <p class="timeline-event-date">2023</p>
-                        <h3 class="timeline-event-title">IT-Praktikum bei Fielmann</h3>
-                        <p class="timeline-event-desc">Im Oktober 2023 absolvierte ich ein weiteres Schülerpraktikum im Bereich IT, mit einem Schwerpunkt auf Software- und Webentwicklung. Während dieser Zeit hatte ich die Gelegenheit, meine bereits vorhandenen Fähigkeiten weiter zu vertiefen und auszubauen.</p>
-                    </div>
-                    <div class="timeline-event">
-                        <p class="timeline-event-date">2022</p>
-                        <h3 class="timeline-event-title">IT-Praktikum bei der Bundeswehr</h3>
-                        <p class="timeline-event-desc">Im Oktober 2022 habe ich ein Schülerpraktikum bei der Führungsakademie der Bundeswehr absolviert. Dort konnte ich Erfahrungen in verschiedenen IT-Bereichen sammeln, angefangen von der Systemadministration bis hin zum Helpdesk.</p>
+        <main>
+            <div class="home-page-banner">
+                <div class="home-page-banner-text">
+                    <h1>Moin, ich bin<br><a id="home-page-banner-name"></a></h1>
+                    <div class="social-icon-wrapper">
+                        <a href="https://www.github.com/JBNCK"><i class="bi bi-github social-icon"></i></a>
+                        <a href="https://www.instagram.com/janj_bnck/"><i class="bi bi-instagram social-icon"></i></a>
+                        <a href="https://x.com/janj_bnck"><i class="bi bi-twitter-x social-icon"></i></a>
+                        <a href="mailto:jan@biernacik.dev"><i class="bi bi-envelope-fill social-icon"></i></a>
                     </div>
                 </div>
+                <img class="home-page-banner-picture" alt="Bild von mir in London" src="/assets/media/web-app-manifest-512x512.png" draggable="false" oncontextmenu="return false">
+            </div>
+            <div class="main-section">
+                <h1>Information</h1>
+                <p>Diese Seite befindet sich noch im Bau.</p>
             </div>
         </main>
-        <footer></footer>
-        <div class="site-end"></div>
-        </div>
+        <footer>
+
+        </footer>
     </body>
 </html>

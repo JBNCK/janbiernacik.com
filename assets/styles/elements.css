@@ -1,0 +1,22 @@
+/* Background Elements */
+.background-element {
+    border-radius: 50%;
+    height: 0px;
+    width: 0px;
+    float: left;
+    position: fixed;
+    z-index: -1;
+    box-shadow: 0 0 30svh 30svh var(--background-alt);
+    transition: all 5s ease-in-out;
+    opacity: 0;
+}
+
+#background-element-1 {
+    top: 0;
+    left: 0;
+}
+
+#background-element-2 {
+    top: 100svh;
+    right: 0;
+}

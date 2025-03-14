@@ -1,73 +1,50 @@
 @media screen and (max-width: 800px) {
-    .home-banner {
-        flex-direction: column-reverse;
-        margin: var(--mobile-max-spacing) auto var(--mobile-double-spacing) auto;
-        max-width: 400px;
-        padding: 0 var(--mobile-spacing);
+    * {
+        --spacing: 30px;
+        --spacing-small: 15px;
+        --spacing-large: 60px;
+        --spacing-extra-large: 120px;
     }
 
-    .home-banner-picture {
+    .home-page-banner {
+        flex-direction: row-reverse;
+        align-content: space-around;
+        margin: var(--spacing) 0;
         width: 100%;
-        margin: 0 0 var(--mobile-double-spacing) 0;
-        box-shadow: var(--border) 0 0 var(--mobile-spacing);
+        padding: 0 var(--spacing);
     }
 
-    .home-banner-text {
-        padding: 0;
+    .home-page-banner-picture {
+        margin-right: var(--spacing-small);
+        width: 20%;
     }
 
-    .navbar-link {
-        display: none;
+    .home-page-banner-text {
+        width: 100%;
+        margin-left: 0;
     }
 
-    .menu-toggle {
-        display: block;
+    .home-page-banner-text h1 {
+        font-size: large;
     }
 
-    .navbar-items-left {
-        margin: 0 30px;
-    }
-
-    .navbar-items-right {
-        margin: 0 30px;
-    }
-
-    .main-section {
-        padding: 0 var(--mobile-spacing) var(--mobile-double-spacing) var(--mobile-spacing);
+    .home-page-banner-text h1 a {
+        font-size: x-large;
     }
 }
 
-@media screen and (min-width: 930px) and (max-width: 1120px) {
-    .home-banner-text h1 {
+@media screen and (min-width: 801px) and (max-width: 900px) {
+    .home-page-banner-text h1 {
+        font-size: x-large;
+    }
+
+    .home-page-banner-text h1 a {
         font-size: xx-large;
     }
 }
 
-@media screen and (max-width: 929px) {
-    .home-banner-text h1 {
-        font-size: 28px;
-    }
-    .home-banner-picture {
-        max-width: 400px;
-    }
-}
-
-
-
-@media screen and (min-width: 801px) {
-    .menu {
+@media screen and (max-width: 350px) {
+    .home-page-banner-picture {
         display: none;
     }
-    .menu-collapser {
-        display: none;
-    }
-    body.active {
-        overflow: auto;
-    }
-}
-
-/* Dark Mode */
-
-@media (prefers-color-scheme: dark) {
-    
 }

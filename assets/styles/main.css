@@ -1,181 +1,50 @@
-/* General */
-
-.site-beginning {
-    margin: 120px 0;
-}
-
-.site-end {
-    margin: 40px 0;
-}
-
-.inline-link {
-    color: var(--secondary);
-}
-
-/*
-.inline-link:hover {
-    color: var(--text);
-    padding-left: 0 !important;
-    border-left: 0 !important;
-    border-bottom: 2px solid var(--accent);
-}*/
-
-.block-button {
-    display: block;
-}
-
 /* Home Page Banner */
 
-.home-banner {
-    max-width: 1400px;
-    margin: var(--max-spacing) auto var(--double-spacing) auto;
+.home-page-banner {
+    width: 100%;
+    margin: var(--spacing-large) auto var(--spacing) auto;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.home-banner-text {
-    width: 100%;
-    padding: 0 0 0 var(--double-spacing);
-}
-
-.home-banner-text h1 {
-    font-size: 48px;
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 400;
-}
-
-.home-banner-text h1 a {
-    font-weight: 700;
-    font-style: normal;
-}
-
-.home-banner-picture {
-    box-shadow: var(--border) 0 0 var(--double-spacing);
+.home-page-banner-picture {
+    max-width: 400px;
     border-radius: 50%;
-    margin: 0 var(--double-spacing) 0 0;
-    max-width: 500px;
+    filter: brightness(0.9);
+    margin-right: var(--spacing)
+}
+
+.home-page-banner-text {
+    margin-left: var(--spacing);
+}
+
+.home-page-banner-text h1 a {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 48px;
+    padding-right: 4px
+}
+
+.social-icon-wrapper {
+    margin-top: 4px;
+}
+
+.social-icon {
+    font-size: x-large;
+    padding-right: 8px;
+    color: var(--text-paragraph);
+    transition: all .25s;
+}
+
+.social-icon:hover {
+    color: var(--text-title);
 }
 
 /* Main Section */
 
 .main-section {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 var(--double-spacing) var(--double-spacing) var(--double-spacing);
-}
-
-.main-section-title {
-    margin-bottom: 20px;
-    padding-bottom: 16px;
-    border-bottom: 0.01em solid var(--border);
-}
-
-.main-section-subtitle {
-    padding-top: 20px;
-    font-weight: 700;
-}
-
-.main-section a:hover {
-    text-decoration: underline;
-}
-
-/* Timeline/Resume */
-
-.timeline {
-    border-left: 3px var(--text) solid;
-    padding-left: 20px;
-}
-
-.timeline-event-date {
-    font-size: small;
-    padding-top: 10px;
-    margin: 0;
-}
-
-.timeline-event-title {
-    font-weight: 700;
-}
-
-.timeline-event-desc {
-    padding-bottom: 10px;
-}
-
-/* GitHub Activity */
-
-.github-calendar-wrapper {
-    width: 100%;
-    overflow: auto;
-    text-align: center;
-}
-.github-calendar {
-    max-width: 1000px;
-    min-width: 800px;
-    width: 100%;
-    cursor: pointer;
-}
-
-.github-calendar:hover {
-    transform: scale(0.95);
-}
-
-/* Social Media Links */
-
-.social-icon-wrapper {
-    width: 100%;
-    text-align: center;
-    margin-bottom: var(--double-spacing);
-}
-.social-icon {
-    font-size: x-large;
-    padding: 0 4px;
-    color: var(--text);
-}
-.social-icon:hover {
-    color: var(--text-alt);
-    padding: 0 8px;
-}
-
-/* GitHub Repo List */
-
-.repo-list {
-    margin: 10px 0;
-}
-.repo-list a {
-    text-decoration: none;
-}
-.repo-list a:hover {
-    text-decoration: none;
-}
-.repo-list-item-wrapper:hover {
-    text-decoration: none;
-}
-
-.repo-list-item-wrapper *:hover {
-    text-decoration: none;
-}
-
-.repo-list-item *:hover {
-    text-decoration: none;
-}
-
-.repo-list-item {
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 20px;
-    margin-top: 10px;
-    box-shadow: 0 0 40px var(--border);
-}
-
-.repo-list-item:hover {
-    box-shadow: 0 0 20px var(--border);
-    background-color: var(--border);
-}
-
-.repo-list-item h3 {
-    padding: 0;
-}
-
-.repo-list-item p {
-    margin: 0;
+    margin: var(--spacing) auto;
+    padding: 0 var(--spacing);
+    max-width: 1200px;
 }
