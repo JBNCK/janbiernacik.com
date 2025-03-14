@@ -50,3 +50,16 @@ $(document).on('scroll', function() {
         $('#navbar').css({visibility: 'hidden', opacity: "0"});
     }
 });
+
+function loadGitHubRepos() {
+    $.getJSON("//api.github.com/users/JBNCK/repos", function(data) {
+        var items = '';
+        $.each(data, function(key, value) {
+            items += '<a class="repo-list-item-wrapper" href="' + value.html_url + '"><div class="repo-list-item">';
+            items += '<h3 class="main-section-subtitle">' + value.name + '</h3>';
+            items += '<p>' + value.description + '<p>';
+            items += '</div></a>';
+        })
+        $('.repo-list').html(items);
+    });
+}

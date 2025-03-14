@@ -20,3 +20,25 @@
     top: 100svh;
     right: 0;
 }
+
+/* Repo List */
+
+.repo-list-item {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.1);
+    /* box-shadow: 0 0 20px var(--background-alt2); */
+    margin-bottom: 20px;
+    padding: var(--spacing-small);
+    transition: all .25s;
+}
+
+.repo-list-item:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.repo-list-item h3 {
+    color: var(--text-title);
+}
