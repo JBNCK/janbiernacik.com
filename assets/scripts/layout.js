@@ -41,3 +41,12 @@ $(document).ready(function() {
         }, 1000);
     }, 2000);
 });
+
+$(document).on('scroll', function() {
+    var scrollPosition = $(document).scrollTop();
+    if (scrollPosition > 1) {
+        $('#navbar').css({visibility: 'visible', opacity: "100%"});
+    } else {
+        $('#navbar').css({visibility: 'hidden', opacity: "0"});
+    }
+});
