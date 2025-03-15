@@ -29,7 +29,6 @@ $(document).ready(function() {
             sectionName = $(this).attr("name");
             sectionPosition = this.getBoundingClientRect();
             sectionPosition = sectionPosition.y - 80;
-            console.log(sectionPosition);
             if (sectionTitle == "") {
                 sectionTitle = sectionName;
             }

@@ -67,28 +67,36 @@ function loadGitHubRepos() {
 }
 
 function menuToggle() {
-    if (menuOpen != 1 && menuLock != 1) {
-        menuLock = 1;
-        $("#menu").css({visibility: "visible", backdropFilter: "blur(10px)", webkitBackdropFilter: "blur(10px)", background: "var(--background-transparent)"});
-        setTimeout(function() {
-            $("#menu-items").css({top: "11svh", marginLeft: "0"});
-            $(".menu-link").css({fontSize: "x-large", paddingBottom: "6px"});
+    if (menuLock != 1) {
+        if (menuOpen != 1) {
+            menuLock = 1;
+            $("body").css({overflow: "hidden"});
+            $("#menu").css({visibility: "visible", backdropFilter: "blur(10px)", webkitBackdropFilter: "blur(10px)", background: "var(--background-transparent)"});
             setTimeout(function() {
-                $("#menu-items").css({top: "10svh"});
-                $(".menu-link").css({paddingBottom: "4px"});
-            }, 300);
-            menuOpen = 1;
-            menuLock = 0;
-        }, 250);
-    } if (menuOpen == 1 && menuLock != 1) {
-        menuLock = 1;
-        $(".menu-link").css({fontSize: "0", paddingBottom: "0"});
-        $("#menu-items").css({top: "0svh", marginLeft: "10px"});
-        setTimeout(function() {
-            $("#menu").css({visibility: "hidden", backdropFilter: "blur(0px)", webkitBackdropFilter: "blur(0px)", background: "rgba(0,0,0,0)"});
-            menuOpen = 0;
-            menuLock = 0;
-        }, 250);
+                $("#menu-items").css({top: "11svh", marginLeft: "0"});
+                $(".menu-link").css({fontSize: "x-large", paddingBottom: "6px"});
+                setTimeout(function() {
+                    $("#menu-items").css({top: "10svh"});
+                    $(".menu-link").css({paddingBottom: "4px"});
+                    setTimeout(function() {
+                        menuOpen = 1;
+                        menuLock = 0;
+                    }, 300);
+                }, 300);
+            }, 250);
+        } if (menuOpen == 1) {
+            menuLock = 1;
+            $(".menu-link").css({fontSize: "0", paddingBottom: "0"});
+            $("#menu-items").css({top: "6px", marginLeft: "10px"});
+            setTimeout(function() {
+                $("#menu").css({visibility: "hidden", backdropFilter: "blur(0px)", webkitBackdropFilter: "blur(0px)", background: "rgba(0,0,0,0)"});
+                $("body").css({overflow: "auto"});
+                setTimeout(function() {
+                    menuOpen = 0;
+                    menuLock = 0;
+                }, 300);
+            }, 250);
+        }
     }
 }
 
