@@ -69,33 +69,37 @@ function loadGitHubRepos() {
 function menuToggle() {
     if (menuLock != 1) {
         if (menuOpen != 1) {
+            document.ontouchmove = function (e) {
+                e.preventDefault();
+            }
             menuLock = 1;
-            $("body").css({overflow: "hidden"});
+            $("body").css({overflowY: "hidden"});
             $("#menu").css({visibility: "visible", backdropFilter: "blur(10px)", webkitBackdropFilter: "blur(10px)", background: "var(--background-transparent)"});
+            $("#menu-items").css({top: "11svh", marginLeft: "0"});
+            $(".menu-link").css({fontSize: "x-large", marginBottom: "8px"});
+            $(".menu-close-button").css({opacity: "100%"});
             setTimeout(function() {
-                $("#menu-items").css({top: "11svh", marginLeft: "0"});
-                $(".menu-link").css({fontSize: "x-large", paddingBottom: "6px"});
+                $("#menu-items").css({top: "10svh"});
+                $(".menu-link").css({marginBottom: "4px"});
                 setTimeout(function() {
-                    $("#menu-items").css({top: "10svh"});
-                    $(".menu-link").css({paddingBottom: "4px"});
-                    setTimeout(function() {
-                        menuOpen = 1;
-                        menuLock = 0;
-                    }, 300);
-                }, 300);
-            }, 250);
-        } if (menuOpen == 1) {
-            menuLock = 1;
-            $(".menu-link").css({fontSize: "0", paddingBottom: "0"});
-            $("#menu-items").css({top: "6px", marginLeft: "10px"});
-            setTimeout(function() {
-                $("#menu").css({visibility: "hidden", backdropFilter: "blur(0px)", webkitBackdropFilter: "blur(0px)", background: "rgba(0,0,0,0)"});
-                $("body").css({overflow: "auto"});
-                setTimeout(function() {
-                    menuOpen = 0;
+                    menuOpen = 1;
                     menuLock = 0;
                 }, 300);
-            }, 250);
+            }, 300);
+        } if (menuOpen == 1) {
+            document.ontouchmove = function (e) {
+                return true;
+            }
+            menuLock = 1;
+            $(".menu-link").css({fontSize: "0", marginBottom: "0"});
+            $("#menu-items").css({top: "6px", marginLeft: "10px"});
+            $("#menu").css({visibility: "hidden", backdropFilter: "blur(0px)", webkitBackdropFilter: "blur(0px)", background: "rgba(0,0,0,0)"});
+            $("body").css({overflowY: "auto"});
+            $(".menu-close-button").css({opacity: "0"});
+            setTimeout(function() {
+                menuOpen = 0;
+                menuLock = 0;
+            }, 300);
         }
     }
 }

@@ -37,7 +37,7 @@
     background: rgba(0,0,0,0);
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
-    transition: all .5s ease;
+    transition: all .3s ease;
     z-index: 1000;
     visibility: hidden;
 }
@@ -56,10 +56,28 @@
 }
 
 .menu-link {
-    padding-bottom: 0;
+    margin-bottom: 0;
     transition: all .3s ease;
     color: var(--text-title);
     font-size: 0;
     font-weight: 700;
     display: block;
+}
+
+.menu-link:hover {
+    color: var(--text-paragraph);
+}
+
+.menu-close-button {
+    position: absolute;
+    top: 40px;
+    transform: translateY(-50%);
+    margin-left: var(--spacing);
+    opacity: 0;
+}
+
+.menu-close-button-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    transition: all .3s;
 }

@@ -28,7 +28,7 @@ $(document).ready(function() {
             sectionTitle = $(this).find("h1").text();
             sectionName = $(this).attr("name");
             sectionPosition = this.getBoundingClientRect();
-            sectionPosition = sectionPosition.y - 80;
+            sectionPosition = sectionPosition.y - 90;
             if (sectionTitle == "") {
                 sectionTitle = sectionName;
             }

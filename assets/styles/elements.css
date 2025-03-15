@@ -45,6 +45,6 @@
 
 /* Clickable */
 
-.clickable {
+.clickable:hover {
     cursor: pointer;
 }

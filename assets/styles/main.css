@@ -39,10 +39,15 @@
 
 .social-icon-navbar {
     padding-right: 0 !important;
+    color: var(--text-title) !important;
 }
 
 .social-icon:hover {
     color: var(--text-title);
+}
+
+.social-icon-navbar:hover {
+    color: var(--text-paragraph) !important;
 }
 
 /* Main Section */
@@ -55,4 +60,8 @@
 
 .main-section h1 {
     margin-bottom: 4px
+}
+
+.main-section-subtitle {
+    font-weight: 700;
 }
