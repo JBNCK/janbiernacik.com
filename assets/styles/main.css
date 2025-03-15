@@ -37,6 +37,10 @@
     transition: all .25s;
 }
 
+.social-icon-navbar {
+    padding-right: 0 !important;
+}
+
 .social-icon:hover {
     color: var(--text-title);
 }

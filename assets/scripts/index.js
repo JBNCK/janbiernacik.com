@@ -19,7 +19,24 @@ $(document).ready(function() {
         }, 500);
     });
     $("footer").load(assetPath + "footer.html");
-    $("#menu").load(assetPath + "menu.html");
+    $("#menu").load(assetPath + "menu.html", function() {
+        var menuItems = "";
+        $("main").find(".main-section").each(function() {
+            var sectionTitle = "";
+            var sectionName = "";
+            var sectionPosition = "";
+            sectionTitle = $(this).find("h1").text();
+            sectionName = $(this).attr("name");
+            sectionPosition = this.getBoundingClientRect();
+            sectionPosition = sectionPosition.y - 80;
+            console.log(sectionPosition);
+            if (sectionTitle == "") {
+                sectionTitle = sectionName;
+            }
+            menuItems += `<a class='menu-link clickable' onclick='$("html, body").animate({scrollTop: "${sectionPosition}"});'>${sectionTitle}</a>`
+        });
+        $("#menu-items").html(menuItems);
+    });
     $("#navbar").load(assetPath + "navbar.html");
 
     $("main").css({opacity: "100%"});

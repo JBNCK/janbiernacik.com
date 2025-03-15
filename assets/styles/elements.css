@@ -42,3 +42,9 @@
 .repo-list-item h3 {
     color: var(--text-title);
 }
+
+/* Clickable */
+
+.clickable {
+    cursor: pointer;
+}

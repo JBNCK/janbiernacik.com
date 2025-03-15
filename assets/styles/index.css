@@ -21,6 +21,7 @@
     --background: #051020;
     --background-alt: #102040;
     --background-alt2: #091929;
+    --background-transparent: rgba(5, 16, 32, 0.5);
     --text-title: #f5f5f5;
     --text-paragraph: #aaaabb;
     --spacing: 40px;
