@@ -1,0 +1,85 @@
+.home-page-banner {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: var(--spacing-large) auto var(--spacing) auto;
+    max-width: 1200px;
+}
+
+.home-page-banner-picture {
+    border-radius: 8px;
+    filter: brightness(.8);
+    margin-right: var(--spacing);
+    max-width: 250px;
+}
+
+.home-page-banner-items-left {
+    margin-left: var(--spacing);
+}
+
+#my-name {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 42px;
+    padding-right: 4px;
+}
+
+.social-icon:hover {
+    color: var(--text-title);
+}
+
+.social-icon-wrapper {
+    margin-top: 4px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.social-icon {
+    font-size: large;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 800px) {
+    .home-page-banner {
+        align-content: space-around;
+        flex-direction: row-reverse;
+        margin: var(--spacing-large) 0;
+        padding: 0 var(--spacing);
+        width: 100%;
+    }
+
+    .home-page-banner-picture {
+        margin-right: var(--spacing-small);
+        width: 25%;
+    }
+
+    .home-page-banner-items-left {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .home-page-banner-items-left h3 {
+        font-size: large;
+    }
+
+    #my-name {
+        font-size: x-large;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 900px) {
+    .home-page-banner-items-left h3 {
+        font-size: x-large;
+    }
+
+    #my-name {
+        font-size: xx-large;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .home-page-banner-picture {
+        display: none;
+    }
+}
