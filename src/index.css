@@ -103,6 +103,10 @@ ul {
     color: var(--text-highlight);
 }
 
+.block {
+    display: block;
+}
+
 .social-icon {
     transition: all .25s;
 }

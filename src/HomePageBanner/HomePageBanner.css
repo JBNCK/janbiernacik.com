@@ -68,6 +68,12 @@ p {
     }
 }
 
+@media screen and (max-width: 400px) {
+    #my-name {
+        font-size: large;
+    }
+}
+
 @media screen and (min-width: 801px) and (max-width: 900px) {
     .home-page-banner-items-left h3 {
         font-size: x-large;
