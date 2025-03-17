@@ -1,7 +1,12 @@
 import GoBack from './GoBack/GoBack';
-import Footer from './Footer/Footer';
+import { useEffect } from 'react';
 
 function Privacy() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     const title = navigator.language === "de-DE" ? "Datenschutz" : "Privacy";
     const privacyPolicy = navigator.language === "de-DE" ? (
         <>
