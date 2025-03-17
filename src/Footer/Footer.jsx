@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 
 function Footer() {
+    const sourceCodeLink = navigator.language === "de-DE" ? "Quelltext" : "Source Code";
     const privacyName = navigator.language === "de-DE" ? "Datenschutz" : "Privacy";
     const websiteInfo = navigator.language === "de-DE" ? (
         <p>Diese Website wurde in <a className="bold">Vite</a> geschrieben und wird auf <a className="bold">GitHub Pages</a> gehostet. Das Design basiert auf der <a className="bold">Gruvbox</a>-Farbpalette.</p>
@@ -10,7 +11,7 @@ function Footer() {
 
     return (
         <div className="main-section">
-            <a className="bold link block" href="https://github.com/JBNCK/janbiernacik.com">Quelltext</a>
+            <a className="bold link block" href="https://github.com/JBNCK/janbiernacik.com">{sourceCodeLink}</a>
             <Link className="bold link" to="/privacy">{privacyName}</Link>
             {websiteInfo}
         </div>
