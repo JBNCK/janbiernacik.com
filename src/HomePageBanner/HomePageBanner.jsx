@@ -2,7 +2,16 @@ import './HomePageBanner.css';
 import memoji from './memoji.png';
 
 function HomePageBanner() {
-    const greeting = "Moin, ich bin";
+    const isGerman = navigator.language === "de-DE";
+
+    const greeting = isGerman ? "Moin, ich bin" : "Hi, I'm";
+
+        setInterval(() => {
+            document.getElementById("my-name").style.borderRight = "2px solid var(--text-paragraph)"
+            setTimeout(() => {
+                document.getElementById("my-name").style.borderRight = "0"
+            },1000);
+        },2000);
 
     return(
         <div className="home-page-banner">

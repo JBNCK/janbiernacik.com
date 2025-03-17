@@ -2,8 +2,9 @@ import { useEffect } from "react";
 import "./BackgroundElements.css";
 
 function BackgroundElements() {
-    useEffect(() => {
+    /* useEffect(() => {
         document.getElementById("background-element-wrapper").style.opacity = "1";
+        document.getElementById("background-element-wrapper").style.zIndex = "-1";
         
         const interval = setInterval(() => {
             const randomNumber1 = Math.floor(100 * Math.random()) + 1;
@@ -15,7 +16,7 @@ function BackgroundElements() {
             document.getElementById("background-element-1").style.right = randomNumber2 + "%";
             document.getElementById("background-element-2").style.right = randomNumber4 + "%";
         }, 5000);
-    });
+    });*/
     
     return (
         <div id="background-element-wrapper">

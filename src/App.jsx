@@ -1,14 +1,15 @@
-import './App.css';
-import BackgroundElements from './BackgroundElements/BackgroundElements';
 import HomePageBanner from './HomePageBanner/HomePageBanner';
 import AboutMe from './AboutMe/AboutMe';
+import Footer from './Footer/Footer';
 
 function App() {
   return (
     <>
-      <BackgroundElements />
       <HomePageBanner />
       <AboutMe />
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

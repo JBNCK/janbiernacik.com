@@ -1,6 +1,6 @@
 #background-element-wrapper {
-    opacity: 0;
     transition: all 5s ease-in-out;
+    z-index: -1 !important;
 }
 
 .background-element {
@@ -9,8 +9,9 @@
     float: left;
     height: 0;
     position: fixed;
-    transition: all 5s ease-in-out;
+    transition: all 1s ease-in-out;
     width: 0;
+    z-index: -1 !important;
 }
 
 #background-element-1 {

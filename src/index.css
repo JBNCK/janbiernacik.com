@@ -2,31 +2,32 @@
 @import url(https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css);
 
 * {
-    text-size-adjust:none;
-    -ms-text-size-adjust:none;
-    -moz-text-size-adjust:none;
-    -webkit-text-size-adjust:none;
-    --background:#08121e;
-    --background-alt:#0c1c39;
-    --background-alt2:#0a1a27;
-    --background-transparent:#08121e80;
-    --text-title:#f5f5fa;
-    --text-paragraph:#aab;
-    --spacing:40px;
-    --spacing-small:20px;
-    --spacing-large:80px;
-    --spacing-extra-large:160px;
-    box-sizing:border-box;
-    color:var(--text-paragraph);
-    font-family:IBM Plex Sans,sans-serif;
-    font-optical-sizing:auto;
-    font-style:normal;
-    font-variation-settings:"wdth" 100;
-    font-weight:400;
-    margin:0;
-    padding:0;
-    user-select:none;
-    -webkit-user-select:none;
+    text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    --background: #08121e;
+    --background-alt: #0c1c39;
+    --background-alt2: #0a1a27;
+    --background-transparent :#08121e80;
+    --text-title: #f5f5fa;
+    --text-paragraph: #aab;
+    --spacing: 40px;
+    --spacing-small: 20px;
+    --spacing-large: 80px;
+    --spacing-extra-large: 160px;
+    box-sizing: border-box;
+    color: var(--text-paragraph);
+    font-family: "IBM Plex Sans" ,sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    z-index: 1;
 }
 
 body {
@@ -66,6 +67,10 @@ ul {
     margin: var(--spacing-small) 0;
 }
 
+.main-section ul {
+    margin: var(--spacing-small) 0 var(--spacing-small) 20px;
+}
+
 .bold {
     color: var(--text-title);
     font-weight: 700;
@@ -78,6 +83,15 @@ ul {
 
 .link:hover {
     color: var(--text-paragraph);
+}
+
+.link-dark {
+    color: var(--text-paragraph);
+    transition: all .25s;
+}
+
+.link-dark:hover {
+    color: var(--text-title);
 }
 
 .social-icon {
