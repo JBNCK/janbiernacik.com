@@ -17,7 +17,7 @@ function HomePageBanner() {
         <div className="home-page-banner">
             <div className="home-page-banner-items-left">
                 <h3>{greeting}<br></br>
-                    <a id="my-name">Jan Biernacik</a>
+                    <a id="my-name">&lt;Jan Biernacik /&gt;</a>
                 </h3>
                 <div className="social-icon-wrapper">
                     <a href="https://www.github.com/JBNCK"><i className="bi bi-github social-icon"></i></a>
