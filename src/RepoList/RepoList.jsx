@@ -9,9 +9,9 @@ function RepoList() {
     useEffect(() => {
         fetch('https://api.github.com/users/JBNCK/repos', {
             method: 'GET',
-            headers: {
+            /* headers: {
                 'Authorization': `Bearer ${ghPat}`
-            },
+            }, */
         })
             .then(response => response.json())
             .then(data => setRepos(data))
