@@ -1,0 +1,25 @@
+* {
+    --frosted-glass-1: rgba(255,255,255,0.05);
+    --frosted-glass-2: rgba(255,255,255,0.1);
+}
+
+.repo-item {
+    padding: var(--spacing-small);
+    background: var(--frosted-glass-1);
+    border: solid 1px var(--frosted-glass-2);
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    margin: var(--spacing-small) 0;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    transition: all .25s;
+}
+
+.repo-item:hover {
+    background: var(--frosted-glass-2);
+}
+
+.repo-item p {
+    margin: 0;
+}

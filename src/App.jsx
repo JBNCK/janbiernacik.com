@@ -1,6 +1,7 @@
 import HomePageBanner from './HomePageBanner/HomePageBanner';
 import AboutMe from './AboutMe/AboutMe';
 import Footer from './Footer/Footer';
+import RepoList from './RepoList/RepoList';
 import { useEffect } from 'react';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <>
       <HomePageBanner />
       <AboutMe />
+      <RepoList />
       <footer>
         <Footer />
       </footer>

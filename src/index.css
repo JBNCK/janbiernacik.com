@@ -87,6 +87,7 @@ ul {
 .link {
     color: var(--text-highlight);
     transition: all .25s;
+    width: fit-content;
 }
 
 .link:hover {
