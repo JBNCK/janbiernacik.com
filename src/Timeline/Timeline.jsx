@@ -64,11 +64,11 @@ function Timeline() {
             <div id='timeline'>
                 {timelineItems.map(item => (
                     <div key={item.id} className='timeline-item'>
+                        <div className='timeline-dot'></div>
                         <div className='timeline-item-header'><a className='timeline-item-date'>{item.date}</a><a className='timeline-item-type'>{item.type}</a></div>
                         <h3 className='timeline-item-name'>{item.name}</h3>
                         <p className='timeline-item-loc'>{item.loc}</p>
                         <div className='timeline-item-desc-wrapper'><p className='timeline-item-desc'>{item.desc}</p></div>
-                        <div className='timeline-expand'><i className="bi bi-chevron-down"></i></div>
                     </div>
                 ))}
             </div>

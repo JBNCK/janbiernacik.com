@@ -57,7 +57,7 @@ ul {
 }
 
 .main-section {
-    margin: var(--spacing-large) auto;
+    margin: var(--spacing-extra-large) auto;
     max-width: 1200px;
     padding: 0 var(--spacing);
 }
