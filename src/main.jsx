@@ -4,10 +4,12 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import './index.css'
 import App from './App.jsx'
 import Privacy from './Privacy.jsx';
+import BackgroundElements from './BackgroundElements/BackgroundElements.jsx';
 
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
+  <BackgroundElements />
     <Routes>
       <Route path="/" element={<App />} />
       <Route path='/privacy' element={<Privacy />} />

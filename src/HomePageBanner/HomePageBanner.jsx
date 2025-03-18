@@ -1,18 +1,23 @@
 import './HomePageBanner.css';
 import memoji from './memoji.png';
+import { useEffect } from 'react';
 
 function HomePageBanner() {
     const isGerman = navigator.language === "de-DE";
-
     const greeting = isGerman ? "Moin, ich bin" : "Hi, I'm";
 
+    useEffect(() => {
+        const myName = document.getElementById("my-name");
         setInterval(() => {
-            document.getElementById("my-name").style.borderRight = "2px solid var(--text-paragraph)"
-            setTimeout(() => {
-                document.getElementById("my-name").style.borderRight = "0"
-            },1000);
+            if (myName) {
+                myName.style.borderRight = "2px solid var(--text-paragraph)";
+                setTimeout(() => {
+                    myName.style.borderRight = "0";
+                },1000);
+            }
         },2000);
-
+    }, []);
+    
     return(
         <div className="home-page-banner">
             <div className="home-page-banner-items-left">

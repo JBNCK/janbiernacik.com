@@ -4,9 +4,9 @@ function Footer() {
     const sourceCodeLink = navigator.language === "de-DE" ? "Quelltext" : "Source Code";
     const privacyName = navigator.language === "de-DE" ? "Datenschutz" : "Privacy";
     const websiteInfo = navigator.language === "de-DE" ? (
-        <p>Diese Website wurde in <a className="bold">Vite</a> geschrieben und wird auf <a className="bold">GitHub Pages</a> gehostet. Das Design basiert auf der <a className="bold">Gruvbox</a>-Farbpalette.</p>
+        <p>Diese Website wurde in <a className="bold">Vite</a> geschrieben und wird auf <a className="bold">GitHub Pages</a> gehostet.</p>
     ) : (
-        <p>This Website was written in <a className="bold">Vite</a> and is being hosted on <a className="bold">GitHub Pages</a>. The design is based on the <a className="bold">Gruvbox</a> color palette.</p>
+        <p>This Website was written in <a className="bold">Vite</a> and is being hosted on <a className="bold">GitHub Pages</a>.</p>
     );
 
     return (

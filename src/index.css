@@ -6,25 +6,24 @@
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
-    /*
     --background: #08121e;
     --background-alt: #0c1c39;
     --background-alt2: #0a1a27;
     --background-transparent :#08121e80;
-    --text-title: #f5f5fa;
-    --text-paragraph: #aab;
-    */
+    --text-title: #f5f5f8;
+    --text-paragraph: #aaaaaf;
+    --text-highlight: #f5f5f8;
     --spacing: 40px;
     --spacing-small: 20px;
     --spacing-large: 80px;
     --spacing-extra-large: 160px;
-    --background: #282828;
-    --background-alt: #1d2021;
-    --background-alt2: #3c3836;
+    /*--background: #202025;
+    --background-alt: #161619;
+    --background-alt2: #282828;
     --background-transparent :#28282880;
-    --text-title: #fe8019;
-    --text-paragraph: #ebdbb2;
-    --text-highlight: #fbf1c7;
+    --text-title: #aaaaff;
+    --text-paragraph: #cacacc;
+    --text-highlight: #fafaff;*/
     box-sizing: border-box;
     color: var(--text-paragraph);
     font-family: "IBM Plex Sans" ,sans-serif;

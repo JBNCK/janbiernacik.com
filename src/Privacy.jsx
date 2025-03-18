@@ -16,9 +16,7 @@ function Privacy() {
                 <p>Die verwendeten Begriffe sind nicht geschlechtsspezifisch.</p>
                 <p><a className='bold'>Stand:</a> 17. März 2025</p>
                 <h3 className='main-section-subtitle'>Verantwortlicher</h3>
-                <p>Jan Biernacik<br></br>E-Mail-Adresse: 
-                <a className="bold link" href="mailto:jan@biernacik.dev">jan@biernacik.dev</a>
-                </p>
+                <p>Jan Biernacik<br></br>E-Mail-Adresse: <a className="bold link" href="mailto:jan@biernacik.dev">jan@biernacik.dev</a></p>
             </div>
         
             <div className="main-section">
@@ -187,9 +185,7 @@ function Privacy() {
                     <p>The terms used are not gender-specific.</p>
                     <p><a className='bold'>As of:</a> March 17, 2025</p>
                     <h3>Controller</h3>
-                    <p>Jan Biernacik<br></br>Email address: 
-                    <a className="bold link" href="mailto:jan@biernacik.dev">jan@biernacik.dev</a>
-                    </p>
+                    <p>Jan Biernacik<br></br>Email address: <a className="bold link" href="mailto:jan@biernacik.dev">jan@biernacik.dev</a></p>
                 </div>
             
                 <div className="main-section">
