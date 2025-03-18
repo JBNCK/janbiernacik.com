@@ -2,7 +2,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: var(--spacing-large) auto var(--spacing) auto;
+    margin: var(--spacing-extra-large) auto;
     max-width: 1200px;
 }
 
