@@ -36,6 +36,7 @@
     user-select: none;
     -webkit-user-select: none;
     z-index: 1;
+    line-height: 1.5em;
 }
 
 body {
@@ -71,7 +72,7 @@ ul {
     font-weight: 700;
 }
 
-.main-section p {
+.main-section-text {
     margin: var(--spacing-small) 0;
 }
 
