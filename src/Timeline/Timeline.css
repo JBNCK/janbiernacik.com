@@ -36,7 +36,7 @@
     display: none;
 }
 
-.timeline-item-name, .timeline-item-date, .timeline-item-desc {
+.timeline-item-name, .timeline-item-date, .timeline-item-desc, .timeline-item-loc {
     margin: 0 !important;
 }
 
@@ -58,12 +58,17 @@
     font-size: small;
 }
 
+.timeline-item-loc {
+    font-size: small;
+}
+
 .timeline-item-desc-wrapper {
     display: none;
     visibility: hidden;
     opacity: 0;
     transition: all .25s;
     height: fit-content;
+    margin-top: var(--spacing-small);
 }
 
 .timeline-expand {

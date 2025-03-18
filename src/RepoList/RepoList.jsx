@@ -20,6 +20,7 @@ function RepoList() {
 
     return (
         <div id='repo-list' className='main-section'>
+            <h3 className='main-section-title'>{projectTitle}</h3>
             {repos.map(repo => (
                 <a key={repo.id} className="repo-item" href={repo.html_url}>
                     <h3>{repo.name}</h3>
@@ -29,7 +30,5 @@ function RepoList() {
         </div>
     );
 }
-
-// <h3 className='main-section-title'>{projectTitle}</h3>
 
 export default RepoList;
