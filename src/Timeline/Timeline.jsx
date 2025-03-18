@@ -13,10 +13,18 @@ function Timeline() {
         },
         {
             id: 3,
-            date: "Aktuell",
-            name: "Gymnasiale Oberstufe",
+            date: "2017 - 2025",
+            name: "Gymnasiale Oberstufe und Abitur",
             desc: "Aktuell besuche ich die 12. Klasse eines hamburger Gymnasiums und werde diesen Sommer mit dem Abitur meine Schulbildung abschließen.",
             type: "Schulbildung",
+            loc: "Hamburg, Deutschland"
+        },
+        {
+            id: 2,
+            date: "2023",
+            name: "IT-Schülerpraktikum bei Fielmann",
+            desc: "Zu beginn der 11. Klasse absolvierte ich ein zweiwöchiges Schülerpraktikum bei Fielmann mit Schwerpunkt auf Softwareentwicklung.",
+            type: "Anwendungsentwicklung",
             loc: "Hamburg, Deutschland"
         }
     ]
@@ -32,10 +40,18 @@ function Timeline() {
         },
         {
             id: 3,
-            date: "Now",
-            name: "High School",
+            date: "2017 - 2025",
+            name: "High School and Abitur",
             desc: "I am currently in the 12th grade at a high school in Hamburg and will graduate with my Abitur this summer.",
             type: "School",
+            loc: "Hamburg, Germany"
+        },
+        {
+            id: 2,
+            date: "2023",
+            name: "IT Internship/Work Experience at Fielmann",
+            desc: "At the beginning of 11th grade, I completed a two-week IT internship at Fielmann with a focus on software development.",
+            type: "Software Development",
             loc: "Hamburg, Germany"
         }
     ]
