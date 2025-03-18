@@ -1,5 +1,6 @@
 import './RepoList.css';
 import { useEffect, useState } from 'react';
+const ghPat = import.meta.env.VITE_GITHUB_PAT;
 
 function RepoList() {
     const [repos, setRepos] = useState([]);
@@ -8,9 +9,9 @@ function RepoList() {
     useEffect(() => {
         fetch('https://api.github.com/users/JBNCK/repos', {
             method: 'GET',
-            /* headers: {
-                'Authorization': 'Bearer gh_PAT'
-            },*/
+            headers: {
+                'Authorization': `Bearer ${ghPat}`
+            },
         })
             .then(response => response.json())
             .then(data => setRepos(data))
