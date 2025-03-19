@@ -1,10 +1,14 @@
 import './HomePageBanner.css';
 import memoji from './memoji.png';
 import { useEffect } from 'react';
+import isGerman from "../../scripts/is-german";
 
 function HomePageBanner() {
-    const isGerman = navigator.language === "de-DE";
-    const greeting = isGerman ? "Moin, ich bin" : "Hi, I'm";
+    const componentContent = isGerman() ? {
+        greeting: "Moin, ich bin"
+    } : {
+        greeting: "Hi, I'm"
+    }
 
     useEffect(() => {
         const myName = document.getElementById("my-name");
@@ -21,7 +25,7 @@ function HomePageBanner() {
     return(
         <div className="home-page-banner">
             <div className="home-page-banner-items-left">
-                <h3>{greeting}<br></br>
+                <h3>{componentContent.greeting}<br></br>
                     <a id="my-name">Jan Biernacik</a>
                 </h3>
                 <div className="social-icon-wrapper">

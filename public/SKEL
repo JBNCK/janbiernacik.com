@@ -1,0 +1,5 @@
+const componentContent = isGerman() ? {
+
+    } : {
+        
+    }

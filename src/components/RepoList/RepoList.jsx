@@ -1,17 +1,19 @@
 import './RepoList.css';
+import isGerman from "../../scripts/is-german";
 import { useEffect, useState } from 'react';
 const ghPat = import.meta.env.VITE_GITHUB_PAT;
 
 function RepoList() {
     const [repos, setRepos] = useState([]);
-    const projectTitle = navigator.language === "de-DE" ? "Projekte" : "Projects";
+    const componentContent = isGerman() ? {
+        componentTitle: "Projekte"
+    } : {
+        componentTitle: "Projects"
+    }
 
     useEffect(() => {
         fetch('https://api.github.com/users/JBNCK/repos', {
             method: 'GET',
-            /* headers: {
-                'Authorization': `Bearer ${ghPat}`
-            }, */
         })
             .then(response => response.json())
             .then(data => setRepos(data))
@@ -20,7 +22,7 @@ function RepoList() {
 
     return (
         <div id='repo-list' className='main-section'>
-            <h3 className='main-section-title'>{projectTitle}</h3>
+            <h3 className='main-section-title'>{componentContent.componentTitle}</h3>
             {repos.map(repo => (
                 <a key={repo.id} className="repo-item" href={repo.html_url}>
                     <h3>{repo.name}</h3>
