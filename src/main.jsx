@@ -13,6 +13,7 @@ createRoot(document.getElementById('root')).render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path='/privacy' element={<Privacy />} />
+      <Route path='/datenschutz' element={<Privacy />} />
       <Route path='*' element={<Navigate replace to="/" />} />
     </Routes>
   </BrowserRouter>,

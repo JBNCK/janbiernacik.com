@@ -3,6 +3,7 @@ import { Link } from "react-router";
 function Footer() {
     const sourceCodeLink = navigator.language === "de-DE" ? "Quelltext" : "Source Code";
     const privacyName = navigator.language === "de-DE" ? "Datenschutz" : "Privacy";
+    const privacyUrl = navigator.language === "de-DE" ? "datenschutz" : "privacy";
     /*const websiteInfo = navigator.language === "de-DE" ? (
         <p>Diese Website wurde in <a className="bold">Vite</a> geschrieben und wird auf <a className="bold">GitHub Pages</a> gehostet.</p>
     ) : (
@@ -12,7 +13,7 @@ function Footer() {
     return (
         <div className="main-section">
             <a className="bold link block" href="https://github.com/JBNCK/janbiernacik.com">{sourceCodeLink}</a>
-            <Link className="bold link" to="/privacy" viewTransition>{privacyName}</Link>
+            <Link className="bold link" to={privacyUrl} viewTransition>{privacyName}</Link>
             <p>(c) 2025 Jan Biernacik</p>
         </div>
     );
