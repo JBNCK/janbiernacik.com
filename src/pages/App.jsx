@@ -4,9 +4,11 @@ import Timeline from '../components/Timeline/Timeline';
 import Footer from '../components/Footer/Footer';
 import RepoList from '../components/RepoList/RepoList';
 import fadeIn from '../scripts/fade-in';
+import changeTitle from '../scripts/change-title';
 
 function App() {
   fadeIn();
+  changeTitle();
 
   return (
     <div id='page'>

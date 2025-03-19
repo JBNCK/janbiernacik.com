@@ -1,9 +1,10 @@
 import PageHeader from '../components/PageHeader/PageHeader';
 import isGerman from '../scripts/is-german';
 import fadeIn from '../scripts/fade-in';
+import changeTitle from '../scripts/change-title';
 
 function Privacy() {
-   fadeIn();
+    fadeIn();
 
     const pageContent = isGerman() ? {
         pageTitle: "Datenschutz",
@@ -342,6 +343,8 @@ function Privacy() {
             </>
         )
     }
+
+    changeTitle(pageContent.pageTitle);
 
     return (
         <div id='page'>
