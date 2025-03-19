@@ -11,7 +11,7 @@ function App() {
   changeTitle();
 
   return (
-    <div id='page'>
+    <div className='page'>
       <HomePageBanner />
       <AboutMe />
       <Timeline />

@@ -347,7 +347,7 @@ function Privacy() {
     changeTitle(pageContent.pageTitle);
 
     return (
-        <div id='page'>
+        <div className='page'>
             <PageHeader pageTitle={pageContent.pageTitle} />
             {pageContent.privacyPolicyText}
         </div>

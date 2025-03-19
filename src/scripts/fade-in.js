@@ -5,7 +5,7 @@ function fadeIn() {
         window.scrollTo(0, 0);
     
         setTimeout(() => {
-          document.getElementById("page").style.opacity = "1";
+          document.querySelector(".page").style.opacity = "1";
         }, 1);
     });
 }
