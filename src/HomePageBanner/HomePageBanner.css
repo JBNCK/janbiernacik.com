@@ -47,7 +47,7 @@ p {
     .home-page-banner {
         align-content: space-around;
         flex-direction: row-reverse;
-        margin: var(--spacing-large) 0;
+        margin: var(--spacing-extra-large) 0;
         padding: 0 var(--spacing);
         width: 100%;
     }
