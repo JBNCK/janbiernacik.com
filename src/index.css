@@ -56,6 +56,11 @@ ul {
     margin-left: 20px;
 }
 
+#page {
+    opacity: 0;
+    transition: all .5s;
+}
+
 .main-section {
     margin: var(--spacing-extra-large) auto;
     max-width: 1200px;
@@ -78,6 +83,10 @@ ul {
 
 .main-section ul {
     margin: var(--spacing-small) 0 var(--spacing-small) 20px;
+}
+
+.main-section ul li {
+    margin: 10px 0;
 }
 
 .bold {

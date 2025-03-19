@@ -4,8 +4,12 @@ import { useEffect } from 'react';
 function Privacy() {
 
     useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+        window.scrollTo(0, 0);
+    
+        setTimeout(() => {
+          document.getElementById("page").style.opacity = "1";
+        }, 1);
+    });
 
     const title = navigator.language === "de-DE" ? "Datenschutz" : "Privacy";
     const privacyPolicy = navigator.language === "de-DE" ? (
@@ -153,9 +157,7 @@ function Privacy() {
                 <li><span>Rechtsgrundlagen:</span> Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO. Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO.</li>
                 </ul>
                 <p><span className="bold">Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:</span></p>
-                <ul>
-                <li>
-                    <span className="bold">Google Fonts (Bezug vom Google Server): </span>
+                <span className="bold">Google Fonts (Bezug vom Google Server): </span>
                     Bezug von Schriften (und Symbolen) zum Zwecke einer technisch sicheren, wartungsfreien und effizienten Nutzung von Schriften und Symbolen im Hinblick auf Aktualität und Ladezeiten, deren einheitliche Darstellung und Berücksichtigung möglicher lizenzrechtlicher Beschränkungen. Dem Anbieter der Schriftarten wird die IP-Adresse des Nutzers mitgeteilt, damit die Schriftarten im Browser des Nutzers zur Verfügung gestellt werden können. Darüber hinaus werden technische Daten (Spracheinstellungen, Bildschirmauflösung, Betriebssystem, verwendete Hardware) übermittelt, die für die Bereitstellung der Schriften in Abhängigkeit von den verwendeten Geräten und der technischen Umgebung notwendig sind. Diese Daten können auf einem Server des Anbieter der Schriftarten in den USA verarbeitet werden - Beim Besuch unseres Onlineangebotes senden die Browser der Nutzer ihre Browser HTTP-Anfragen an die Google Fonts Web API (d. h. eine Softwareschnittstelle für den Abruf der Schriftarten). Die Google Fonts Web API stellt den Nutzern die Cascading Style Sheets (CSS) von Google Fonts und danach die in der CCS angegebenen Schriftarten zur Verfügung. Zu diesen HTTP-Anfragen gehören (1) die vom jeweiligen Nutzer für den Zugriff auf das Internet verwendete IP-Adresse, (2) die angeforderte URL auf dem Google-Server und (3) die HTTP-Header, einschließlich des User-Agents, der die Browser- und Betriebssystemversionen der Websitebesucher beschreibt, sowie die Verweis-URL (d. h. die Webseite, auf der die Google-Schriftart angezeigt werden soll). IP-Adressen werden weder auf Google-Servern protokolliert noch gespeichert und sie werden nicht analysiert. Die Google Fonts Web API protokolliert Details der HTTP-Anfragen (angeforderte URL, User-Agent und Verweis-URL). Der Zugriff auf diese Daten ist eingeschränkt und streng kontrolliert. Die angeforderte URL identifiziert die Schriftfamilien, für die der Nutzer Schriftarten laden möchte. Diese Daten werden protokolliert, damit Google bestimmen kann, wie oft eine bestimmte Schriftfamilie angefordert wird. Bei der Google Fonts Web API muss der User-Agent die Schriftart anpassen, die für den jeweiligen Browsertyp generiert wird. Der User-Agent wird in erster Linie zum Debugging protokolliert und verwendet, um aggregierte Nutzungsstatistiken zu generieren, mit denen die Beliebtheit von Schriftfamilien gemessen wird. Diese zusammengefassten Nutzungsstatistiken werden auf der Seite „Analysen" von Google Fonts veröffentlicht. Schließlich wird die Verweis-URL protokolliert, sodass die Daten für die Wartung der Produktion verwendet und ein aggregierter Bericht zu den Top-Integrationen basierend auf der Anzahl der Schriftartenanfragen generiert werden kann. Google verwendet laut eigener Auskunft keine der von Google Fonts erfassten Informationen, um Profile von Endnutzern zu erstellen oder zielgerichtete Anzeigen zu schalten;
                     <span>Dienstanbieter:</span> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland;
                     <span> Rechtsgrundlagen:</span> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO;
@@ -163,8 +165,6 @@ function Privacy() {
                     <span> Datenschutzerklärung: </span> <a className="bold link" href="https://policies.google.com/privacy" target="_blank">https:<wbr></wbr>//policies.google.com/<wbr></wbr>privacy</a>;
                     <span> Grundlage Drittlandtransfers: </span> Data Privacy Framework (DPF).
                     <span> Weitere Informationen: </span> <a className="bold link" href="https://developers.google.com/fonts/faq/privacy?hl=de" target="_blank">https:<wbr></wbr>//developers.google.com/<wbr></wbr>fonts/<wbr></wbr>faq/<wbr></wbr>privacy?hl=de</a>.
-                </li>
-                </ul>
             </div>
         
             <div className="main-section">
@@ -322,8 +322,6 @@ function Privacy() {
                     <li><span>Legal bases:</span> Consent (Art. 6(1)(a) GDPR). Legitimate interests (Art. 6(1)(f) GDPR).</li>
                     </ul>
                     <p><span className="bold">Further information on processing operations, procedures, and services:</span></p>
-                    <ul>
-                    <li>
                         <span className="bold">Google Fonts (obtained from the Google server): </span>
                         Obtaining fonts (and symbols) for the purpose of technically secure, maintenance-free, and efficient use of fonts and symbols with regard to timeliness and loading times, their uniform presentation, and consideration of possible licensing restrictions. The provider of the fonts is informed of the user's IP address so that the fonts can be provided in the user's browser. In addition, technical data (language settings, screen resolution, operating system, hardware used) are transmitted, which are necessary for providing the fonts depending on the devices used and the technical environment. This data may be processed on a server of the font provider in the USA - When visiting our online offering, users' browsers send their browser HTTP requests to the Google Fonts Web API (i.e., a software interface for retrieving the fonts). The Google Fonts Web API provides users with the Cascading Style Sheets (CSS) from Google Fonts and then the fonts specified in the CSS. These HTTP requests include (1) the IP address used by the respective user to access the internet, (2) the requested URL on the Google server, and (3) the HTTP headers, including the user agent describing the browser and operating system versions of the website visitors, as well as the referral URL (i.e., the webpage where the Google font is to be displayed). IP addresses are neither logged nor stored on Google servers, and they are not analyzed. The Google Fonts Web API logs details of the HTTP requests (requested URL, user agent, and referral URL). Access to this data is restricted and strictly controlled. The requested URL identifies the font families for which the user wants to load fonts. This data is logged so that Google can determine how often a particular font family is requested. With the Google Fonts Web API, the user agent must adapt the font generated for the respective browser type. The user agent is primarily logged for debugging purposes and used to generate aggregated usage statistics to measure the popularity of font families. These aggregated usage statistics are published on the "Analytics" page of Google Fonts. Finally, the referral URL is logged so that the data can be used for production maintenance and an aggregated report on top integrations based on the number of font requests can be generated. According to its own statements, Google does not use any of the information collected by Google Fonts to create profiles of end users or to serve targeted advertisements;
                         <span>Service provider:</span> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland;
@@ -332,8 +330,6 @@ function Privacy() {
                         <span>Privacy policy:</span> <a className="bold link" href="https://policies.google.com/privacy" target="_blank">https:<wbr></wbr>//policies.google.com/<wbr></wbr>privacy</a>;
                         <span>Basis for third-country transfers:</span> Data Privacy Framework (DPF).
                         <span>Further information:</span> <a className="bold link" href="https://developers.google.com/fonts/faq/privacy?hl=de" target="_blank">https:<wbr></wbr>//developers.google.com/<wbr></wbr>fonts/<wbr></wbr>faq/<wbr></wbr>privacy?hl=de</a>.
-                    </li>
-                    </ul>
                 </div>
             
                 <div className="main-section">
@@ -349,10 +345,10 @@ function Privacy() {
     );
 
     return (
-        <>
+        <div id='page'>
         <GoBack title={title} />
         {privacyPolicy}
-        </>
+        </div>
     );
 }
 

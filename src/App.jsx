@@ -8,11 +8,15 @@ import { useEffect } from 'react';
 function App() {
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+
+    setTimeout(() => {
+      document.getElementById("page").style.opacity = "1";
+    }, 1);
+});
 
   return (
-    <>
+    <div id='page'>
       <HomePageBanner />
       <AboutMe />
       <Timeline />
@@ -20,7 +24,7 @@ function App() {
       <footer>
         <Footer />
       </footer>
-    </>
+    </div>
   );
 }
 
