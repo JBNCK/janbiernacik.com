@@ -12,7 +12,7 @@ function Footer() {
 
     return (
         <div className="main-section">
-            <a className="bold link block" href="https://github.com/JBNCK/janbiernacik.com">{componentContent.sourceCodeLinkText}</a>
+            <a className="bold link block" href="https://github.com/janjbnck/janbiernacik.com">{componentContent.sourceCodeLinkText}</a>
             <Link className="bold link" to="/privacy">{componentContent.privacyLinkText}</Link>
             <p>(c) 2025 Jan Biernacik</p>
         </div>

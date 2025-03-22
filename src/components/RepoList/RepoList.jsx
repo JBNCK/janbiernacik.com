@@ -12,12 +12,11 @@ function RepoList() {
     }
 
     useEffect(() => {
-        fetch('https://api.github.com/users/JBNCK/repos', {
+        fetch('https://api.github.com/users/janjbnck/repos', {
             method: 'GET',
         })
             .then(response => response.json())
             .then(data => setRepos(data))
-            .catch(error => console.error("Couldn't fetch repos"));
     }, []);
 
     return (
