@@ -9,7 +9,6 @@ import BackgroundElements from './components/BackgroundElements/BackgroundElemen
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <BackgroundElements />
     <Routes>
       <Route path="/" element={<App />} />
       <Route path='/privacy' element={<Privacy />} />

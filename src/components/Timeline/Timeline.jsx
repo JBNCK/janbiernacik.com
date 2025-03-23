@@ -3,6 +3,7 @@ import isGerman from "../../scripts/is-german";
 
 function Timeline() {
     const componentContent = isGerman() ? {
+        componentTitle: "Lebenslauf",
         timelineItems: [
             {
                 id: 4,
@@ -30,6 +31,7 @@ function Timeline() {
             }
         ]
     } : {
+        componentTitle: "Resume",
         timelineItems: [
             {
                 id: 4,

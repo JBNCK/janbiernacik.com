@@ -1,16 +1,10 @@
-* {
-    --frosted-glass-1: rgba(255,255,255,0.05);
-    --frosted-glass-2: rgba(255,255,255,0.1);
-}
-
-
 #timeline {
     border-left: solid 4px var(--text-paragraph);
 }
 
 .timeline-item {
     padding: var(--spacing-small);
-    border-radius: 8px;
+    border-radius: var(--corner-radius);
     padding: var(--spacing-small);
     cursor: default;
     margin: var(--spacing) 0 var(--spacing) var(--spacing-small);
@@ -38,10 +32,14 @@
     margin: 0 !important;
 }
 
+.timeline-item-name {
+    color: var(--text-highlight);
+}
+
 .timeline-item-type {
     background: var(--frosted-glass-2);
     border: 2px solid var(--frosted-glass-2);
-    color: var(--text-title);
+    color: var(--text-highlight);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 999px;

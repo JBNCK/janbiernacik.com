@@ -7,7 +7,7 @@
 }
 
 .home-page-banner-picture {
-    border-radius: 8px;
+    border-radius: var(--corner-radius);
     filter: brightness(.8);
     margin-right: var(--spacing);
     max-width: 250px;
@@ -19,12 +19,16 @@
 
 #my-name {
     font-family: 'IBM Plex Mono', monospace;
-    font-size: 42px;
-    padding-right: 4px;
+    font-size: 70px;
+    padding-right: 8px;
+}
+
+.greeting {
+    color: var(--text-highlight);
 }
 
 .social-icon:hover {
-    color: var(--text-title);
+    color: var(--text-highlight);
 }
 
 .social-icon-wrapper {
@@ -65,19 +69,29 @@ p {
     .home-page-banner-items-left h3 {
         font-size: large;
     }
+}
 
+@media screen and (max-width: 390px) {
     #my-name {
-        font-size: x-large;
+        font-size: 24px;
     }
 }
 
-@media screen and (min-width: 801px) and (max-width: 900px) {
-    .home-page-banner-items-left h3 {
-        font-size: x-large;
-    }
-
+@media screen and (min-width: 391px) and (max-width: 470px) {
     #my-name {
-        font-size: xx-large;
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-width: 471px) and (max-width: 600px) {
+    #my-name {
+        font-size: 36px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    #my-name {
+        font-size: 48px;
     }
 }
 

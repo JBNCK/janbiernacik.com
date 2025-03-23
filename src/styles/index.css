@@ -6,13 +6,25 @@
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
-    --background: #08121e;
+    --background: #1e1e1e;
+    --background-alt: #2d2d30;
+    --background-alt2: #3e3e42;
+    --background-transparent :#1e1e1e80;
+    --text-title: #139df0;
+    --text-paragraph: #aaaaab;
+    --text-highlight: #f5f5f6;
+    --frosted-glass-1: var(--background-alt);
+    --frosted-glass-2: var(--background-alt2);
+    --corner-radius: 4px;
+    /*--background: #08121e;
     --background-alt: #0c1c39;
     --background-alt2: #0a1a27;
     --background-transparent :#08121e80;
     --text-title: #f5f5f8;
     --text-paragraph: #aaaaaf;
     --text-highlight: #f5f5f8;
+    --frosted-glass-1: rgba(255,255,255,0.05);
+    --frosted-glass-2: rgba(255,255,255,0.1);*/
     --spacing: 40px;
     --spacing-small: 20px;
     --spacing-large: 80px;
@@ -35,6 +47,7 @@
     padding: 0;
     user-select: none;
     -webkit-user-select: none;
+    cursor: default;
     z-index: 1;
     line-height: 1.5em;
 }
@@ -69,7 +82,9 @@ ul {
 
 .main-section-title {
     margin-bottom: var(--spacing-small);
-    text-transform: uppercase;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-size: x-large;
 }
 
 .main-section-subtitle {
@@ -102,6 +117,7 @@ ul {
 
 .link:hover {
     color: var(--text-paragraph);
+    cursor: pointer;
 }
 
 .link-dark {
@@ -111,6 +127,7 @@ ul {
 
 .link-dark:hover {
     color: var(--text-highlight);
+    cursor: pointer;
 }
 
 .block {
@@ -119,6 +136,10 @@ ul {
 
 .social-icon {
     transition: all .25s;
+}
+
+.social-icon:hover {
+    cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {

@@ -25,7 +25,7 @@ function HomePageBanner() {
     return(
         <div className="home-page-banner">
             <div className="home-page-banner-items-left">
-                <h3>{componentContent.greeting}<br></br>
+                <h3 className='greeting'>{componentContent.greeting}<br></br>
                     <a id="my-name">Jan Biernacik</a>
                 </h3>
                 <div className="social-icon-wrapper">
@@ -35,7 +35,7 @@ function HomePageBanner() {
                     <a className='social-icon-link' href="mailto:jan@biernacik.dev"><i className="bi bi-envelope-fill social-icon"></i></a>
                 </div>
             </div>
-            <img className="home-page-banner-picture" src={memoji}></img>
+            <img className="home-page-banner-picture" draggable="false" src={memoji}></img>
         </div>
     );
 }
