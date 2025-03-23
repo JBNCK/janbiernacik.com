@@ -11,166 +11,98 @@ function Privacy() {
         privacyPolicyText: (
             <>
                 <div className="main-section">
-                    <h3 className="main-section-title">Präambel</h3>
-                    <p>Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als "Daten" bezeichnet) wir zu welchen Zwecken und in welchem Umfang verarbeiten. Die Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der Erbringung unserer Leistungen als auch insbesondere auf unseren Webseiten, in mobilen Applikationen sowie innerhalb externer Onlinepräsenzen, wie z. B. unserer Social-Media-Profile (nachfolgend zusammenfassend bezeichnet als "Onlineangebot").</p>
-                    <p>Die verwendeten Begriffe sind nicht geschlechtsspezifisch.</p>
-                    <p><a className='bold'>Stand:</a> 17. März 2025</p>
-                    <h3 className='main-section-subtitle'>Verantwortlicher</h3>
-                    <p>Jan Biernacik<br></br>E-Mail-Adresse: <a className="bold link" href="mailto:jan@biernacik.dev">jan@biernacik.dev</a></p>
+                    <h3 className="main-section-title">1. Datenschutz auf einen Blick</h3>
+                    <h3 className="main-section-subtitle">Allgemeine Hinweise</h3>
+                    <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung.</p>
+                    <h3 className="main-section-subtitle">Datenerfassung auf dieser Website</h3>
+                    <p>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</p>
+                    <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle" in dieser Datenschutzerklärung entnehmen.</p>
+                    <p>Wie erfassen wir Ihre Daten?</p>
+                    <p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.</p>
+                    <p>Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten.</p>
+                    <p>Wofür nutzen wir Ihre Daten?</p>
+                    <p>Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden. Sofern über die Website Verträge geschlossen oder angebahnt werden können, werden die übermittelten Daten auch für Vertragsangebote, Bestellungen oder sonstige Auftragsanfragen verarbeitet.</p>
+                    <p>Welche Rechte haben Sie bezüglich Ihrer Daten?</p>
+                    <p>Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenverarbeitung erteilt haben, können Sie diese Einwilligung jederzeit für die Zukunft widerrufen. Außerdem haben Sie das Recht, unter bestimmten Umständen die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Des Weiteren steht Ihnen ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.</p>
+                    <p>Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit an uns wenden.</p>
                 </div>
-            
+        
                 <div className="main-section">
-                    <h3 className="main-section-title">Übersicht der Verarbeitungen</h3>
-                    <p>Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer Verarbeitung zusammen und verweist auf die betroffenen Personen.</p>
-                    <h3 className='main-section-subtitle'>Arten der verarbeiteten Daten</h3>
+                    <h3 className="main-section-title">2. Hosting</h3>
+                    <h3 className="main-section-subtitle">Externes Hosting</h3>
+                    <p>Diese Website wird extern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf den Servern des Hosters / der Hoster gespeichert. Hierbei kann es sich v. a. um IP-Adressen, Kontaktanfragen, Meta- und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Websitezugriffe und sonstige Daten, die über eine Website generiert werden, handeln.</p>
+                    <p>Das externe Hosting erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter (Art. 6 Abs. 1 lit. f DSGVO). Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TDDDG umfasst. Die Einwilligung ist jederzeit widerrufbar.</p>
+                    <p>Unser(e) Hoster wird bzw. werden Ihre Daten nur insoweit verarbeiten, wie dies zur Erfüllung seiner Leistungspflichten erforderlich ist und unsere Weisungen in Bezug auf diese Daten befolgen.</p>
+                    <p>Wir setzen folgende(n) Hoster ein:</p>
+                    <p>GitHub, Inc.<br></br>88 Colin P Kelly Jr St<br></br>San Francisco<br></br>CA 94107<br></br>United States of America</p>
+                </div>
+        
+                <div className="main-section">
+                    <h3 className="main-section-title">3. Allgemeine Hinweise und Pflicht<wbr></wbr>informationen</h3>
+                    <h3 className="main-section-subtitle">Datenschutz</h3>
+                    <p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+                    <p>Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.</p>
+                    <p>Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+                    <h3 className="main-section-subtitle">Hinweis zur verantwortlichen Stelle</h3>
+                    <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
+                    <p>Jan Biernacik<br></br>E-Mail: <a className='link bold' href='mailto:jan@biernacik.dev'>jan@biernacik.dev</a></p>
+                    <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
+                    <h3 className="main-section-subtitle">Speicherdauer</h3>
+                    <p>Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe.</p>
+                    <h3 className="main-section-subtitle">Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website</h3>
+                    <p>Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer ausdrücklichen Einwilligung in die Übertragung personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO. Sofern Sie in die Speicherung von Cookies oder in den Zugriff auf Informationen in Ihr Endgerät (z. B. via Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung zusätzlich auf Grundlage von § 25 Abs. 1 TDDDG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur Vertragserfüllung oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, verarbeiten wir Ihre Daten auf Grundlage des Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern diese zur Erfüllung einer rechtlichen Verpflichtung erforderlich sind auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO. Die Datenverarbeitung kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO erfolgen. Über die jeweils im Einzelfall einschlägigen Rechtsgrundlagen wird in den folgenden Absätzen dieser Datenschutzerklärung informiert.</p>
+                    <h3 className="main-section-subtitle">Empfänger von personenbezogenen Daten</h3>
+                    <p>Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen. Dabei ist teilweise auch eine Übermittlung von personenbezogenen Daten an diese externen Stellen erforderlich. Wir geben personenbezogene Daten nur dann an externe Stellen weiter, wenn dies im Rahmen einer Vertragserfüllung erforderlich ist, wenn wir gesetzlich hierzu verpflichtet sind (z. B. Weitergabe von Daten an Steuerbehörden), wenn wir ein berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO an der Weitergabe haben oder wenn eine sonstige Rechtsgrundlage die Datenweitergabe erlaubt. Beim Einsatz von Auftragsverarbeitern geben wir personenbezogene Daten unserer Kunden nur auf Grundlage eines gültigen Vertrags über Auftragsverarbeitung weiter. Im Falle einer gemeinsamen Verarbeitung wird ein Vertrag über gemeinsame Verarbeitung geschlossen.</p>
+                    <h3 className="main-section-subtitle">Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
+                    <p>Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
+                    <h3 className="main-section-subtitle">Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)</h3>
+                    <p>WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRUCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).</p>
+                    <p>WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO).</p>
+                    <h3 className="main-section-subtitle">Beschwerderecht bei der zuständigen Aufsichtsbehörde</h3>
+                    <p>Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe.</p>
+                    <h3 className="main-section-subtitle">Recht auf Datenübertragbarkeit</h3>
+                    <p>Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>
+                    <h3 className="main-section-subtitle">Auskunft, Berichtigung und Löschung</h3>
+                    <p>Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden.</p>
+                    <h3 className="main-section-subtitle">Recht auf Einschränkung der Verarbeitung</h3>
+                    <p>Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:</p>
                     <ul>
-                    <li>Nutzungsdaten.</li>
-                    <li>Meta-, Kommunikations- und Verfahrensdaten.</li>
-                    <li>Protokolldaten.</li>
+                        <li>Wenn Sie die Richtigkeit Ihrer bei uns gespeicherten personenbezogenen Daten bestreiten, benötigen wir in der Regel Zeit, um dies zu überprüfen. Für die Dauer der Prüfung haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+                        <li>Wenn die Verarbeitung Ihrer personenbezogenen Daten unrechtmäßig geschah/geschieht, können Sie statt der Löschung die Einschränkung der Datenverarbeitung verlangen.</li>
+                        <li>Wenn wir Ihre personenbezogenen Daten nicht mehr benötigen, Sie sie jedoch zur Ausübung, Verteidigung oder Geltendmachung von Rechtsansprüchen benötigen, haben Sie das Recht, statt der Löschung die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
+                        <li>Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.</li>
                     </ul>
-                    <h3 className='main-section-subtitle'>Kategorien betroffener Personen</h3>
+                    <p>Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden.</p>
+                    <h3 className="main-section-subtitle">SSL- bzw. TLS-Verschlüsselung</h3>
+                    <p>Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.</p>
+                    <p>Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.</p>
+                </div>
+        
+                <div className="main-section">
+                    <h3 className="main-section-title">4. Datenerfassung auf dieser Website</h3>
+                    <h3 className="main-section-subtitle">Server-Log-Dateien</h3>
+                    <p>Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
                     <ul>
-                    <li>Nutzer.</li>
+                        <li>Browsertyp und Browserversion</li>
+                        <li>verwendetes Betriebssystem</li>
+                        <li>Referrer URL</li>
+                        <li>Hostname des zugreifenden Rechners</li>
+                        <li>Uhrzeit der Serveranfrage</li>
+                        <li>IP-Adresse</li>
                     </ul>
-                    <h3 className='main-section-subtitle'>Zwecke der Verarbeitung</h3>
-                    <ul>
-                    <li>Sicherheitsmaßnahmen.</li>
-                    <li>Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.</li>
-                    <li>Informationstechnische Infrastruktur.</li>
-                    </ul>
+                    <p>Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.</p>
+                    <p>Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der technisch fehlerfreien Darstellung und der Optimierung seiner Website – hierzu müssen die Server-Log-Files erfasst werden.</p>
                 </div>
-            
+        
                 <div className="main-section">
-                    <h3 className="main-section-title">Maßgebliche Rechtsgrundlagen</h3>
-                    <p>
-                    <span className="bold">Maßgebliche Rechtsgrundlagen nach der DSGVO: </span>
-                    Im Folgenden erhalten Sie eine Übersicht der Rechtsgrundlagen der DSGVO, auf deren Basis wir personenbezogene Daten verarbeiten. Bitte nehmen Sie zur Kenntnis, dass neben den Regelungen der DSGVO nationale Datenschutzvorgaben in Ihrem bzw. unserem Wohn- oder Sitzland gelten können. Sollten ferner im Einzelfall speziellere Rechtsgrundlagen maßgeblich sein, teilen wir Ihnen diese in der Datenschutzerklärung mit.
-                    </p>
-                    <ul>
-                    <li>
-                        <span className="bold">Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO: </span>
-                        Die betroffene Person hat ihre Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten für einen spezifischen Zweck oder mehrere bestimmte Zwecke gegeben.
-                    </li>
-                    <li>
-                        <span className="bold">Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO: </span>
-                        - die Verarbeitung ist zur Wahrung der berechtigten Interessen des Verantwortlichen oder eines Dritten notwendig, vorausgesetzt, dass die Interessen, Grundrechte und Grundfreiheiten der betroffenen Person, die den Schutz personenbezogener Daten verlangen, nicht überwiegen.
-                    </li>
-                    </ul>
-                    <p>
-                    <span className="bold">Nationale Datenschutzregelungen in Deutschland: </span>
-                    Zusätzlich zu den Datenschutzregelungen der DSGVO gelten nationale Regelungen zum Datenschutz in Deutschland. Hierzu gehört insbesondere das Gesetz zum Schutz vor Missbrauch personenbezogener Daten bei der Datenverarbeitung (Bundesdatenschutzgesetz – BDSG). Das BDSG enthält insbesondere Spezialregelungen zum Recht auf Auskunft, zum Recht auf Löschung, zum Widerspruchsrecht, zur Verarbeitung besonderer Kategorien personenbezogener Daten, zur Verarbeitung für andere Zwecke und zur Übermittlung sowie automatisierten Entscheidungsfindung im Einzelfall einschließlich Profiling. Ferner können Landesdatenschutzgesetze der einzelnen Bundesländer zur Anwendung gelangen.
-                    </p>
-                    <p>
-                    <span className="bold">Hinweis auf Geltung DSGVO und Schweizer DSG: </span>
-                    Diese Datenschutzhinweise dienen sowohl der Informationserteilung nach dem Schweizer DSG als auch nach der Datenschutzgrundverordnung (DSGVO). Aus diesem Grund bitten wir Sie zu beachten, dass aufgrund der breiteren räumlichen Anwendung und Verständlichkeit die Begriffe der DSGVO verwendet werden. Insbesondere statt der im Schweizer DSG verwendeten Begriffe „Bearbeitung" von „Personendaten", "überwiegendes Interesse" und "besonders schützenswerte Personendaten" werden die in der DSGVO verwendeten Begriffe „Verarbeitung" von „personenbezogenen Daten" sowie "berechtigtes Interesse" und "besondere Kategorien von Daten" verwendet. Die gesetzliche Bedeutung der Begriffe wird jedoch im Rahmen der Geltung des Schweizer DSG weiterhin nach dem Schweizer DSG bestimmt.
-                    </p>
-                </div>
-            
-                <div className="main-section">
-                    <h3 className="main-section-title">Sicherheitsmaßnahmen</h3>
-                    <p>Wir treffen nach Maßgabe der gesetzlichen Vorgaben unter Berücksichtigung des Stands der Technik, der Implementierungskosten und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung sowie der unterschiedlichen Eintrittswahrscheinlichkeiten und des Ausmaßes der Bedrohung der Rechte und Freiheiten natürlicher Personen geeignete technische und organisatorische Maßnahmen, um ein dem Risiko angemessenes Schutzniveau zu gewährleisten.</p>
-                    <p>Zu den Maßnahmen gehören insbesondere die Sicherung der Vertraulichkeit, Integrität und Verfügbarkeit von Daten durch Kontrolle des physischen und elektronischen Zugangs zu den Daten als auch des sie betreffenden Zugriffs, der Eingabe, der Weitergabe, der Sicherung der Verfügbarkeit und ihrer Trennung. Des Weiteren haben wir Verfahren eingerichtet, die eine Wahrnehmung von Betroffenenrechten, die Löschung von Daten und Reaktionen auf die Gefährdung der Daten gewährleisten. Ferner berücksichtigen wir den Schutz personenbezogener Daten bereits bei der Entwicklung bzw. Auswahl von Hardware, Software sowie Verfahren entsprechend dem Prinzip des Datenschutzes, durch Technikgestaltung und durch datenschutzfreundliche Voreinstellungen.</p>
-                    <p>Sicherung von Online-Verbindungen durch TLS-/SSL-Verschlüsselungstechnologie (HTTPS): Um die Daten der Nutzer, die über unsere Online-Dienste übertragen werden, vor unerlaubten Zugriffen zu schützen, setzen wir auf die TLS-/SSL-Verschlüsselungstechnologie. Secure Sockets Layer (SSL) und Transport Layer Security (TLS) sind die Eckpfeiler der sicheren Datenübertragung im Internet. Diese Technologien verschlüsseln die Informationen, die zwischen der Website oder App und dem Browser des Nutzers (oder zwischen zwei Servern) übertragen werden, wodurch die Daten vor unbefugtem Zugriff geschützt sind. TLS, als die weiterentwickelte und sicherere Version von SSL, gewährleistet, dass alle Datenübertragungen den höchsten Sicherheitsstandards entsprechen. Wenn eine Website durch ein SSL-/TLS-Zertifikat gesichert ist, wird dies durch die Anzeige von HTTPS in der URL signalisiert. Dies dient als ein Indikator für die Nutzer, dass ihre Daten sicher und verschlüsselt übertragen werden.</p>
-                </div>
-            
-                <div className="main-section">
-                    <h3 className="main-section-title">Übermittlung von personenbezogenen Daten</h3>
-                    <p>Im Rahmen unserer Verarbeitung von personenbezogenen Daten kommt es vor, dass diese an andere Stellen, Unternehmen, rechtlich selbstständige Organisationseinheiten oder Personen übermittelt beziehungsweise ihnen gegenüber offengelegt werden. Zu den Empfängern dieser Daten können z. B. mit IT-Aufgaben beauftragte Dienstleister gehören oder Anbieter von Diensten und Inhalten, die in eine Website eingebunden sind. In solchen Fällen beachten wir die gesetzlichen Vorgaben und schließen insbesondere entsprechende Verträge bzw. Vereinbarungen, die dem Schutz Ihrer Daten dienen, mit den Empfängern Ihrer Daten ab.</p>
-                </div>
-            
-                <div className="main-section">
-                    <h3 className="main-section-title">Internationale Datentransfers</h3>
-                    <p>
-                    Datenverarbeitung in Drittländern: Sofern wir Daten in einem Drittland (d. h., außerhalb der Europäischen Union (EU), des Europäischen Wirtschaftsraums (EWR)) verarbeiten oder die Verarbeitung im Rahmen der Inanspruchnahme von Diensten Dritter oder der Offenlegung bzw. Übermittlung von Daten an andere Personen, Stellen oder Unternehmen stattfindet, erfolgt dies nur im Einklang mit den gesetzlichen Vorgaben. Sofern das Datenschutzniveau in dem Drittland mittels eines Angemessenheitsbeschlusses anerkannt wurde (Art. 45 DSGVO), dient dieser als Grundlage des Datentransfers. Im Übrigen erfolgen Datentransfers nur dann, wenn das Datenschutzniveau anderweitig gesichert ist, insbesondere durch Standardvertragsklauseln (Art. 46 Abs. 2 lit. c) DSGVO), ausdrückliche Einwilligung oder im Fall vertraglicher oder gesetzlich erforderlicher Übermittlung (Art. 49 Abs. 1 DSGVO). Im Übrigen teilen wir Ihnen die Grundlagen der Drittlandübermittlung bei den einzelnen Anbietern aus dem Drittland mit, wobei die Angemessenheitsbeschlüsse als Grundlagen vorrangig gelten. Informationen zu Drittlandtransfers und vorliegenden Angemessenheitsbeschlüssen können dem Informationsangebot der EU-Kommission entnommen werden:
-                    <a className="bold link" href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection_en?prefLang=de" target="_blank">https:<wbr></wbr>//commission.europa.eu/<wbr></wbr>law/<wbr></wbr>law-topic/<wbr></wbr>data-protection/<wbr></wbr>international-dimension-data-protection_en?prefLang=de</a>. Im Rahmen des sogenannten „Data Privacy Framework" (DPF) hat die EU-Kommission das Datenschutzniveau ebenfalls für bestimmte Unternehmen aus den USA im Rahmen der Angemessenheitsbeschlusses vom 10.07.2023 als sicher anerkannt. Die Liste der zertifizierten Unternehmen als auch weitere Informationen zu dem DPF können Sie der Website des Handelsministeriums der USA unter 
-                    <a className="bold link" href="https://www.dataprivacyframework.gov/" target="_blank">https:<wbr></wbr>//www.dataprivacyframework.gov/<wbr></wbr></a> (in Englisch) entnehmen. Wir informieren Sie im Rahmen der Datenschutzhinweise, welche von uns eingesetzten Diensteanbieter unter dem Data Privacy Framework zertifiziert sind.
-                    </p>
-                </div>
-            
-                <div className="main-section">
-                    <h3 className="main-section-title">Allgemeine Informationen zur Datenspeicherung und Löschung</h3>
-                    <p>Wir löschen personenbezogene Daten, die wir verarbeiten, gemäß den gesetzlichen Bestimmungen, sobald die zugrundeliegenden Einwilligungen widerrufen werden oder keine weiteren rechtlichen Grundlagen für die Verarbeitung bestehen. Dies betrifft Fälle, in denen der ursprüngliche Verarbeitungszweck entfällt oder die Daten nicht mehr benötigt werden. Ausnahmen von dieser Regelung bestehen, wenn gesetzliche Pflichten oder besondere Interessen eine längere Aufbewahrung oder Archivierung der Daten erfordern.</p>
-                    <p>Insbesondere müssen Daten, die aus handels- oder steuerrechtlichen Gründen aufbewahrt werden müssen oder deren Speicherung notwendig ist zur Rechtsverfolgung oder zum Schutz der Rechte anderer natürlicher oder juristischer Personen, entsprechend archiviert werden.</p>
-                    <p>Unsere Datenschutzhinweise enthalten zusätzliche Informationen zur Aufbewahrung und Löschung von Daten, die speziell für bestimmte Verarbeitungsprozesse gelten.</p>
-                    <p>Bei mehreren Angaben zur Aufbewahrungsdauer oder Löschungsfristen eines Datums, ist stets die längste Frist maßgeblich.</p>
-                    <p>Beginnt eine Frist nicht ausdrücklich zu einem bestimmten Datum und beträgt sie mindestens ein Jahr, so startet sie automatisch am Ende des Kalenderjahres, in dem das fristauslösende Ereignis eingetreten ist. Im Fall laufender Vertragsverhältnisse, in deren Rahmen Daten gespeichert werden, ist das fristauslösende Ereignis der Zeitpunkt des Wirksamwerdens der Kündigung oder sonstige Beendigung des Rechtsverhältnisses.</p>
-                    <p>Daten, die nicht mehr für den ursprünglich vorgesehenen Zweck, sondern aufgrund gesetzlicher Vorgaben oder anderer Gründe aufbewahrt werden, verarbeiten wir ausschließlich zu den Gründen, die ihre Aufbewahrung rechtfertigen.</p>
-                    <p><span className="bold">Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:</span></p>
-                    <ul>
-                    <li>
-                        <span className="bold">Aufbewahrung und Löschung von Daten: </span>
-                        Die folgenden allgemeinen Fristen gelten für die Aufbewahrung und Archivierung nach deutschem Recht:
-                        <ul>
-                        <li>10 Jahre - Aufbewahrungsfrist für Bücher und Aufzeichnungen, Jahresabschlüsse, Inventare, Lageberichte, Eröffnungsbilanz sowie die zu ihrem Verständnis erforderlichen Arbeitsanweisungen und sonstigen Organisationsunterlagen (§ 147 Abs. 1 Nr. 1 i.V.m. Abs. 3 AO, § 14b Abs. 1 UStG, § 257 Abs. 1 Nr. 1 i.V.m. Abs. 4 HGB).</li>
-                        <li>8 Jahre - Buchungsbelege, wie z. B. Rechnungen und Kostenbelege (§ 147 Abs. 1 Nr. 4 und 4a i.V.m. Abs. 3 Satz 1 AO sowie § 257 Abs. 1 Nr. 4 i.V.m. Abs. 4 HGB).</li>
-                        <li>6 Jahre - Übrige Geschäftsunterlagen: empfangene Handels- oder Geschäftsbriefe, Wiedergaben der abgesandten Handels- oder Geschäftsbriefe, sonstige Unterlagen, soweit sie für die Besteuerung von Bedeutung sind, z. B. Stundenlohnzettel, Betriebsabrechnungsbögen, Kalkulationsunterlagen, Preisauszeichnungen, aber auch Lohnabrechnungsunterlagen, soweit sie nicht bereits Buchungsbelege sind und Kassenstreifen (§ 147 Abs. 1 Nr. 2, 3, 5 i.V.m. Abs. 3 AO, § 257 Abs. 1 Nr. 2 u. 3 i.V.m. Abs. 4 HGB).</li>
-                        <li>3 Jahre - Daten, die erforderlich sind, um potenzielle Gewährleistungs- und Schadensersatzansprüche oder ähnliche vertragliche Ansprüche und Rechte zu berücksichtigen sowie damit verbundene Anfragen zu bearbeiten, basierend auf früheren Geschäftserfahrungen und üblichen Branchenpraktiken, werden für die Dauer der regulären gesetzlichen Verjährungsfrist von drei Jahren gespeichert (§§ 195, 199 BGB).</li>
-                        </ul>
-                    </li>
-                    </ul>
-                </div>
-            
-                <div className="main-section">
-                    <h3 className="main-section-title">Bereitstellung des Onlineangebots und Webhosting</h3>
-                    <p>Wir verarbeiten die Daten der Nutzer, um ihnen unsere Online-Dienste zur Verfügung stellen zu können. Zu diesem Zweck verarbeiten wir die IP-Adresse des Nutzers, die notwendig ist, um die Inhalte und Funktionen unserer Online-Dienste an den Browser oder das Endgerät der Nutzer zu übermitteln.</p>
-                    <ul>
-                    <li><span className="bold">Verarbeitete Datenarten:</span> Nutzungsdaten (z. B. Seitenaufrufe und Verweildauer, Klickpfade, Nutzungsintensität und -frequenz, verwendete Gerätetypen und Betriebssysteme, Interaktionen mit Inhalten und Funktionen); Meta-, Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern, beteiligte Personen). Protokolldaten (z. B. Logfiles betreffend Logins oder den Abruf von Daten oder Zugriffszeiten.).</li>
-                    <li><span className="bold">Betroffene Personen:</span> Nutzer (z. B. Webseitenbesucher, Nutzer von Onlinediensten).</li>
-                    <li><span className="bold">Zwecke der Verarbeitung:</span> Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit; Informationstechnische Infrastruktur (Betrieb und Bereitstellung von Informationssystemen und technischen Geräten (Computer, Server etc.)). Sicherheitsmaßnahmen.</li>
-                    <li><span className="bold">Aufbewahrung und Löschung:</span> Löschung entsprechend Angaben im Abschnitt "Allgemeine Informationen zur Datenspeicherung und Löschung".</li>
-                    <li><span className="bold">Rechtsgrundlagen:</span> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).</li>
-                    </ul>
-                    <p><span className="bold">Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:</span></p>
-                    <ul>
-                    <li>
-                        <span className="bold">Erhebung von Zugriffsdaten und Logfiles: </span>
-                        Der Zugriff auf unser Onlineangebot wird in Form von sogenannten "Server-Logfiles" protokolliert. Zu den Serverlogfiles können die Adresse und der Name der abgerufenen Webseiten und Dateien, Datum und Uhrzeit des Abrufs, übertragene Datenmengen, Meldung über erfolgreichen Abruf, Browsertyp nebst Version, das Betriebssystem des Nutzers, Referrer URL (die zuvor besuchte Seite) und im Regelfall IP-Adressen und der anfragende Provider gehören. Die Serverlogfiles können zum einen zu Sicherheitszwecken eingesetzt werden, z. B. um eine Überlastung der Server zu vermeiden (insbesondere im Fall von missbräuchlichen Angriffen, sogenannten DDoS-Attacken), und zum anderen, um die Auslastung der Server und ihre Stabilität sicherzustellen;
-                        <span><span className="bold">Rechtsgrundlagen:</span> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO).</span>
-                        <span className="bold">Löschung von Daten:</span> Logfile-Informationen werden für die Dauer von maximal 30 Tagen gespeichert und danach gelöscht oder anonymisiert. Daten, deren weitere Aufbewahrung zu Beweiszwecken erforderlich ist, sind bis zur endgültigen Klärung des jeweiligen Vorfalls von der Löschung ausgenommen.
-                    </li>
-                    <li>
-                        <span className="bold">Hetzner: </span>
-                        Leistungen auf dem Gebiet der Bereitstellung von informationstechnischer Infrastruktur und verbundenen Dienstleistungen (z. B. Speicherplatz und/oder Rechenkapazitäten);
-                        <span className="bold"> Dienstanbieter:</span> Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Deutschland;
-                        <span><span className="bold"> Rechtsgrundlagen:</span> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO);</span>
-                        <span className="bold"> Website:</span> <a className="bold link" href="https://www.hetzner.com" target="_blank">https:<wbr></wbr>//www.hetzner.com</a>;
-                        <span className="bold"> Datenschutzerklärung:</span> <a className="bold link" href="https://www.hetzner.com/de/rechtliches/datenschutz" target="_blank">https:<wbr></wbr>//www.hetzner.com/<wbr></wbr>de/<wbr></wbr>rechtliches/<wbr></wbr>datenschutz</a>.
-                        <span className="bold"> Auftragsverarbeitungsvertrag:</span> <a className="bold link" href="https://docs.hetzner.com/de/general/general-terms-and-conditions/data-privacy-faq/" target="_blank">https:<wbr></wbr>//docs.hetzner.com/<wbr></wbr>de/<wbr></wbr>general/<wbr></wbr>general-terms-and-conditions/<wbr></wbr>data-privacy-faq/<wbr></wbr></a>.
-                    </li>
-                    </ul>
-                </div>
-            
-                <div className="main-section">
-                    <h3 className="main-section-title">Plug-ins und eingebettete Funktionen sowie Inhalte</h3>
-                    <p>Wir binden Funktions- und Inhaltselemente in unser Onlineangebot ein, die von den Servern ihrer jeweiligen Anbieter (nachfolgend als „Drittanbieter" bezeichnet) bezogen werden. Dabei kann es sich zum Beispiel um Grafiken, Videos oder Stadtpläne handeln (nachfolgend einheitlich als „Inhalte" bezeichnet).</p>
-                    <p>Die Einbindung setzt immer voraus, dass die Drittanbieter dieser Inhalte die IP-Adresse der Nutzer verarbeiten, da sie ohne IP-Adresse die Inhalte nicht an deren Browser senden könnten. Die IP-Adresse ist damit für die Darstellung dieser Inhalte oder Funktionen erforderlich. Wir bemühen uns, nur solche Inhalte zu verwenden, deren jeweilige Anbieter die IP-Adresse lediglich zur Auslieferung der Inhalte anzuwenden. Drittanbieter können ferner sogenannte Pixel-Tags (unsichtbare Grafiken, auch als „Web Beacons" bezeichnet) für statistische oder Marketingzwecke einsetzen. Durch die „Pixel-Tags" können Informationen, wie etwa der Besucherverkehr auf den Seiten dieser Website, ausgewertet werden. Die pseudonymen Informationen können darüber hinaus in Cookies auf dem Gerät der Nutzer gespeichert werden und unter anderem technische Auskünfte zum Browser und zum Betriebssystem, zu verweisenden Websites, zur Besuchszeit sowie weitere Angaben zur Nutzung unseres Onlineangebots enthalten, aber auch mit solchen Informationen aus anderen Quellen verbunden werden.</p>
-                    <p><span className="bold">Hinweise zu Rechtsgrundlagen:</span> Sofern wir die Nutzer um ihre Einwilligung in den Einsatz der Drittanbieter bitten, stellt die Rechtsgrundlage der Datenverarbeitung die Erlaubnis dar. Ansonsten werden die Nutzerdaten auf Grundlage unserer berechtigten Interessen (d. h. Interesse an effizienten, wirtschaftlichen und empfängerfreundlichen Leistungen) verarbeitet. In diesem Zusammenhang möchten wir Sie auch auf die Informationen zur Verwendung von Cookies in dieser Datenschutzerklärung hinweisen.</p>
-                    <ul>
-                    <li><span>Verarbeitete Datenarten:</span> Nutzungsdaten (z. B. Seitenaufrufe und Verweildauer, Klickpfade, Nutzungsintensität und -frequenz, verwendete Gerätetypen und Betriebssysteme, Interaktionen mit Inhalten und Funktionen). Meta-, Kommunikations- und Verfahrensdaten (z. B. IP-Adressen, Zeitangaben, Identifikationsnummern, beteiligte Personen).</li>
-                    <li><span>Betroffene Personen:</span> Nutzer (z. B. Webseitenbesucher, Nutzer von Onlinediensten).</li>
-                    <li><span>Zwecke der Verarbeitung:</span> Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.</li>
-                    <li><span>Aufbewahrung und Löschung:</span> Löschung entsprechend Angaben im Abschnitt "Allgemeine Informationen zur Datenspeicherung und Löschung". Speicherung von Cookies von bis zu 2 Jahren (Sofern nicht anders angegeben, können Cookies und ähnliche Speichermethoden für einen Zeitraum von zwei Jahren auf den Geräten der Nutzer gespeichert werden.).</li>
-                    <li><span>Rechtsgrundlagen:</span> Einwilligung (Art. 6 Abs. 1 S. 1 lit. a) DSGVO. Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO.</li>
-                    </ul>
-                    <p><span className="bold">Weitere Hinweise zu Verarbeitungsprozessen, Verfahren und Diensten:</span></p>
-                    <span className="bold">Google Fonts (Bezug vom Google Server): </span>
-                        Bezug von Schriften (und Symbolen) zum Zwecke einer technisch sicheren, wartungsfreien und effizienten Nutzung von Schriften und Symbolen im Hinblick auf Aktualität und Ladezeiten, deren einheitliche Darstellung und Berücksichtigung möglicher lizenzrechtlicher Beschränkungen. Dem Anbieter der Schriftarten wird die IP-Adresse des Nutzers mitgeteilt, damit die Schriftarten im Browser des Nutzers zur Verfügung gestellt werden können. Darüber hinaus werden technische Daten (Spracheinstellungen, Bildschirmauflösung, Betriebssystem, verwendete Hardware) übermittelt, die für die Bereitstellung der Schriften in Abhängigkeit von den verwendeten Geräten und der technischen Umgebung notwendig sind. Diese Daten können auf einem Server des Anbieter der Schriftarten in den USA verarbeitet werden - Beim Besuch unseres Onlineangebotes senden die Browser der Nutzer ihre Browser HTTP-Anfragen an die Google Fonts Web API (d. h. eine Softwareschnittstelle für den Abruf der Schriftarten). Die Google Fonts Web API stellt den Nutzern die Cascading Style Sheets (CSS) von Google Fonts und danach die in der CCS angegebenen Schriftarten zur Verfügung. Zu diesen HTTP-Anfragen gehören (1) die vom jeweiligen Nutzer für den Zugriff auf das Internet verwendete IP-Adresse, (2) die angeforderte URL auf dem Google-Server und (3) die HTTP-Header, einschließlich des User-Agents, der die Browser- und Betriebssystemversionen der Websitebesucher beschreibt, sowie die Verweis-URL (d. h. die Webseite, auf der die Google-Schriftart angezeigt werden soll). IP-Adressen werden weder auf Google-Servern protokolliert noch gespeichert und sie werden nicht analysiert. Die Google Fonts Web API protokolliert Details der HTTP-Anfragen (angeforderte URL, User-Agent und Verweis-URL). Der Zugriff auf diese Daten ist eingeschränkt und streng kontrolliert. Die angeforderte URL identifiziert die Schriftfamilien, für die der Nutzer Schriftarten laden möchte. Diese Daten werden protokolliert, damit Google bestimmen kann, wie oft eine bestimmte Schriftfamilie angefordert wird. Bei der Google Fonts Web API muss der User-Agent die Schriftart anpassen, die für den jeweiligen Browsertyp generiert wird. Der User-Agent wird in erster Linie zum Debugging protokolliert und verwendet, um aggregierte Nutzungsstatistiken zu generieren, mit denen die Beliebtheit von Schriftfamilien gemessen wird. Diese zusammengefassten Nutzungsstatistiken werden auf der Seite „Analysen" von Google Fonts veröffentlicht. Schließlich wird die Verweis-URL protokolliert, sodass die Daten für die Wartung der Produktion verwendet und ein aggregierter Bericht zu den Top-Integrationen basierend auf der Anzahl der Schriftartenanfragen generiert werden kann. Google verwendet laut eigener Auskunft keine der von Google Fonts erfassten Informationen, um Profile von Endnutzern zu erstellen oder zielgerichtete Anzeigen zu schalten;
-                        <span>Dienstanbieter:</span> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland;
-                        <span> Rechtsgrundlagen:</span> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO;
-                        <span> Website: </span> <a className="bold link" href="https://fonts.google.com/" target="_blank">https:<wbr></wbr>//fonts.google.com/<wbr></wbr></a>;
-                        <span> Datenschutzerklärung: </span> <a className="bold link" href="https://policies.google.com/privacy" target="_blank">https:<wbr></wbr>//policies.google.com/<wbr></wbr>privacy</a>;
-                        <span> Grundlage Drittlandtransfers: </span> Data Privacy Framework (DPF).
-                        <span> Weitere Informationen: </span> <a className="bold link" href="https://developers.google.com/fonts/faq/privacy?hl=de" target="_blank">https:<wbr></wbr>//developers.google.com/<wbr></wbr>fonts/<wbr></wbr>faq/<wbr></wbr>privacy?hl=de</a>.
-                </div>
-            
-                <div className="main-section">
-                    <h3 className="main-section-title">Änderung und Aktualisierung</h3>
-                    <p>Wir bitten Sie, sich regelmäßig über den Inhalt unserer Datenschutzerklärung zu informieren. Wir passen die Datenschutzerklärung an, sobald die Änderungen der von uns durchgeführten Datenverarbeitungen dies erforderlich machen. Wir informieren Sie, sobald durch die Änderungen eine Mitwirkungshandlung Ihrerseits (z. B. Einwilligung) oder eine sonstige individuelle Benachrichtigung erforderlich wird.</p>
-                    <p>Sofern wir in dieser Datenschutzerklärung Adressen und Kontaktinformationen von Unternehmen und Organisationen angeben, bitten wir zu beachten, dass die Adressen sich über die Zeit ändern können und bitten die Angaben vor Kontaktaufnahme zu prüfen.</p>
-                    <p className="seal">
-                    <a className="bold link" href="https://datenschutz-generator.de/" title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken." target="_blank" rel="noopener noreferrer nofollow">Erstellt mit kostenlosem Datenschutz-Generator.de von Dr. Thomas Schwenke </a>
-                    <i className="bi bi-arrow-up-right-square-fill"></i>
-                    </p>
+                    <h3 className="main-section-title">5. Plugins und Tools</h3>
+                    <h3 className="main-section-subtitle">Google Fonts</h3>
+                    <p>Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Google Fonts, die von Google bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Fonts in ihren Browsercache, um Texte und Schriftarten korrekt anzuzeigen.</p>
+                    <p>Zu diesem Zweck muss der von Ihnen verwendete Browser Verbindung zu den Servern von Google aufnehmen. Hierdurch erlangt Google Kenntnis darüber, dass über Ihre IP-Adresse diese Website aufgerufen wurde. Die Nutzung von Google Fonts erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Der Websitebetreiber hat ein berechtigtes Interesse an der einheitlichen Darstellung des Schriftbildes auf seiner Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TDDDG umfasst. Die Einwilligung ist jederzeit widerrufbar.</p>
+                    <p>Wenn Ihr Browser Google Fonts nicht unterstützt, wird eine Standardschrift von Ihrem Computer genutzt.</p>
+                    <p>Weitere Informationen zu Google Fonts finden Sie unter <a className='bold link' href="https://developers.google.com/fonts/faq">https://<wbr></wbr>developers.<wbr></wbr>google.<wbr></wbr>com/<wbr></wbr>fonts/<wbr></wbr>faq</a> und in der Datenschutzerklärung von Google: <a className='bold link' href="https://policies.google.com/privacy?hl=de">https://<wbr></wbr>policies.<wbr></wbr>google.<wbr></wbr>com/<wbr></wbr>privacy?<wbr></wbr>hl=de</a>.</p>
+                    <p>Das Unternehmen verfügt über eine Zertifizierung nach dem „EU-US Data Privacy Framework“ (DPF). Der DPF ist ein Übereinkommen zwischen der Europäischen Union und den USA, der die Einhaltung europäischer Datenschutzstandards bei Datenverarbeitungen in den USA gewährleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich, diese Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom Anbieter unter folgendem Link: <a className='bold link' href="https://www.dataprivacyframework.gov/participant/5780">https://<wbr></wbr>www.<wbr></wbr>dataprivacyframework.<wbr></wbr>gov/<wbr></wbr>participant/<wbr></wbr>5780</a>.</p>
+                    <p>Quelle: <a className='bold link' href="https://www.e-recht24.de">https://<wbr></wbr>www.<wbr></wbr>e-recht24.<wbr></wbr>de</a></p>
                 </div>
             </>
         )
@@ -179,166 +111,98 @@ function Privacy() {
         privacyPolicyText: (
             <>
                 <div className="main-section">
-                    <h3 className="main-section-title">Preamble</h3>
-                    <p>With the following privacy policy, we would like to inform you about the types of your personal data (hereinafter also referred to as "data") that we process, for what purposes, and to what extent. The privacy policy applies to all processing of personal data carried out by us, both in the context of providing our services and, in particular, on our websites, in mobile applications, and within external online presences, such as our social media profiles (hereinafter collectively referred to as "online offering").</p>
-                    <p>The terms used are not gender-specific.</p>
-                    <p><a className='bold'>As of:</a> March 17, 2025</p>
-                    <h3>Controller</h3>
-                    <p>Jan Biernacik<br></br>Email address: <a className="bold link" href="mailto:jan@biernacik.dev">jan@biernacik.dev</a></p>
+                    <h3 className="main-section-title">1. Privacy at a Glance</h3>
+                    <h3 className="main-section-subtitle">General Information</h3>
+                    <p>The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can be used to identify you personally. For detailed information on data protection, please refer to our privacy policy listed below this text.</p>
+                    <h3 className="main-section-subtitle">Data Collection on This Website</h3>
+                    <p>Who is responsible for data collection on this website?</p>
+                    <p>The data processing on this website is carried out by the website operator. You can find their contact details in the section “Information on the Responsible Entity” in this privacy policy.</p>
+                    <p>How do we collect your data?</p>
+                    <p>Your data is collected, on the one hand, by you providing it to us. This may include, for example, data you enter into a contact form.</p>
+                    <p>Other data is collected automatically or with your consent by our IT systems when you visit the website. This primarily includes technical data (e.g., internet browser, operating system, or time of page access). This data is collected automatically as soon as you enter this website.</p>
+                    <p>What do we use your data for?</p>
+                    <p>Some of the data is collected to ensure the error-free provision of the website. Other data may be used to analyze your user behavior. If contracts can be concluded or initiated via the website, the transmitted data will also be processed for contract offers, orders, or other service requests.</p>
+                    <p>What rights do you have regarding your data?</p>
+                    <p>You have the right at any time to receive information free of charge about the origin, recipients, and purpose of your stored personal data. You also have the right to request the correction or deletion of this data. If you have given consent to data processing, you can revoke this consent at any time for the future. Additionally, you have the right, under certain circumstances, to request the restriction of the processing of your personal data. Furthermore, you have the right to lodge a complaint with the competent supervisory authority.</p>
+                    <p>You can contact us at any time regarding this or any further questions about data protection.</p>
                 </div>
-            
+        
                 <div className="main-section">
-                    <h3 className="main-section-title">Overview of Processing</h3>
-                    <p>The following overview summarizes the types of data processed and the purposes of their processing and refers to the data subjects.</p>
-                    <h3>Types of Data Processed</h3>
+                    <h3 className="main-section-title">2. Hosting</h3>
+                    <h3 className="main-section-subtitle">External Hosting</h3>
+                    <p>This website is hosted externally. The personal data collected on this website is stored on the servers of the host(s). This may include, in particular, IP addresses, contact requests, metadata and communication data, contract data, contact details, names, website accesses, and other data generated via a website.</p>
+                    <p>External hosting is carried out for the purpose of fulfilling contracts with our potential and existing customers (Art. 6(1)(b) GDPR) and in the interest of a secure, fast, and efficient provision of our online offer by a professional provider (Art. 6(1)(f) GDPR). If corresponding consent has been obtained, processing is carried out exclusively on the basis of Art. 6(1)(a) GDPR and § 25(1) TDDDG, insofar as the consent includes the storage of cookies or access to information on the user’s device (e.g., device fingerprinting) within the meaning of the TDDDG. Consent can be revoked at any time.</p>
+                    <p>Our host(s) will only process your data to the extent necessary to fulfill their performance obligations and will follow our instructions regarding this data.</p>
+                    <p>We use the following host:</p>
+                    <p>GitHub, Inc.<br></br>88 Colin P Kelly Jr St<br></br>San Francisco<br></br>CA 94107<br></br>United States of America</p>
+                </div>
+        
+                <div className="main-section">
+                    <h3 className="main-section-title">3. General Information and Mandatory Information</h3>
+                    <h3 className="main-section-subtitle">Data Protection</h3>
+                    <p>The operators of this website take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with statutory data protection regulations and this privacy policy.</p>
+                    <p>When you use this website, various personal data is collected. Personal data is data with which you can be personally identified. This privacy policy explains what data we collect and what we use it for. It also explains how and for what purpose this happens.</p>
+                    <p>We point out that data transmission over the internet (e.g., communication via email) may have security vulnerabilities. Complete protection of data against access by third parties is not possible.</p>
+                    <h3 className="main-section-subtitle">Information on the Responsible Entity</h3>
+                    <p>The entity responsible for data processing on this website is:</p>
+                    <p>Jan Biernacik<br></br>Email: <a className='link bold' href='mailto:jan@biernacik.dev'>jan@biernacik.dev</a></p>
+                    <p>The responsible entity is the natural or legal person who, alone or jointly with others, decides on the purposes and means of processing personal data (e.g., names, email addresses, etc.).</p>
+                    <h3 className="main-section-subtitle">Storage Duration</h3>
+                    <p>Unless a more specific storage period is stated within this privacy policy, your personal data will remain with us until the purpose for the data processing no longer applies. If you assert a legitimate request for deletion or revoke your consent to data processing, your data will be deleted unless we have other legally permissible reasons for storing your personal data (e.g., tax or commercial retention periods); in the latter case, deletion will occur after these reasons cease to apply.</p>
+                    <h3 className="main-section-subtitle">General Information on the Legal Basis for Data Processing on This Website</h3>
+                    <p>If you have consented to data processing, we process your personal data based on Art. 6(1)(a) GDPR or Art. 9(2)(a) GDPR if special categories of data under Art. 9(1) GDPR are processed. In the case of explicit consent to the transfer of personal data to third countries, data processing is also based on Art. 49(1)(a) GDPR. If you have consented to the storage of cookies or access to information on your device (e.g., via device fingerprinting), data processing is additionally based on § 25(1) TDDDG. Consent can be revoked at any time. If your data is required for contract fulfillment or to carry out pre-contractual measures, we process your data based on Art. 6(1)(b) GDPR. Furthermore, we process your data if it is necessary to fulfill a legal obligation based on Art. 6(1)(c) GDPR. Data processing may also be carried out based on our legitimate interest under Art. 6(1)(f) GDPR. The relevant legal bases in each individual case are explained in the following sections of this privacy policy.</p>
+                    <h3 className="main-section-subtitle">Recipients of Personal Data</h3>
+                    <p>In the course of our business activities, we work with various external entities. This sometimes requires the transfer of personal data to these external entities. We only pass on personal data to external entities if this is necessary for contract fulfillment, if we are legally obliged to do so (e.g., transferring data to tax authorities), if we have a legitimate interest under Art. 6(1)(f) GDPR in the transfer, or if another legal basis permits the data transfer. When using data processors, we only transfer personal data of our customers based on a valid data processing agreement. In the case of joint processing, a joint processing agreement is concluded.</p>
+                    <h3 className="main-section-subtitle">Revocation of Your Consent to Data Processing</h3>
+                    <p>Many data processing operations are only possible with your explicit consent. You can revoke consent you have already given at any time. The legality of the data processing carried out until the revocation remains unaffected by the revocation.</p>
+                    <h3 className="main-section-subtitle">Right to Object to Data Collection in Special Cases and to Direct Marketing (Art. 21 GDPR)</h3>
+                    <p>IF DATA PROCESSING IS BASED ON ART. 6(1)(E) OR (F) GDPR, YOU HAVE THE RIGHT TO OBJECT TO THE PROCESSING OF YOUR PERSONAL DATA AT ANY TIME FOR REASONS ARISING FROM YOUR PARTICULAR SITUATION; THIS ALSO APPLIES TO PROFILING BASED ON THESE PROVISIONS. THE RESPECTIVE LEGAL BASIS ON WHICH PROCESSING IS BASED CAN BE FOUND IN THIS PRIVACY POLICY. IF YOU OBJECT, WE WILL NO LONGER PROCESS YOUR AFFECTED PERSONAL DATA UNLESS WE CAN DEMONSTRATE COMPELLING LEGITIMATE GROUNDS FOR THE PROCESSING THAT OVERRIDE YOUR INTERESTS, RIGHTS, AND FREEDOMS, OR THE PROCESSING SERVES THE ASSERTION, EXERCISE, OR DEFENSE OF LEGAL CLAIMS (OBJECTION UNDER ART. 21(1) GDPR).</p>
+                    <p>IF YOUR PERSONAL DATA IS PROCESSED FOR DIRECT MARKETING PURPOSES, YOU HAVE THE RIGHT TO OBJECT AT ANY TIME TO THE PROCESSING OF PERSONAL DATA CONCERNING YOU FOR SUCH MARKETING; THIS ALSO APPLIES TO PROFILING TO THE EXTENT THAT IT IS RELATED TO SUCH DIRECT MARKETING. IF YOU OBJECT, YOUR PERSONAL DATA WILL SUBSEQUENTLY NO LONGER BE USED FOR DIRECT MARKETING PURPOSES (OBJECTION UNDER ART. 21(2) GDPR).</p>
+                    <h3 className="main-section-subtitle">Right to Lodge a Complaint with the Competent Supervisory Authority</h3>
+                    <p>In the event of violations of the GDPR, data subjects have the right to lodge a complaint with a supervisory authority, in particular in the Member State of their habitual residence, place of work, or the place of the alleged violation. The right to lodge a complaint exists without prejudice to other administrative or judicial remedies.</p>
+                    <h3 className="main-section-subtitle">Right to Data Portability</h3>
+                    <p>You have the right to have data that we process automatically based on your consent or in fulfillment of a contract handed over to you or a third party in a common, machine-readable format. If you request the direct transfer of the data to another controller, this will only be done if it is technically feasible.</p>
+                    <h3 className="main-section-subtitle">Information, Correction, and Deletion</h3>
+                    <p>Within the framework of applicable legal provisions, you have the right at any time to free information about your stored personal data, its origin, and recipients, and the purpose of the data processing, and, if applicable, a right to correction or deletion of this data. You can contact us at any time regarding this or any further questions about personal data.</p>
+                    <h3 className="main-section-subtitle">Right to Restriction of Processing</h3>
+                    <p>You have the right to request the restriction of the processing of your personal data. You can contact us at any time regarding this. The right to restriction of processing exists in the following cases:</p>
                     <ul>
-                    <li>Usage data.</li>
-                    <li>Meta, communication, and procedural data.</li>
-                    <li>Log data.</li>
+                        <li>If you dispute the accuracy of your personal data stored by us, we usually need time to verify this. During the verification period, you have the right to request the restriction of the processing of your personal data.</li>
+                        <li>If the processing of your personal data was/is unlawful, you can request the restriction of data processing instead of deletion.</li>
+                        <li>If we no longer need your personal data, but you need it to exercise, defend, or assert legal claims, you have the right to request the restriction of the processing of your personal data instead of deletion.</li>
+                        <li>If you have lodged an objection under Art. 21(1) GDPR, a balancing of your and our interests must be carried out. As long as it is not yet clear whose interests prevail, you have the right to request the restriction of the processing of your personal data.</li>
                     </ul>
-                    <h3>Categories of Data Subjects</h3>
+                    <p>If you have restricted the processing of your personal data, this data – apart from its storage – may only be processed with your consent or for the assertion, exercise, or defense of legal claims or to protect the rights of another natural or legal person or for reasons of important public interest of the European Union or a Member State.</p>
+                    <h3 className="main-section-subtitle">SSL or TLS Encryption</h3>
+                    <p>For security reasons and to protect the transmission of confidential content, such as orders or inquiries that you send to us as the website operator, this site uses SSL or TLS encryption. You can recognize an encrypted connection by the fact that the address bar of the browser changes from “http://” to “https://” and by the lock symbol in your browser line.</p>
+                    <p>If SSL or TLS encryption is activated, the data you transmit to us cannot be read by third parties.</p>
+                </div>
+        
+                <div className="main-section">
+                    <h3 className="main-section-title">4. Data Collection on This Website</h3>
+                    <h3 className="main-section-subtitle">Server Log Files</h3>
+                    <p>The provider of the pages automatically collects and stores information in so-called server log files, which your browser automatically transmits to us. These are:</p>
                     <ul>
-                    <li>Users.</li>
+                        <li>Browser type and browser version</li>
+                        <li>Operating system used</li>
+                        <li>Referrer URL</li>
+                        <li>Hostname of the accessing computer</li>
+                        <li>Time of the server request</li>
+                        <li>IP address</li>
                     </ul>
-                    <h3>Purposes of Processing</h3>
-                    <ul>
-                    <li>Security measures.</li>
-                    <li>Provision of our online offering and user-friendliness.</li>
-                    <li>Information technology infrastructure.</li>
-                    </ul>
+                    <p>This data is not merged with other data sources.</p>
+                    <p>The collection of this data is based on Art. 6(1)(f) GDPR. The website operator has a legitimate interest in the technically error-free presentation and optimization of their website – for this purpose, the server log files must be recorded.</p>
                 </div>
-            
+        
                 <div className="main-section">
-                    <h3 className="main-section-title">Relevant Legal Bases</h3>
-                    <p>
-                    <span className="bold">Relevant legal bases under the GDPR: </span>
-                    Below, you will find an overview of the legal bases of the GDPR on which we process personal data. Please note that, in addition to the provisions of the GDPR, national data protection regulations may apply in your or our country of residence or domicile. Should more specific legal bases be relevant in individual cases, we will inform you of these in the privacy policy.
-                    </p>
-                    <ul>
-                    <li>
-                        <span className="bold">Consent (Art. 6(1)(a) GDPR): </span>
-                        The data subject has given consent to the processing of their personal data for one or more specific purposes.
-                    </li>
-                    <li>
-                        <span className="bold">Legitimate Interests (Art. 6(1)(f) GDPR): </span>
-                        Processing is necessary for the purposes of the legitimate interests pursued by the controller or a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject that require the protection of personal data.
-                    </li>
-                    </ul>
-                    <p>
-                    <span className="bold">National data protection regulations in Germany: </span>
-                    In addition to the data protection regulations of the GDPR, national data protection regulations apply in Germany. This includes, in particular, the Federal Data Protection Act (Bundesdatenschutzgesetz – BDSG), which contains specific provisions on the right to information, the right to erasure, the right to object, the processing of special categories of personal data, processing for other purposes, and transmission, as well as automated decision-making in individual cases, including profiling. Furthermore, data protection laws of the individual federal states may also apply.
-                    </p>
-                    <p>
-                    <span className="bold">Note on the applicability of the GDPR and Swiss DSG: </span>
-                    These privacy notices serve to provide information under both the Swiss Federal Act on Data Protection (DSG) and the General Data Protection Regulation (GDPR). For this reason, please note that, due to broader spatial application and comprehensibility, the terms of the GDPR are used. In particular, instead of the terms "processing" of "personal data," "overriding interest," and "particularly sensitive personal data" used in the Swiss DSG, the terms "processing" of "personal data," "legitimate interest," and "special categories of data" as used in the GDPR are applied. However, the legal meaning of the terms will continue to be determined under the Swiss DSG where applicable.
-                    </p>
-                </div>
-            
-                <div className="main-section">
-                    <h3 className="main-section-title">Security Measures</h3>
-                    <p>In accordance with legal requirements and taking into account the state of the art, implementation costs, and the nature, scope, circumstances, and purposes of the processing, as well as the varying likelihood and severity of risks to the rights and freedoms of natural persons, we implement appropriate technical and organizational measures to ensure a level of protection appropriate to the risk.</p>
-                    <p>These measures include, in particular, ensuring the confidentiality, integrity, and availability of data by controlling physical and electronic access to the data, as well as access, input, disclosure, availability, and separation of the data. Furthermore, we have established procedures to ensure the exercise of data subjects' rights, the deletion of data, and responses to data breaches. Additionally, we consider the protection of personal data during the development or selection of hardware, software, and processes in accordance with the principle of data protection by design and default settings.</p>
-                    <p>Securing online connections using TLS/SSL encryption technology (HTTPS): To protect user data transmitted via our online services from unauthorized access, we use TLS/SSL encryption technology. Secure Sockets Layer (SSL) and Transport Layer Security (TLS) are the cornerstones of secure data transmission on the internet. These technologies encrypt the information transmitted between the website or app and the user's browser (or between two servers), protecting the data from unauthorized access. TLS, as the more advanced and secure version of SSL, ensures that all data transmissions meet the highest security standards. When a website is secured with an SSL/TLS certificate, this is indicated by the display of HTTPS in the URL. This serves as an indicator to users that their data is being transmitted securely and encrypted.</p>
-                </div>
-            
-                <div className="main-section">
-                    <h3 className="main-section-title">Transmission of Personal Data</h3>
-                    <p>In the course of our processing of personal data, it may happen that this data is transmitted to or disclosed to other entities, companies, legally independent organizational units, or persons. Recipients of this data may include, for example, service providers tasked with IT functions or providers of services and content embedded in a website. In such cases, we comply with legal requirements and, in particular, conclude appropriate contracts or agreements with the recipients of your data to ensure the protection of your data.</p>
-                </div>
-            
-                <div className="main-section">
-                    <h3 className="main-section-title">International Data Transfers</h3>
-                    <p>
-                    Data processing in third countries: If we process data in a third country (i.e., outside the European Union (EU) or the European Economic Area (EEA)), or if processing occurs in the context of using third-party services or disclosing or transferring data to other persons, entities, or companies, this is done only in accordance with legal requirements. If the level of data protection in the third country has been recognized by an adequacy decision (Art. 45 GDPR), this serves as the basis for the data transfer. Otherwise, data transfers only occur if the level of data protection is otherwise ensured, in particular through standard contractual clauses (Art. 46(2)(c) GDPR), explicit consent, or in the case of contractual or legally required transfers (Art. 49(1) GDPR). Furthermore, we will inform you of the basis for third-country transfers with the respective providers from the third country, with adequacy decisions taking precedence. Information on third-country transfers and existing adequacy decisions can be obtained from the information provided by the EU Commission: 
-                    <a className="bold link" href="https://commission.europa.eu/law/law-topic/data-protection/international-dimension-data-protection_en?prefLang=de" target="_blank">https:<wbr></wbr>//commission.europa.eu/<wbr></wbr>law/<wbr></wbr>law-topic/<wbr></wbr>data-protection/<wbr></wbr>international-dimension-data-protection_en?prefLang=de</a>. As part of the so-called "Data Privacy Framework" (DPF), the EU Commission has also recognized the data protection level for certain companies in the USA as secure under the adequacy decision of July 10, 2023. The list of certified companies and further information on the DPF can be found on the website of the U.S. Department of Commerce at 
-                    <a className="bold link" href="https://www.dataprivacyframework.gov/" target="_blank">https:<wbr></wbr>//www.dataprivacyframework.gov/<wbr></wbr></a> (in English). We will inform you within the privacy notices which service providers we use that are certified under the Data Privacy Framework.
-                    </p>
-                </div>
-            
-                <div className="main-section">
-                    <h3 className="main-section-title">General Information on Data Storage and Deletion</h3>
-                    <p>We delete personal data we process in accordance with legal requirements as soon as the underlying consents are revoked or no further legal bases for processing exist. This applies to cases where the original purpose of processing no longer exists or the data is no longer needed. Exceptions to this rule exist if statutory obligations or special interests require longer retention or archiving of the data.</p>
-                    <p>In particular, data that must be retained for commercial or tax reasons or whose storage is necessary for legal prosecution or the protection of the rights of other natural or legal persons must be archived accordingly.</p>
-                    <p>Our privacy notices contain additional information on the retention and deletion of data that specifically applies to certain processing operations.</p>
-                    <p>If multiple retention periods or deletion deadlines are specified for a piece of data, the longest period is always decisive.</p>
-                    <p>If a period does not explicitly start on a specific date and lasts at least one year, it automatically begins at the end of the calendar year in which the event triggering the period occurred. In the case of ongoing contractual relationships during which data is stored, the triggering event is the effective date of termination or other conclusion of the legal relationship.</p>
-                    <p>Data that is no longer retained for its originally intended purpose but due to legal requirements or other reasons is processed solely for the reasons justifying its retention.</p>
-                    <p><span className="bold">Further information on processing operations, procedures, and services:</span></p>
-                    <ul>
-                    <li>
-                        <span className="bold">Retention and deletion of data: </span>
-                        The following general deadlines apply to retention and archiving under German law:
-                        <ul>
-                        <li>10 years - Retention period for books and records, annual financial statements, inventories, management reports, opening balance sheets, as well as the work instructions and other organizational documents necessary for their understanding (§ 147(1) No. 1 in conjunction with (3) AO, § 14b(1) UStG, § 257(1) No. 1 in conjunction with (4) HGB).</li>
-                        <li>8 years - Accounting documents, such as invoices and expense receipts (§ 147(1) No. 4 and 4a in conjunction with (3) sentence 1 AO and § 257(1) No. 4 in conjunction with (4) HGB).</li>
-                        <li>6 years - Other business documents: received commercial or business letters, copies of sent commercial or business letters, other documents relevant to taxation, e.g., hourly wage slips, operating cost sheets, calculation documents, price labels, as well as payroll records, unless they are already accounting documents, and cash register receipts (§ 147(1) No. 2, 3, 5 in conjunction with (3) AO, § 257(1) No. 2 and 3 in conjunction with (4) HGB).</li>
-                        <li>3 years - Data required to consider potential warranty and compensation claims or similar contractual claims and rights, as well as to process related inquiries, based on previous business experience and common industry practices, are stored for the duration of the regular statutory limitation period of three years (§§ 195, 199 BGB).</li>
-                        </ul>
-                    </li>
-                    </ul>
-                </div>
-            
-                <div className="main-section">
-                    <h3 className="main-section-title">Provision of the Online Offering and Web Hosting</h3>
-                    <p>We process users' data to provide them with our online services. For this purpose, we process the user's IP address, which is necessary to transmit the content and functions of our online services to the user's browser or device.</p>
-                    <ul>
-                    <li><span className="bold">Types of data processed:</span> Usage data (e.g., page views and dwell time, click paths, usage intensity and frequency, device types and operating systems used, interactions with content and functions); Meta, communication, and procedural data (e.g., IP addresses, timestamps, identification numbers, involved persons). Log data (e.g., log files concerning logins or data retrieval or access times).</li>
-                    <li><span className="bold">Data subjects:</span> Users (e.g., website visitors, users of online services).</li>
-                    <li><span className="bold">Purposes of processing:</span> Provision of our online offering and user-friendliness; Information technology infrastructure (operation and provision of information systems and technical devices (computers, servers, etc.)). Security measures.</li>
-                    <li><span className="bold">Retention and deletion:</span> Deletion in accordance with the information in the section "General Information on Data Storage and Deletion".</li>
-                    <li><span className="bold">Legal bases:</span> Legitimate interests (Art. 6(1)(f) GDPR).</li>
-                    </ul>
-                    <p><span className="bold">Further information on processing operations, procedures, and services:</span></p>
-                    <ul>
-                    <li>
-                        <span className="bold">Collection of access data and log files: </span>
-                        Access to our online offering is logged in the form of so-called "server log files." Server log files may include the address and name of the retrieved web pages and files, date and time of retrieval, data volumes transferred, notification of successful retrieval, browser type and version, the user's operating system, referrer URL (the previously visited page), and usually IP addresses and the requesting provider. Server log files can be used for security purposes, e.g., to prevent server overload (especially in the case of abusive attacks, so-called DDoS attacks), and to ensure server utilization and stability;
-                        <span><span className="bold">Legal bases:</span> Legitimate interests (Art. 6(1)(f) GDPR).</span>
-                        <span className="bold">Deletion of data:</span> Log file information is stored for a maximum of 30 days and then deleted or anonymized. Data whose further retention is required for evidentiary purposes is exempt from deletion until the respective incident has been finally clarified.
-                    </li>
-                    <li>
-                        <span className="bold">Hetzner: </span>
-                        Services in the field of providing information technology infrastructure and related services (e.g., storage space and/or computing capacities);
-                        <span className="bold">Service provider:</span> Hetzner Online GmbH, Industriestr. 25, 91710 Gunzenhausen, Germany;
-                        <span><span className="bold">Legal bases:</span> Legitimate interests (Art. 6(1)(f) GDPR);</span>
-                        <span className="bold">Website:</span> <a className="bold link" href="https://www.hetzner.com" target="_blank">https:<wbr></wbr>//www.hetzner.com</a>;
-                        <span className="bold">Privacy policy:</span> <a className="bold link" href="https://www.hetzner.com/de/rechtliches/datenschutz" target="_blank">https:<wbr></wbr>//www.hetzner.com/<wbr></wbr>de/<wbr></wbr>rechtliches/<wbr></wbr>datenschutz</a>.
-                        <span className="bold">Data processing agreement:</span> <a className="bold link" href="https://docs.hetzner.com/de/general/general-terms-and-conditions/data-privacy-faq/" target="_blank">https:<wbr></wbr>//docs.hetzner.com/<wbr></wbr>de/<wbr></wbr>general/<wbr></wbr>general-terms-and-conditions/<wbr></wbr>data-privacy-faq/<wbr></wbr></a>.
-                    </li>
-                    </ul>
-                </div>
-            
-                <div className="main-section">
-                    <h3 className="main-section-title">Plugins and Embedded Functions and Content</h3>
-                    <p>We integrate functional and content elements into our online offering that are obtained from the servers of their respective providers (hereinafter referred to as "third-party providers"). These may include, for example, graphics, videos, or city maps (hereinafter uniformly referred to as "content").</p>
-                    <p>The integration always requires that the third-party providers of this content process the user's IP address, as they could not send the content to the user's browser without the IP address. The IP address is thus necessary for the display of this content or functions. We strive to use only content whose respective providers use the IP address solely for delivering the content. Third-party providers may also use so-called pixel tags (invisible graphics, also known as "web beacons") for statistical or marketing purposes. The "pixel tags" can be used to evaluate information such as visitor traffic on the pages of this website. The pseudonymous information may also be stored in cookies on the user's device and may contain, among other things, technical information about the browser and operating system, referring websites, visit time, and other details about the use of our online offering, and may also be linked to such information from other sources.</p>
-                    <p><span className="bold">Notes on legal bases:</span> If we ask users for their consent to use third-party providers, the legal basis for processing data is consent. Otherwise, user data is processed based on our legitimate interests (i.e., interest in efficient, economical, and user-friendly services). In this context, we would also like to refer you to the information on the use of cookies in this privacy policy.</p>
-                    <ul>
-                    <li><span>Types of data processed:</span> Usage data (e.g., page views and dwell time, click paths, usage intensity and frequency, device types and operating systems used, interactions with content and functions). Meta, communication, and procedural data (e.g., IP addresses, timestamps, identification numbers, involved persons).</li>
-                    <li><span>Data subjects:</span> Users (e.g., website visitors, users of online services).</li>
-                    <li><span>Purposes of processing:</span> Provision of our online offering and user-friendliness.</li>
-                    <li><span>Retention and deletion:</span> Deletion in accordance with the information in the section "General Information on Data Storage and Deletion". Storage of cookies for up to 2 years (unless otherwise specified, cookies and similar storage methods may be stored on users' devices for a period of two years).</li>
-                    <li><span>Legal bases:</span> Consent (Art. 6(1)(a) GDPR). Legitimate interests (Art. 6(1)(f) GDPR).</li>
-                    </ul>
-                    <p><span className="bold">Further information on processing operations, procedures, and services:</span></p>
-                        <span className="bold">Google Fonts (obtained from the Google server): </span>
-                        Obtaining fonts (and symbols) for the purpose of technically secure, maintenance-free, and efficient use of fonts and symbols with regard to timeliness and loading times, their uniform presentation, and consideration of possible licensing restrictions. The provider of the fonts is informed of the user's IP address so that the fonts can be provided in the user's browser. In addition, technical data (language settings, screen resolution, operating system, hardware used) are transmitted, which are necessary for providing the fonts depending on the devices used and the technical environment. This data may be processed on a server of the font provider in the USA - When visiting our online offering, users' browsers send their browser HTTP requests to the Google Fonts Web API (i.e., a software interface for retrieving the fonts). The Google Fonts Web API provides users with the Cascading Style Sheets (CSS) from Google Fonts and then the fonts specified in the CSS. These HTTP requests include (1) the IP address used by the respective user to access the internet, (2) the requested URL on the Google server, and (3) the HTTP headers, including the user agent describing the browser and operating system versions of the website visitors, as well as the referral URL (i.e., the webpage where the Google font is to be displayed). IP addresses are neither logged nor stored on Google servers, and they are not analyzed. The Google Fonts Web API logs details of the HTTP requests (requested URL, user agent, and referral URL). Access to this data is restricted and strictly controlled. The requested URL identifies the font families for which the user wants to load fonts. This data is logged so that Google can determine how often a particular font family is requested. With the Google Fonts Web API, the user agent must adapt the font generated for the respective browser type. The user agent is primarily logged for debugging purposes and used to generate aggregated usage statistics to measure the popularity of font families. These aggregated usage statistics are published on the "Analytics" page of Google Fonts. Finally, the referral URL is logged so that the data can be used for production maintenance and an aggregated report on top integrations based on the number of font requests can be generated. According to its own statements, Google does not use any of the information collected by Google Fonts to create profiles of end users or to serve targeted advertisements;
-                        <span>Service provider:</span> Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland;
-                        <span>Legal bases:</span> Legitimate interests (Art. 6(1)(f) GDPR);
-                        <span>Website:</span> <a className="bold link" href="https://fonts.google.com/" target="_blank">https:<wbr></wbr>//fonts.google.com/<wbr></wbr></a>;
-                        <span>Privacy policy:</span> <a className="bold link" href="https://policies.google.com/privacy" target="_blank">https:<wbr></wbr>//policies.google.com/<wbr></wbr>privacy</a>;
-                        <span>Basis for third-country transfers:</span> Data Privacy Framework (DPF).
-                        <span>Further information:</span> <a className="bold link" href="https://developers.google.com/fonts/faq/privacy?hl=de" target="_blank">https:<wbr></wbr>//developers.google.com/<wbr></wbr>fonts/<wbr></wbr>faq/<wbr></wbr>privacy?hl=de</a>.
-                </div>
-            
-                <div className="main-section">
-                    <h3 className="main-section-title">Changes and Updates</h3>
-                    <p>We ask you to regularly inform yourself about the content of our privacy policy. We will adjust the privacy policy as soon as changes in the data processing we carry out make this necessary. We will inform you as soon as the changes require your participation (e.g., consent) or other individual notification.</p>
-                    <p>If we provide addresses and contact information of companies and organizations in this privacy policy, please note that the addresses may change over time and ask you to verify the information before contacting them.</p>
-                    <p className="seal">
-                    <a className="bold link" href="https://datenschutz-generator.de/" title="Legal text by Dr. Schwenke - click for more information." target="_blank" rel="noopener noreferrer nofollow">Created with the free Datenschutz-Generator.de by Dr. Thomas Schwenke </a>
-                    <i className="bi bi-arrow-up-right-square-fill"></i>
-                    </p>
+                    <h3 className="main-section-title">5. Plugins and Tools</h3>
+                    <h3 className="main-section-subtitle">Google Fonts</h3>
+                    <p>This site uses so-called Google Fonts, provided by Google, for the uniform display of fonts. When you access a page, your browser loads the required fonts into its cache to display texts and fonts correctly.</p>
+                    <p>For this purpose, the browser you use must connect to Google’s servers. This allows Google to gain knowledge that this website was accessed via your IP address. The use of Google Fonts is based on Art. 6(1)(f) GDPR. The website operator has a legitimate interest in the uniform presentation of the typeface on their website. If corresponding consent has been requested, processing is carried out exclusively on the basis of Art. 6(1)(a) GDPR and § 25(1) TDDDG, insofar as the consent includes the storage of cookies or access to information on the user’s device (e.g., device fingerprinting) within the meaning of the TDDDG. Consent can be revoked at any time.</p>
+                    <p>If your browser does not support Google Fonts, a standard font from your computer will be used.</p>
+                    <p>For more information about Google Fonts, see <a className='bold link' href="https://developers.google.com/fonts/faq">https://<wbr></wbr>developers.<wbr></wbr>google.<wbr></wbr>com/<wbr></wbr>fonts/<wbr></wbr>faq</a> and Google’s privacy policy: <a className='bold link' href="https://policies.google.com/privacy?hl=en">https://<wbr></wbr>policies.<wbr></wbr>google.<wbr></wbr>com/<wbr></wbr>privacy?<wbr></wbr>hl=en</a>.</p>
+                    <p>The company is certified under the “EU-US Data Privacy Framework” (DPF). The DPF is an agreement between the European Union and the USA intended to ensure compliance with European data protection standards for data processing in the USA. Every company certified under the DPF commits to adhering to these data protection standards. Further information can be obtained from the provider at the following link: <a className='bold link' href="https://www.dataprivacyframework.gov/participant/5780">https://<wbr></wbr>www.<wbr></wbr>dataprivacyframework.<wbr></wbr>gov/<wbr></wbr>participant/<wbr></wbr>5780</a>.</p>
+                    <p>Source: <a className='bold link' href="https://www.e-recht24.de">https://<wbr></wbr>www.<wbr></wbr>e-recht24.<wbr></wbr>de</a></p>
                 </div>
             </>
         )

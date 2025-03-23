@@ -1,3 +1,25 @@
 .page-title {
     color: var(--text-highlight);
+    font-size: 72px;
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    .page-title {
+        color: var(--text-highlight);
+        font-size: 56px;
+    }
+}
+
+@media screen and (min-width: 371px) and (max-width: 500px) {
+    .page-title {
+        color: var(--text-highlight);
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .page-title {
+        color: var(--text-highlight);
+        font-size: xx-large;
+    }
 }

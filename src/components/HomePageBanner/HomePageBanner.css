@@ -21,6 +21,7 @@
     font-family: 'IBM Plex Mono', monospace;
     font-size: 70px;
     padding-right: 8px;
+    color: var(--text-highlight);
 }
 
 .greeting {
