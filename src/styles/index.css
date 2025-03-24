@@ -13,8 +13,8 @@
     --background-transparent :#18181880;
     --text-title: #0078d4;
     /*--text-title: #EEEEEF;*/
-    --text-paragraph: #aaaaab;
-    --text-highlight: #EAEAEB;
+    --text-paragraph: #CCCCCC;
+    --text-highlight: #FFFFFF;
     /*--text-highlight: #f5f5f6;*/
     --frosted-glass-1: var(--background-alt);
     --frosted-glass-2: var(--background-alt2);
@@ -146,19 +146,18 @@ ul {
     cursor: pointer;
 }
 
-@media screen and (min-width: 501px) and (max-width: 800px) {
+@media screen and (min-width: 471px) and (max-width: 800px) {
     .main-section-title {
-        font-size: xx-large;
+        font-size: 36px;
     }
 }
 
-@media screen and (max-width: 500px) {
-    .main-section-title {
-        font-size: x-large;
-    }
-
+@media screen and (max-width: 470px) {
     .main-section-subtitle {
         font-size: large;
+    }
+    .main-section-title {
+        font-size: xx-large;
     }
 }
 

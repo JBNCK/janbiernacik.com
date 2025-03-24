@@ -17,9 +17,9 @@ function HomePageBanner() {
                 myName.style.borderRight = "2px solid var(--text-paragraph)";
                 setTimeout(() => {
                     myName.style.borderRight = "0";
-                },1000);
+                },500);
             }
-        },2000);
+        },1000);
     }, []);
     
     return(
