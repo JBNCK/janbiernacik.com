@@ -7,7 +7,7 @@
     border-radius: var(--corner-radius);
     padding: var(--spacing-small);
     cursor: default;
-    margin: var(--spacing) 0 var(--spacing) var(--spacing-small);
+    margin: var(--spacing-small) 0 var(--spacing-small) var(--spacing-small);
     transition: all .25s;
     border: 1px solid transparent; 
 }

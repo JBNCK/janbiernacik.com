@@ -6,11 +6,12 @@
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
-    --background: #1e1e1e;
-    --background-alt: #2d2d30;
-    --background-alt2: #3e3e42;
-    --background-transparent :#1e1e1e80;
-    --text-title: #20aaff;
+    --background: #181818;
+    --background-alt: #1f1f1f;
+    --border: #2b2b2b;
+    --background-alt2: var(--border);
+    --background-transparent :#18181880;
+    --text-title: #0078d4;
     /*--text-title: #EEEEEF;*/
     --text-paragraph: #aaaaab;
     --text-highlight: #EAEAEB;
