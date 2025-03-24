@@ -19,6 +19,7 @@
 }
 
 #my-name {
+    font-weight: 700;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 70px;
     padding-right: 8px;
@@ -46,7 +47,7 @@ p {
 }
 
 .social-icon-link {
-    margin-right: 8px;
+    margin-right: var(--spacing-small);
 }
 
 @media screen and (max-width: 800px) {

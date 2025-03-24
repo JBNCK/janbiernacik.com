@@ -74,7 +74,8 @@ ul {
 
 .page {
     opacity: 0;
-    transition: all .5s;
+    transition: all 1s;
+    padding-top: 0px;
 }
 
 .main-section {
@@ -86,7 +87,7 @@ ul {
 .main-section-title {
     margin-bottom: var(--spacing-small);
     font-family: "IBM Plex Mono";
-    font-weight: 400;
+    font-weight: 700;
     font-size: 48px;
 }
 

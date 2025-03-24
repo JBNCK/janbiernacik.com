@@ -25,9 +25,7 @@ function HomePageBanner() {
     return(
         <div className="home-page-banner">
             <div className="home-page-banner-items-left">
-                <h3 className='greeting'>{componentContent.greeting}<br></br>
-                    <a id="my-name">Jan Biernacik</a>
-                </h3>
+                <a id='my-name'>Jan Biernacik</a>
                 <div className="social-icon-wrapper">
                     <a className='social-icon-link' href="https://www.github.com/janjbnck"><i className="bi bi-github social-icon"></i></a>
                     <a className='social-icon-link' href="https://www.instagram.com/janjbnck/"><i className="bi bi-instagram social-icon"></i></a>
