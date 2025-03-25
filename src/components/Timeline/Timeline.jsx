@@ -62,6 +62,7 @@ function Timeline() {
 
     return (
         <div className='main-section'>
+            <h3 className='main-section-subtitle'>{componentContent.componentTitle}</h3>
             <div id='timeline'>
                 {componentContent.timelineItems.map(item => (
                     <div key={item.id} className='timeline-item'>

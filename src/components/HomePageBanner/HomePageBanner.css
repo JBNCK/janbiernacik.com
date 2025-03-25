@@ -24,6 +24,7 @@
     font-size: 70px;
     padding-right: 8px;
     color: var(--text-highlight);
+    line-height: 1.05em;
 }
 
 .greeting {

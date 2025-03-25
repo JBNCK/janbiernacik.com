@@ -26,6 +26,7 @@ function HomePageBanner() {
         <div className="home-page-banner">
             <div className="home-page-banner-items-left">
                 <a id='my-name'>Jan Biernacik</a>
+                <a className='block'>Tech enthusiast and self taught web developer.</a>
                 <div className="social-icon-wrapper">
                     <a className='social-icon-link' href="https://www.github.com/janjbnck"><i className="bi bi-github social-icon"></i></a>
                     <a className='social-icon-link' href="https://www.instagram.com/janjbnck/"><i className="bi bi-instagram social-icon"></i></a>

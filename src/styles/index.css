@@ -6,11 +6,11 @@
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
-    --background: #181818;
-    --background-alt: #1f1f1f;
-    --border: #2b2b2b;
+    --background: #18181b;
+    --background-alt: #1f1f21;
+    --border: #2b2b2d;
     --background-alt2: var(--border);
-    --background-transparent :#18181880;
+    --background-transparent :#18181b80;
     --text-title: #0078d4;
     /*--text-title: #EEEEEF;*/
     --text-paragraph: #CCCCCC;
@@ -95,6 +95,9 @@ ul {
     color: var(--text-highlight);
     font-weight: 700;
     font-size: x-large;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: var(--background-alt2) 1px solid;
 }
 
 .main-section-text {
@@ -122,6 +125,10 @@ ul {
 
 .link:hover {
     color: var(--text-paragraph);
+    cursor: pointer;
+}
+
+.link i:hover {
     cursor: pointer;
 }
 
